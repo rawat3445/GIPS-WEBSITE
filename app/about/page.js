@@ -1,7 +1,7 @@
 // app/about/page.js
 export default function AboutPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
+    <main className="max-w-6xl mx-auto px-6 py-12 mt-12">
       <h1 className="text-3xl font-bold text-blue-700 mb-6">About GIPS</h1>
       <p className="text-gray-700 leading-relaxed mb-8">
         Garhwal Institute of Paramedical Sciences (GIPS) is a premier institution 

@@ -68,13 +68,13 @@ export default function Nav() {
       hoverColor: "hover:text-blue-700 hover:bg-blue-100",
       dropdown: [
         { name: "Academic Overview", href: "/academics/overview" },
-        { name: "Curriculum Innovations", href: "/academics/curriculum" },
+        { name: "Curriculum Innovations", href: "/academics/curriculum-innovations" },
         { name: "Examination", href: "/academics/examination" },
-        { name: "Student Mentoring", href: "/academics/mentoring" },
-        { name: "Libraries", href: "/academics/libraries" },
-        { name: "Academic Calendar", href: "/academics/calendar" },
+        { name: "Student Mentoring", href: "/academics/student-mentoring" },
+        { name: "Libraries", href: "/academics/liby" },
+        { name: "Academic Calendar", href: "/academics/academic-calendar" },
         { name: "List of Holidays", href: "/academics/holidays" },
-        { name: "Student Support", href: "/academics/support" },
+        { name: "Student Support", href: "/academics/student-support" },
       ],
     },
     {
