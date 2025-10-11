@@ -73,8 +73,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-        </div>
-
+        </div>       
         {/* Social / Follow */}
         <div>
           <h3 className="text-md font-semibold mb-3 text-white">Follow Us</h3>
@@ -110,7 +109,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 text-center text-xs py-4">
         © {new Date().getFullYear()} Garhwal Institute of Paramedical Sciences.
