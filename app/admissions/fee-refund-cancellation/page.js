@@ -111,7 +111,7 @@ export default function FeeRefund() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-teal-50 to-blue-50 mt-15">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-teal-50 to-blue-50 mt-30">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-600 via-teal-600 to-blue-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">

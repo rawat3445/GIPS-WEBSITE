@@ -4,7 +4,7 @@ import { Zap, Clock, Users, BookOpen, Briefcase, TrendingUp, Award, Calendar, Mo
 
 export default function BmritPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-100 py-12 px-6 mt-15">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-100 py-12 px-6 mt-30">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="bg-white shadow-xl rounded-3xl p-8 mb-8">

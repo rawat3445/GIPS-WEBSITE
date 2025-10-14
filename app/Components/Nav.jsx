@@ -68,7 +68,10 @@ export default function Nav() {
       hoverColor: "hover:text-blue-700 hover:bg-blue-100",
       dropdown: [
         { name: "Academic Overview", href: "/academics/overview" },
-        { name: "Curriculum Innovations", href: "/academics/curriculum-innovations" },
+        {
+          name: "Curriculum Innovations",
+          href: "/academics/curriculum-innovations",
+        },
         { name: "Examination", href: "/academics/examination" },
         { name: "Student Mentoring", href: "/academics/student-mentoring" },
         { name: "Libraries", href: "/academics/liby" },
@@ -124,7 +127,7 @@ export default function Nav() {
       href: "#",
       hoverColor: "hover:text-violet-700 hover:bg-violet-100",
       dropdown: [
-        { name: "Career", href: "/career" },
+        { name: "Career", href: "more/career" },
         { name: "Alumni", href: "/alumni" },
         { name: "News & Events", href: "/news-events" },
         { name: "Contact Us", href: "/contact" },
@@ -156,20 +159,20 @@ export default function Nav() {
         </a>
       </div>
 
-      <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-80">
         <div className=" mx-auto   ">
-          <div className="flex justify-between items-center h-24">
+          <div className="flex justify-between items-center h-40">
             {/* --- Logo + GIPS (Left) --- */}
             <a href="/" className="flex flex-col items-center">
               <div className="flex items-center space-x-3">
                 <img
                   src="/logo-paramedicalfinal-e1717133101289.png"
                   alt="GIPS Logo"
-                  width="40"
-                  height="40"
+                  width="80"
+                  height="80"
                   className="rounded-full object-cover"
                 />
-                <span className="text-2xl font-bold text-blue-700">GIPS</span>
+                <span className="text-3xl font-bold text-blue-700">GIPS</span>
               </div>
               <p className="text-lg font-medium text-gray-700 mt-1 whitespace-nowrap text-center">
                 Garhwal Institute of Paramedical Sciences
@@ -183,7 +186,7 @@ export default function Nav() {
                   {item.dropdown ? (
                     <div className="relative">
                       <button
-                        className={`flex items-center px-3 py-2 text-sm font-medium text-gray-700 ${item.hoverColor} transition-colors rounded-md`}
+                        className={`flex items-center px-3 py-2 text-sm font-light text-gray-700 ${item.hoverColor} transition-colors rounded-md`}
                         onMouseEnter={() => setActiveDropdown(index)}
                         onMouseLeave={() => setActiveDropdown(null)}
                       >

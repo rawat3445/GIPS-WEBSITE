@@ -147,7 +147,7 @@ export default function IPRCell() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 mt-15">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 mt-30">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">

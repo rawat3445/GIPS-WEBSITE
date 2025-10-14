@@ -3,7 +3,7 @@ import { Activity, Eye, Monitor, Scissors, Clock, Users, TrendingUp, Award, Grad
 
 export default function ProgramsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-6 mt-15">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-6 mt-30">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="bg-white shadow-xl rounded-3xl p-8 mb-8 text-center">

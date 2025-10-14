@@ -240,12 +240,12 @@ export default function CampusLife() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 mt-30">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center mb-6">
-            <div className="bg-white bg-opacity-20 p-4 rounded-full backdrop-blur-sm">
+            <div className="bg-blue-400  bg-opacity-20 p-4 rounded-full backdrop-blur-sm">
               <Home className="w-16 h-16" />
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function CampusLife() {
           </p>
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {campusHighlights.slice(0, 4).map((highlight, index) => (
-              <div key={index} className="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-xl">
+              <div key={index} className="bg-blue-400 bg-opacity-20 backdrop-blur-sm p-4 rounded-xl">
                 <div className="text-3xl mb-2">{highlight.icon}</div>
                 <div className="font-bold text-sm">{highlight.title}</div>
               </div>
@@ -352,13 +352,13 @@ export default function CampusLife() {
             </div>
 
             {/* Student Life Aspects */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl p-10 mb-12 text-white">
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl p-10 mb-12">
               <h2 className="text-4xl font-bold mb-8 text-center">Student Life at GIPS</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {studentLife.map((aspect, index) => {
                   const IconComponent = aspect.icon;
                   return (
-                    <div key={index} className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                    <div key={index} className=" bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
                       <IconComponent className="w-10 h-10 mb-3" />
                       <h3 className="text-2xl font-bold mb-2">{aspect.aspect}</h3>
                       <p className="text-blue-100">{aspect.description}</p>

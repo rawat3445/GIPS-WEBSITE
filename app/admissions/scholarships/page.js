@@ -303,7 +303,7 @@ export default function Scholarships() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 mt-15">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 mt-30">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">

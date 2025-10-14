@@ -159,7 +159,7 @@ export default function StudentResearchCell() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 min-h-screen mt-15">
+    <div className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 min-h-screen mt-30">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>

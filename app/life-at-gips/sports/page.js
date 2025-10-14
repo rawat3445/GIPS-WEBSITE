@@ -125,7 +125,7 @@ export default function Sports() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 mt-15">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 mt-30">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-cyan-200 px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">

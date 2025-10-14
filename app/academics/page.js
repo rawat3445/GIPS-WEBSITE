@@ -61,7 +61,7 @@ export default function Academics() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 mt-15">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 mt-30">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-16">
         <div className="max-w-6xl mx-auto">

@@ -157,7 +157,7 @@ export default function Libraries() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 mt-15">
+    <div className="min-h-screen bg-gray-50 mt-30">
       <div className="bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center mb-4">
