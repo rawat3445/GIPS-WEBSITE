@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div className="bg-gray-50 text-gray-800 mt-30">
       {/* ==================== HERO SECTION ==================== */}
-<section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-teal-600 via-emerald-500 to-cyan-500">
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-teal-600 via-emerald-500 to-cyan-500">
   {/* Optional decorative background shapes */}
   <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,_#ffffff_0%,_transparent_70%)]"></div>
 

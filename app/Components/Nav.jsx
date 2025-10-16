@@ -144,7 +144,7 @@ export default function Nav() {
       {/* Fixed Side Support Links */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 space-y-3">
         <a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/8273968106"
           className="flex items-center justify-center w-12 h-12 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-colors"
           target="_blank"
           rel="noopener noreferrer"
