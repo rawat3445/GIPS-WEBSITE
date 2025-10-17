@@ -7,7 +7,7 @@ import {
   Phone,
   FacebookIcon,
   InstagramIcon,
-  LinkedinIcons,
+  Linkedin,
   Twitter,
   Youtube,
   Mail,
