@@ -3,7 +3,7 @@ import { Eye, Clock, Users, BookOpen, Briefcase, TrendingUp, Award, Calendar, Gr
 
 export default function diplomaoptometryPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 to-blue-100 py-12 px-6 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 to-blue-100 py-12 px-6 mt-0">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="bg-white shadow-xl rounded-3xl p-8 mb-8">
@@ -15,7 +15,7 @@ export default function diplomaoptometryPage() {
               <h1 className="text-4xl font-bold text-sky-700">
                 Diploma in Optometry (D.Optom)
               </h1>
-              <p className="text-xl text-gray-600 mt-2">
+              <p className="text-xl text-gray-600 mt-0">
                 Foundation Program in Vision Care and Eye Health
               </p>
             </div>
@@ -71,15 +71,15 @@ export default function diplomaoptometryPage() {
                 <h3 className="text-lg font-semibold text-sky-800 mb-3">Program Overview</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-sky-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-sky-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Duration:</strong> 2 Years (Full-time)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-sky-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-sky-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Eligibility:</strong> 10+2 from any recognized board</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-sky-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-sky-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Age Limit:</strong> No specific age restriction</span>
                   </li>
                 </ul>
@@ -163,7 +163,7 @@ export default function diplomaoptometryPage() {
                     <span className="font-bold text-purple-600">₹3-7 LPA</span>
                   </div>
                 </div>
-                <p className="text-xs text-gray-600 mt-3">
+                <p className="text-xs text-gray-600 mt-0">
                   *Based on current market trends and location variations
                 </p>
               </div>
@@ -270,17 +270,17 @@ export default function diplomaoptometryPage() {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-sky-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-sky-800">Average Course Fee</h4>
-              <p className="text-2xl font-bold text-sky-600 mt-2">₹1-3L</p>
+              <p className="text-2xl font-bold text-sky-600 mt-0">₹1-3L</p>
               <p className="text-sm text-gray-600">Complete program cost</p>
             </div>
             <div className="bg-orange-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-orange-800">Job Market</h4>
-              <p className="text-lg font-bold text-orange-600 mt-2">Expanding</p>
+              <p className="text-lg font-bold text-orange-600 mt-0">Expanding</p>
               <p className="text-sm text-gray-600">High demand across sectors</p>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-purple-800">Salary Range</h4>
-              <p className="text-lg font-bold text-purple-600 mt-2">₹2-7L</p>
+              <p className="text-lg font-bold text-purple-600 mt-0">₹2-7L</p>
               <p className="text-sm text-gray-600">Annual package range</p>
             </div>
           </div>
@@ -320,21 +320,21 @@ export default function diplomaoptometryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-sky-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-sky-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Industry-Ready Curriculum</h3>
                   <p className="text-gray-600">Practical-focused training aligned with current industry needs</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-blue-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-blue-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Experienced Faculty</h3>
                   <p className="text-gray-600">Learn from qualified professionals with industry experience</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-green-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-green-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Modern Facilities</h3>
                   <p className="text-gray-600">Well-equipped laboratories and clinical training areas</p>
@@ -343,21 +343,21 @@ export default function diplomaoptometryPage() {
             </div>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-purple-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-purple-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Placement Assistance</h3>
                   <p className="text-gray-600">Strong industry connections for job placement support</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-orange-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-orange-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Affordable Education</h3>
                   <p className="text-gray-600">Quality education at competitive fees structure</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-red-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-red-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Quick Entry to Workforce</h3>
                   <p className="text-gray-600">2-year program for faster career start</p>

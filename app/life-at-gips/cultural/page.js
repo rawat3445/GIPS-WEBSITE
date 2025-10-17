@@ -271,7 +271,7 @@ export default function Cultural() {
     : culturalCategories.filter(cat => cat.id === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -509,7 +509,7 @@ export default function Cultural() {
                   <div>
                     <h3 className="text-3xl font-bold text-gray-800">{event.name}</h3>
                     <p className="text-purple-600 font-semibold text-lg">{event.month}</p>
-                    <p className="text-gray-600 mt-2">{event.description}</p>
+                    <p className="text-gray-600 mt-0">{event.description}</p>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -566,7 +566,7 @@ export default function Cultural() {
         )}
 
         {/* Call to Action */}
-        <div className="bg-white rounded-2xl shadow-xl p-12 mt-12 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-12 mt-0 text-center">
           <PartyPopper className="w-16 h-16 text-purple-600 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Be Part of Something Amazing!</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">

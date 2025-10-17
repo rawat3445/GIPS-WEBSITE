@@ -212,7 +212,7 @@ export default function After12th() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -512,7 +512,7 @@ export default function After12th() {
         )}
 
         {/* Contact Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-12 mt-12 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-12 mt-0 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">Need Help with Admission?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Our admission team is here to assist you. Contact us for any queries regarding courses, eligibility, or application process.

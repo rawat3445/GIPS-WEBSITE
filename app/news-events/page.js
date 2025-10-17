@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NewsEventPage() {
   return (
-    <div className="bg-gray-50 text-gray-800 mt-35">
+    <div className="bg-gray-50 text-gray-800 mt-05">
       {/* ==================== HERO SECTION ==================== */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -113,7 +113,7 @@ export default function NewsEventPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { name: "Dr. P. C. Sharma", role: "Principal, GIPS", img: "/principal.jpg" },
+              { name: "Animesh Mondol", role: "Principal, GIPS", img: "/principal.jpg" },
               { name: "Event Committee", role: "Faculty & Student Coordinators", img: "/faculty.jpg" },
               { name: "Garhwal Institute", role: "Paramedical Sciences", img: "/gips-logo.png" },
             ].map((member, i) => (

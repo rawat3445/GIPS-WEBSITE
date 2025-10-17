@@ -129,7 +129,7 @@ export default function AwardsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -180,7 +180,7 @@ export default function AwardsPage() {
               <BookOpen className="w-12 h-12 mr-4" />
               <div>
                 <h2 className="text-4xl font-bold">Research Excellence</h2>
-                <p className="text-xl mt-2 text-blue-100">
+                <p className="text-xl mt-0 text-blue-100">
                   Driving Innovation Through Quality Research and Academic Contributions
                 </p>
               </div>

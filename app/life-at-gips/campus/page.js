@@ -240,7 +240,7 @@ export default function CampusLife() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -501,7 +501,7 @@ export default function CampusLife() {
         )}
 
         {/* Call to Action */}
-        <div className="bg-white rounded-2xl shadow-xl p-12 mt-12 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-12 mt-0 text-center">
           <TreePine className="w-16 h-16 text-green-600 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Ready to Be Part of GIPS Family?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">

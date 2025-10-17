@@ -116,7 +116,7 @@ export default function TestimonialsPage() {
                     {t.name}
                   </h4>
                   <p className="text-sm text-gray-500">{t.course}</p>
-                  <div className="flex mt-3">
+                  <div className="flex mt-0">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star
                         key={i}

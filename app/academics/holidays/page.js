@@ -70,7 +70,7 @@ export default function Holidays() {
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-orange-600 via-pink-600 to-purple-600 text-white px-8 py-16">
         <div className="max-w-6xl mx-auto">

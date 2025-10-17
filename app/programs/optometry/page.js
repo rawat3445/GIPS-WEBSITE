@@ -3,7 +3,7 @@ import { Eye, Clock, Users, BookOpen, Briefcase, TrendingUp, Award, Calendar } f
 
 export default function optometryPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-6 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-6 mt-0">
       <div className="max-w-6xl mx-auto ">
         {/* Header Section */}
         <div className="bg-white shadow-xl rounded-3xl p-8 mb-8 ">
@@ -15,7 +15,7 @@ export default function optometryPage() {
               <h1 className="text-4xl font-bold text-blue-700">
                 Bachelor of Optometry (B.Optom)
               </h1>
-              <p className="text-xl text-gray-600 mt-2">
+              <p className="text-xl text-gray-600 mt-0">
                 Professional Undergraduate Allied Healthcare Program
               </p>
             </div>
@@ -70,15 +70,15 @@ export default function optometryPage() {
                 <h3 className="text-lg font-semibold text-blue-800 mb-3">Eligibility Criteria</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Academic:</strong> Successful completion of 10+2 (Science Stream) with Physics, Chemistry, and Biology as core subjects</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Minimum Score:</strong> 50% aggregate (45% for reserved categories)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Age:</strong> 17 years at the time of admission</span>
                   </li>
                 </ul>

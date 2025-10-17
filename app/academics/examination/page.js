@@ -141,7 +141,7 @@ export default function Examination() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 mt-30">
+    <div className="min-h-screen bg-gray-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-16">
         <div className="max-w-6xl mx-auto">

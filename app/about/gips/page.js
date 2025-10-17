@@ -137,7 +137,7 @@ export default function AboutGipsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -333,10 +333,10 @@ export default function AboutGipsPage() {
                               <p className="leading-relaxed">{faculty.location}</p>
                             )}
                             {faculty.degree && (
-                              <p className="font-semibold text-gray-800 mt-2">{faculty.degree}</p>
+                              <p className="font-semibold text-gray-800 mt-0">{faculty.degree}</p>
                             )}
                             {faculty.hospital && (
-                              <p className="font-semibold text-gray-800 mt-2">{faculty.hospital}</p>
+                              <p className="font-semibold text-gray-800 mt-0">{faculty.hospital}</p>
                             )}
                           </div>
                         </div>

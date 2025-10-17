@@ -303,7 +303,7 @@ export default function Scholarships() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -567,7 +567,7 @@ export default function Scholarships() {
         )}
 
         {/* Contact Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-12 mt-12 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-12 mt-0 text-center">
           <Gift className="w-16 h-16 text-orange-600 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Need Help with Scholarship Application?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">

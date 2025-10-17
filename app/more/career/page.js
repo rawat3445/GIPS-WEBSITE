@@ -197,7 +197,7 @@ export default function CareerPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -327,7 +327,7 @@ export default function CareerPage() {
             </div>
 
             {/* Top Recruiters */}
-            <div className="bg-gradient-to-r from-green-600 to-teal-600 rounded-2xl shadow-xl p-10 mt-12 text-white">
+            <div className="bg-gradient-to-r from-green-600 to-teal-600 rounded-2xl shadow-xl p-10 mt-0 text-white">
               <h2 className="text-4xl font-bold mb-8 text-center">Top Recruiters</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {topRecruiters.map((recruiter, index) => (

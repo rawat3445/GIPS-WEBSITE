@@ -254,7 +254,7 @@ export default function RDCell() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -461,7 +461,7 @@ export default function RDCell() {
             </div>
 
             {/* Events & Workshops */}
-            <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl shadow-xl p-10 mt-12 text-white">
+            <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl shadow-xl p-10 mt-0 text-white">
               <div className="flex items-center justify-center mb-8">
                 <Calendar className="w-10 h-10 mr-4" />
                 <h2 className="text-4xl font-bold">Research Events & Workshops</h2>
@@ -588,7 +588,7 @@ export default function RDCell() {
         )}
 
         {/* Contact Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-12 mt-12 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-12 mt-0 text-center">
           <Brain className="w-16 h-16 text-blue-600 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Have a Research Idea?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">

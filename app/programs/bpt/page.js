@@ -3,7 +3,7 @@ import { Activity, Clock, Users, BookOpen, Briefcase, TrendingUp, Award, Calenda
 
 export default function BptPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-100 py-12 px-6 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-100 py-12 px-6 mt-0">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="bg-white shadow-xl rounded-3xl p-8 mb-8">
@@ -15,7 +15,7 @@ export default function BptPage() {
               <h1 className="text-4xl font-bold text-green-700">
                 Bachelor of Physiotherapy (BPT)
               </h1>
-              <p className="text-xl text-gray-600 mt-2">
+              <p className="text-xl text-gray-600 mt-0">
                 Four-year Undergraduate Program in Physical Rehabilitation
               </p>
             </div>
@@ -71,11 +71,11 @@ export default function BptPage() {
                 <h3 className="text-lg font-semibold text-green-800 mb-3">Course Duration</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-green-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Duration:</strong> 4 Years + 6 Months Internship</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-green-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Eligibility:</strong> 10+2 (Science Stream – PCB) or equivalent from a recognized board</span>
                   </li>
                 </ul>
@@ -212,17 +212,17 @@ export default function BptPage() {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-purple-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-purple-800">Monthly Salary Range</h4>
-              <p className="text-2xl font-bold text-purple-600 mt-2">₹20K-₹1L+</p>
+              <p className="text-2xl font-bold text-purple-600 mt-0">₹20K-₹1L+</p>
               <p className="text-sm text-gray-600">Entry-level: ₹20,000-₹35,000, Experienced: ₹60,000-₹1,00,000+</p>
             </div>
             <div className="bg-orange-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-orange-800">Career Flexibility</h4>
-              <p className="text-lg font-bold text-orange-600 mt-2">High</p>
+              <p className="text-lg font-bold text-orange-600 mt-0">High</p>
               <p className="text-sm text-gray-600">Government, Private, Self-practice options</p>
             </div>
             <div className="bg-teal-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-teal-800">Job Security</h4>
-              <p className="text-lg font-bold text-teal-600 mt-2">Excellent</p>
+              <p className="text-lg font-bold text-teal-600 mt-0">Excellent</p>
               <p className="text-sm text-gray-600">Growing healthcare demand</p>
             </div>
           </div>
@@ -280,21 +280,21 @@ export default function BptPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-green-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-green-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">High Demand Career</h3>
                   <p className="text-gray-600">Growing healthcare sector ensures excellent job prospects</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-blue-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-blue-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Rewarding Profession</h3>
                   <p className="text-gray-600">Help people recover and improve their quality of life</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-purple-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-purple-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Diverse Opportunities</h3>
                   <p className="text-gray-600">Multiple specializations and work environments available</p>
@@ -303,21 +303,21 @@ export default function BptPage() {
             </div>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-orange-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-orange-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Global Recognition</h3>
                   <p className="text-gray-600">Indian BPT degree recognized internationally</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-red-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-red-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Entrepreneurial Scope</h3>
                   <p className="text-gray-600">Opportunity to start your own physiotherapy clinic</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-teal-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-teal-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Continuous Learning</h3>
                   <p className="text-gray-600">Rapidly evolving field with new techniques and technologies</p>

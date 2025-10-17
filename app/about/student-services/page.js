@@ -139,7 +139,7 @@ export default function StudentServicesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-6 mt-30">
+    <div className="min-h-screen bg-gray-50 py-12 px-6 mt-0">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="bg-white shadow-md rounded-2xl p-8 mb-8">

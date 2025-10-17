@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SocialResponsibilitiesPage() {
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-6 mt-30">
+    <div className="min-h-screen bg-gray-50 py-12 px-6 mt-0">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="bg-white shadow-md rounded-2xl p-8 mb-6">

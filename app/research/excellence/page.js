@@ -50,7 +50,7 @@ export default function CenterOfExcellence() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 min-h-screen mt-30">
+    <div className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 min-h-screen mt-0">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
@@ -348,7 +348,7 @@ export default function CenterOfExcellence() {
             </div>
             <div className="border-t border-slate-700/50 pt-8 text-center text-slate-400">
               <p>&copy; 2024 Center of Excellence - Neuroscience Research. All rights reserved.</p>
-              <p className="mt-2 text-sm">Advancing neurological health through ethical, innovative research.</p>
+              <p className="mt-0 text-sm">Advancing neurological health through ethical, innovative research.</p>
             </div>
           </div>
         </footer>

@@ -112,7 +112,7 @@ export default function AntiRagging() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-red-600 via-orange-600 to-red-700 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto">
@@ -171,7 +171,7 @@ export default function AntiRagging() {
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
                 <p className="font-semibold mb-2">Online Complaint Portal:</p>
                 <p>Visit: <a href="https://www.antiragging.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.antiragging.in</a></p>
-                <p className="text-sm mt-2">Register your complaint on the UGC-approved portal for immediate action</p>
+                <p className="text-sm mt-0">Register your complaint on the UGC-approved portal for immediate action</p>
               </div>
               <button
                 onClick={() => setShowReportForm(false)}
@@ -227,7 +227,7 @@ export default function AntiRagging() {
           <div className="mt-8 bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl shadow-xl mb-12 bg-opacity-20 backdrop-blur-sm  p-6 text-center">
             <p className="text-xl font-semibold mb-2">National Anti-Ragging Helpline (UGC)</p>
             <p className="text-3xl font-bold">1800-180-5522 (24/7 Toll-Free)</p>
-            <p className="text-sm mt-2 opacity-90">You can also report online at www.antiragging.in</p>
+            <p className="text-sm mt-0 opacity-90">You can also report online at www.antiragging.in</p>
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import { Scissors, Clock, Users, BookOpen, Briefcase, TrendingUp, Award, Calenda
 
 export default function BottPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-blue-100 py-12 px-6 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-blue-100 py-12 px-6 mt-0">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="bg-white shadow-xl rounded-3xl p-8 mb-8">
@@ -16,7 +16,7 @@ export default function BottPage() {
               <h1 className="text-4xl font-bold text-teal-700">
                 Bachelor in Operation Theater Technology (BOTT)
               </h1>
-              <p className="text-xl text-gray-600 mt-2">
+              <p className="text-xl text-gray-600 mt-0">
                 Specialized Undergraduate Program in Surgical Technology
               </p>
             </div>
@@ -74,11 +74,11 @@ export default function BottPage() {
                 <h3 className="text-lg font-semibold text-teal-800 mb-3">Course Duration</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-teal-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Duration:</strong> 3 Years + 1 Year Internship</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-teal-600 rounded-full mt-0 flex-shrink-0"></span>
                     <span><strong>Eligibility:</strong> 10+2 (Science Stream – PCB/PCM) or equivalent from a recognized board</span>
                   </li>
                 </ul>
@@ -220,17 +220,17 @@ export default function BottPage() {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-teal-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-teal-800">Job Security</h4>
-              <p className="text-lg font-bold text-teal-600 mt-2">High</p>
+              <p className="text-lg font-bold text-teal-600 mt-0">High</p>
               <p className="text-sm text-gray-600">Essential healthcare service</p>
             </div>
             <div className="bg-orange-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-orange-800">Career Growth</h4>
-              <p className="text-lg font-bold text-orange-600 mt-2">Excellent</p>
+              <p className="text-lg font-bold text-orange-600 mt-0">Excellent</p>
               <p className="text-sm text-gray-600">Multiple advancement paths</p>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-purple-800">Work Environment</h4>
-              <p className="text-lg font-bold text-purple-600 mt-2">Dynamic</p>
+              <p className="text-lg font-bold text-purple-600 mt-0">Dynamic</p>
               <p className="text-sm text-gray-600">High-tech surgical settings</p>
             </div>
           </div>
@@ -297,21 +297,21 @@ export default function BottPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-teal-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-teal-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Cardiac Surgery Technology</h3>
                   <p className="text-gray-600">Specialized equipment for heart surgeries</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-blue-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-blue-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Neurosurgery Technology</h3>
                   <p className="text-gray-600">Brain and nervous system surgical support</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-green-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-green-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Orthopedic Surgery Technology</h3>
                   <p className="text-gray-600">Bone and joint surgery assistance</p>
@@ -320,21 +320,21 @@ export default function BottPage() {
             </div>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-purple-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-purple-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Minimally Invasive Surgery</h3>
                   <p className="text-gray-600">Laparoscopic and endoscopic procedures</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-orange-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-orange-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Transplant Surgery Technology</h3>
                   <p className="text-gray-600">Organ transplantation support</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-red-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-red-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Emergency Surgery Technology</h3>
                   <p className="text-gray-600">Trauma and emergency procedures</p>
@@ -350,21 +350,21 @@ export default function BottPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-teal-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-teal-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Critical Healthcare Role</h3>
                   <p className="text-gray-600">Essential member of surgical teams</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-blue-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-blue-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">High-Tech Environment</h3>
                   <p className="text-gray-600">Work with advanced surgical technology</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-green-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-green-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Job Security</h3>
                   <p className="text-gray-600">Always in demand in healthcare sector</p>
@@ -373,21 +373,21 @@ export default function BottPage() {
             </div>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="bg-purple-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-purple-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Career Advancement</h3>
                   <p className="text-gray-600">Opportunities for leadership roles</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-orange-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-orange-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Meaningful Work</h3>
                   <p className="text-gray-600">Direct contribution to patient outcomes</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-red-600 w-3 h-3 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="bg-red-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Diverse Opportunities</h3>
                   <p className="text-gray-600">Multiple surgical specialties to choose from</p>

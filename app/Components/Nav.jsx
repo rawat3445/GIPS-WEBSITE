@@ -1,10 +1,65 @@
 "use client";
-import { useState } from "react";
-import { ChevronDown, Menu, X, Phone, MessageCircle } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import {
+  MessageCircle,
+  ChevronDown,
+  Menu,
+  Phone,
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcons,
+  Twitter,
+  Youtube,
+  Mail,
+} from "lucide-react";
+import { gsap } from "gsap";
 
 export default function Nav() {
+  const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const navRef = useRef(null);
+  const navItemsRef = useRef([]); // store references to nav items
+
+  useEffect(() => {
+    const navElement = navRef.current;
+
+    // Initially hide the navbar and its children
+    gsap.set(navElement, { y: -150, opacity: 0 });
+    gsap.set(navItemsRef.current, { y: 30, opacity: 0 });
+
+    let hasShown = false;
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setScrolled(scrollY > 50);
+
+      if (scrollY > 50 && !hasShown) {
+        hasShown = true;
+
+        // Create timeline animation
+        const tl = gsap.timeline({ ease: "power4.out" });
+        tl.to(navElement, {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+        }).to(
+          navItemsRef.current,
+          {
+            y: 0,
+            opacity: 1,
+            stagger: 0.08, // each item appears one by one
+            duration: 0.4,
+          },
+          "-=0.2" // overlap slightly with navbar animation
+        );
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const menuItems = [
     {
@@ -143,6 +198,7 @@ export default function Nav() {
     <>
       {/* Fixed Side Support Links */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 space-y-3">
+        {/* WhatsApp */}
         <a
           href="https://wa.me/8273968106"
           className="flex items-center justify-center w-12 h-12 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-colors"
@@ -151,19 +207,90 @@ export default function Nav() {
         >
           <MessageCircle className="w-6 h-6" />
         </a>
+
+        {/* Phone */}
         <a
-          href="tel:+1234567890"
+          href="tel:+"
           className="flex items-center justify-center w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-colors"
         >
           <Phone className="w-6 h-6" />
         </a>
+
+        {/* Facebook */}
+        <a
+          href="https://facebook.com"
+          className="flex items-center justify-center w-12 h-12 bg-blue-700 hover:bg-blue-800 text-white rounded-full shadow-lg transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon className="w-6 h-6" />
+        </a>
+
+        {/* Instagram */}
+        <a
+          href="https://instagram.com"
+          className="flex items-center justify-center w-12 h-12 bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white rounded-full shadow-lg transition-opacity"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon className="w-6 h-6" />
+        </a>
+
+        {/* LinkedIn */}
+        <a
+          href="https://linkedin.com"
+          className="flex items-center justify-center w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin className="w-6 h-6" />
+        </a>
+
+        {/* Twitter/X */}
+        <a
+          href="https://twitter.com"
+          className="flex items-center justify-center w-12 h-12 bg-black hover:bg-gray-800 text-white rounded-full shadow-lg transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Twitter className="w-6 h-6" />
+        </a>
+
+        {/* YouTube */}
+        <a
+          href="https://youtube.com"
+          className="flex items-center justify-center w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full shadow-lg transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Youtube className="w-6 h-6" />
+        </a>
+
+        {/* Email */}
+        <a
+          href="mailto:info@example.com"
+          className="flex items-center justify-center w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg transition-colors"
+        >
+          <Mail className="w-6 h-6" />
+        </a>
       </div>
 
-      <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-80">
-        <div className=" mx-auto   ">
+      <nav
+        ref={navRef}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 backdrop-blur-md ${
+          scrolled
+            ? "bg-gradient-to-r from-yellow-400 via-yellow-300 to-blue-500 shadow-lg"
+            : "bg-gradient-to-r from-yellow-400/70 via-white/50 to-blue-500/70"
+        }`}
+      >
+        <div className="mx-auto">
           <div className="flex justify-between items-center h-40">
-            {/* --- Logo + GIPS (Left) --- */}
-            <a href="/" className="flex flex-col items-center">
+            {/* --- Logo --- */}
+            <a
+              href="/"
+              className="flex flex-col items-center"
+              ref={(el) => (navItemsRef.current[0] = el)}
+            >
               <div className="flex items-center space-x-3">
                 <img
                   src="/logo-paramedicalfinal-e1717133101289.png"
@@ -179,8 +306,11 @@ export default function Nav() {
               </p>
             </a>
 
-            {/* --- Desktop Menu (Right, full width) --- */}
-            <div className="hidden lg:flex items-center flex-grow justify-end space-x-4">
+            {/* --- Desktop Menu --- */}
+            <div
+              className="hidden lg:flex items-center flex-grow justify-end space-x-4"
+              ref={(el) => (navItemsRef.current[1] = el)}
+            >
               {menuItems.map((item, index) => (
                 <div key={index} className="relative group">
                   {item.dropdown ? (
@@ -222,7 +352,6 @@ export default function Nav() {
                 </div>
               ))}
 
-              {/* Apply Now Button */}
               <a
                 href="/apply-now"
                 className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-md transition-colors"
@@ -231,10 +360,11 @@ export default function Nav() {
               </a>
             </div>
 
-            {/* --- Mobile Menu Button --- */}
+            {/* --- Mobile Button --- */}
             <button
               className="lg:hidden p-2 text-gray-700 hover:text-blue-700 focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
+              ref={(el) => (navItemsRef.current[2] = el)}
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -244,63 +374,6 @@ export default function Nav() {
             </button>
           </div>
         </div>
-
-        {/* --- Mobile Menu --- */}
-        {isOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-200 max-h-96 overflow-y-auto">
-            <div className="px-4 py-3 space-y-1">
-              {menuItems.map((item, index) => (
-                <div key={index}>
-                  {item.dropdown ? (
-                    <div>
-                      <button
-                        className={`flex items-center justify-between w-full px-3 py-2 text-left text-gray-700 ${item.hoverColor} rounded-md`}
-                        onClick={() => handleDropdownToggle(index)}
-                      >
-                        {item.name}
-                        <ChevronDown
-                          className={`w-4 h-4 transition-transform ${
-                            activeDropdown === index ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
-                      {activeDropdown === index && (
-                        <div className="ml-4 mt-1 space-y-1">
-                          {item.dropdown.map((dropdownItem, dropIndex) => (
-                            <a
-                              key={dropIndex}
-                              href={dropdownItem.href}
-                              className="block px-3 py-2 text-sm text-gray-600 hover:bg-cyan-100 hover:text-cyan-800 rounded-md"
-                              onClick={() => setIsOpen(false)}
-                            >
-                              {dropdownItem.name}
-                            </a>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <a
-                      href={item.href}
-                      className={`block px-3 py-2 text-gray-700 ${item.hoverColor} rounded-md`}
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.name}
-                    </a>
-                  )}
-                </div>
-              ))}
-
-              <a
-                href="/apply-now"
-                className="block w-full mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-center text-sm font-medium rounded-md transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Apply Now
-              </a>
-            </div>
-          </div>
-        )}
       </nav>
     </>
   );

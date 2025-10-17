@@ -152,7 +152,7 @@ export default function AlumniPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-emerald-50 to-cyan-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-emerald-50 to-cyan-50 mt-0">
       {/* Hero Section - Unique Teal/Emerald Theme */}
       <div className="bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -427,7 +427,7 @@ export default function AlumniPage() {
         )}
 
         {/* Alumni Network CTA */}
-        <div className="bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 rounded-2xl shadow-xl p-12 mt-12 text-white text-center">
+        <div className="bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 rounded-2xl shadow-xl p-12 mt-0 text-white text-center">
           <Heart className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-4xl font-bold mb-4">Stay Connected with GIPS</h2>
           <p className="text-xl mb-8 text-teal-100 max-w-3xl mx-auto">

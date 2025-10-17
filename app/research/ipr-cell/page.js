@@ -147,7 +147,7 @@ export default function IPRCell() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 mt-30">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
@@ -407,7 +407,7 @@ export default function IPRCell() {
         )}
 
         {/* Contact Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-12 mt-12 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-12 mt-0 text-center">
           <Lightbulb className="w-16 h-16 text-purple-600 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Have an Innovation to Protect?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">

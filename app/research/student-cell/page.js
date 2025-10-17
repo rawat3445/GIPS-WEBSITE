@@ -159,7 +159,7 @@ export default function StudentResearchCell() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 min-h-screen mt-30">
+    <div className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 min-h-screen mt-0">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
@@ -375,7 +375,7 @@ export default function StudentResearchCell() {
           </div>
 
           {/* Legend */}
-          <div className="mt-12 bg-slate-800/80 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-8">
+          <div className="mt-0 bg-slate-800/80 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-white mb-6">Understanding Project Status</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
@@ -408,7 +408,7 @@ export default function StudentResearchCell() {
       <footer className="relative border-t border-slate-700/50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center text-slate-400">
           <p>&copy; 2024 Student Research Cell. All projects conducted under institutional guidelines.</p>
-          <p className="text-sm mt-2">Committed to ethical, rigorous, and impactful student research.</p>
+          <p className="text-sm mt-0">Committed to ethical, rigorous, and impactful student research.</p>
         </div>
       </footer>
 
