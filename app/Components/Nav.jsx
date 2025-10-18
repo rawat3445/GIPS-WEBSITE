@@ -228,7 +228,7 @@ export default function Nav() {
 
         {/* Instagram */}
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/gips.pauri/"
           className="flex items-center justify-center w-12 h-12 bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white rounded-full shadow-lg transition-opacity"
           target="_blank"
           rel="noopener noreferrer"
@@ -238,7 +238,7 @@ export default function Nav() {
 
         {/* LinkedIn */}
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/company/108915163/admin/page-posts/published/"
           className="flex items-center justify-center w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition-colors"
           target="_blank"
           rel="noopener noreferrer"
@@ -254,16 +254,6 @@ export default function Nav() {
           rel="noopener noreferrer"
         >
           <Twitter className="w-6 h-6" />
-        </a>
-
-        {/* YouTube */}
-        <a
-          href="https://youtube.com"
-          className="flex items-center justify-center w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full shadow-lg transition-colors"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Youtube className="w-6 h-6" />
         </a>
 
         {/* Email */}
