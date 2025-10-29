@@ -11,7 +11,7 @@ export default function LocationPage() {
       icon: "✈️",
       details: [
         "Nearest Airport: Indira Gandhi International Airport (Delhi) - 350 km",
-        "Alternative: Jolly Grant Airport (Dehradun) - 60 km",
+        "Alternative: Jolly Grant Airport (Dehradun) - 165 km",
         "Cab services and rental cars available from both airports"
       ]
     },
@@ -20,7 +20,7 @@ export default function LocationPage() {
       mode: "By Train",
       icon: "🚂",
       details: [
-        "Nearest Railway Station: Dehradun Junction - 65 km",
+        "Nearest Railway Station: Dehradun Junction - 165 km",
         "Alternative: Haridwar Junction - 70 km",
         "Regular taxi and bus services from station to campus"
       ]
@@ -31,7 +31,7 @@ export default function LocationPage() {
       icon: "🚗",
       details: [
         "NH48 Connectivity: Easily accessible via National Highway",
-        "Distance from Dehradun: 65 km (1.5-2 hours drive)",
+        "Distance from Dehradun: 165 km (3.5 - 4 hours drive)",
         "Well-maintained roads with clear signage to campus"
       ]
     },
@@ -66,7 +66,7 @@ export default function LocationPage() {
     {
       icon: "🕐",
       title: "Office Hours",
-      details: "Monday - Friday: 9:00 AM - 5:00 PM | Saturday: 9:00 AM - 1:00 PM"
+      details: "Monday - Saturday: 9:00 AM - 4:00 PM "
     }
   ];
 
@@ -199,7 +199,7 @@ export default function LocationPage() {
             <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
               <h3 className="font-semibold text-blue-800 mb-3">From Dehradun</h3>
               <p className="text-gray-700 text-sm mb-3">
-                <strong>Distance:</strong> 65 km | <strong>Time:</strong> 1.5 - 2 hours
+                <strong>Distance:</strong> 150.9 km | <strong>Time:</strong> 3.5 - 4 hours
               </p>
               <p className="text-gray-700 text-sm">
                 Take NH48 towards Mussoorie and continue towards Pauri Garhwal. Follow signage to reach our campus.
@@ -208,7 +208,7 @@ export default function LocationPage() {
             <div className="bg-green-50 p-6 rounded-xl border border-green-200">
               <h3 className="font-semibold text-green-800 mb-3">From Delhi</h3>
               <p className="text-gray-700 text-sm mb-3">
-                <strong>Distance:</strong> 350 km | <strong>Time:</strong> 6 - 7 hours
+                <strong>Distance:</strong> 350 km | <strong>Time:</strong> 7 - 8 hours
               </p>
               <p className="text-gray-700 text-sm">
                 Drive via NH48 towards Haridwar, then continue to Dehradun and towards Pauri Garhwal.
@@ -217,7 +217,7 @@ export default function LocationPage() {
             <div className="bg-purple-50 p-6 rounded-xl border border-purple-200">
               <h3 className="font-semibold text-purple-800 mb-3">From Haridwar</h3>
               <p className="text-gray-700 text-sm mb-3">
-                <strong>Distance:</strong> 70 km | <strong>Time:</strong> 2 - 2.5 hours
+                <strong>Distance:</strong> 133 km | <strong>Time:</strong> 3.5 - 4 hours
               </p>
               <p className="text-gray-700 text-sm">
                 Head towards Dehradun via NH48, then take the route towards Pauri Garhwal.

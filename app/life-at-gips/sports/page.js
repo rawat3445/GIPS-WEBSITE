@@ -14,7 +14,6 @@ export default function Sports() {
       color: 'from-green-500 to-emerald-600',
       sports: [
         { name: 'Cricket', icon: '🏏', description: 'Full-size cricket ground with practice nets' },
-        { name: 'Football', icon: '⚽', description: 'FIFA standard football field' },
         { name: 'Basketball', icon: '🏀', description: 'Outdoor and indoor courts available' },
         { name: 'Volleyball', icon: '🏐', description: 'Multiple courts for practice and matches' },
         { name: 'Athletics', icon: '🏃', description: '400m track and field events' },
@@ -27,12 +26,10 @@ export default function Sports() {
       icon: '🏓',
       color: 'from-blue-500 to-indigo-600',
       sports: [
-        { name: 'Table Tennis', icon: '🏓', description: 'Multiple tables in air-conditioned hall' },
         { name: 'Chess', icon: '♟️', description: 'Chess club with regular tournaments' },
         { name: 'Carrom', icon: '🎯', description: 'Boards available in recreation room' },
         { name: 'Yoga', icon: '🧘', description: 'Daily sessions in dedicated yoga hall' },
         { name: 'Badminton', icon: '🏸', description: 'Indoor courts with professional flooring' },
-        { name: 'Gym', icon: '💪', description: 'Modern gymnasium with latest equipment' }
       ]
     },
     {
@@ -41,10 +38,7 @@ export default function Sports() {
       icon: '💪',
       color: 'from-orange-500 to-red-600',
       sports: [
-        { name: 'Gymnasium', icon: '🏋️', description: 'Cardio and strength training equipment' },
         { name: 'Yoga & Meditation', icon: '🧘', description: 'Morning and evening sessions' },
-        { name: 'Aerobics', icon: '🤸', description: 'Group fitness classes' },
-        { name: 'Zumba', icon: '💃', description: 'Dance fitness workouts' },
         { name: 'Physiotherapy', icon: '⚕️', description: 'Sports injury prevention and recovery' },
         { name: 'Nutrition Guidance', icon: '🥗', description: 'Diet plans for athletes' }
       ]
@@ -52,12 +46,6 @@ export default function Sports() {
   ];
 
   const facilities = [
-    {
-      icon: Dumbbell,
-      title: "Modern Gymnasium",
-      description: "Equipped with latest cardio and strength training machines",
-      features: ["Treadmills", "Cross trainers", "Weight training", "Personal trainers"]
-    },
     {
       icon: Flag,
       title: "Sports Grounds",
@@ -68,20 +56,20 @@ export default function Sports() {
       icon: Users,
       title: "Indoor Complex",
       description: "Air-conditioned multi-purpose indoor sports hall",
-      features: ["Badminton courts", "Table tennis", "Yoga hall", "Recreation area"]
+      features: ["Badminton courts",  "Yoga hall", "Recreation area"]
     },
     {
       icon: Heart,
       title: "Fitness Center",
       description: "Complete wellness and fitness programs",
-      features: ["Yoga classes", "Aerobics", "Zumba", "Meditation sessions"]
+      features: ["Yoga classes", "Meditation sessions"]
     }
   ];
 
   const achievements = [
+    { year: '2025', event: 'Code Blue Marathon', position: 'Winners', icon: '🏆' },
     { year: '2024', event: 'Inter-College Cricket Tournament', position: 'Winners', icon: '🏆' },
     { year: '2024', event: 'State Level Basketball Championship', position: 'Runners-up', icon: '🥈' },
-    { year: '2023', event: 'University Football League', position: 'Semi-finalists', icon: '⚽' },
     { year: '2023', event: 'Table Tennis Championship', position: 'Winners', icon: '🏓' },
     { year: '2023', event: 'Athletics Meet - 100m Sprint', position: 'Gold Medal', icon: '🥇' },
     { year: '2022', event: 'Volleyball Tournament', position: 'Champions', icon: '🏐' }
@@ -98,7 +86,7 @@ export default function Sports() {
       name: 'Intra-College Championships',
       month: 'Throughout Year',
       description: 'Regular competitions within college departments',
-      activities: ['Cricket leagues', 'Football matches', 'Basketball tournaments', 'Badminton contests']
+      activities: ['Cricket leagues', 'Badminton contests']
     },
     {
       name: 'Fitness Challenges',
@@ -118,10 +106,7 @@ export default function Sports() {
   ];
 
   const sportsCommittee = [
-    { role: "Sports Director", name: "Dr. Rajesh Kumar", contact: "sports@gips.edu.in" },
-    { role: "Physical Education Officer", name: "Prof. Amit Sharma", contact: "pe@gips.edu.in" },
-    { role: "Fitness Coordinator", name: "Mr. Vikram Singh", contact: "fitness@gips.edu.in" },
-    { role: "Women's Sports Coordinator", name: "Ms. Priya Patel", contact: "women-sports@gips.edu.in" }
+    { role: "In-Charge Sports Committee", name: "MR. Hritik Jairwan", contact: "hritikjairwan3@gmail.com" },
   ];
 
   return (
@@ -242,9 +227,9 @@ export default function Sports() {
             {/* Sports Committee */}
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl p-10 text-white">
               <h2 className="text-4xl font-bold mb-8 text-center">Sports Committee</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-1 gap-2">
                 {sportsCommittee.map((member, index) => (
-                  <div key={index} className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                  <div key={index} className="bg-blue-400 bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
                     <h4 className="text-xl font-bold mb-2">{member.role}</h4>
                     <p className="text-lg mb-2">{member.name}</p>
                     <p className="text-sm opacity-90">{member.contact}</p>
@@ -351,7 +336,7 @@ export default function Sports() {
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {achievements.map((achievement, index) => (
-                  <div key={index} className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 text-center">
+                  <div key={index} className="bg-red-600 bg-opacity-20 backdrop-blur-sm rounded-xl p-6 text-center">
                     <div className="text-5xl mb-3">{achievement.icon}</div>
                     <h4 className="text-xl font-bold mb-2">{achievement.event}</h4>
                     <p className="text-lg mb-1">{achievement.position}</p>

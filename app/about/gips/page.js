@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import { useState } from 'react';
 import { Award, Users, BookOpen, TrendingUp, Target, Heart, Globe, Building2, CheckCircle } from 'lucide-react';
 
@@ -13,15 +14,15 @@ export default function AboutGipsPage() {
           name: "Mr. Kavinder Istwal",
           position: "Chairman",
           qualification: "Garhwal Institute of Paramedical Sciences",
-          location: "Shri Bhatchandi Jankiya Van Samiti, Pauri Garhwal",
-          image: "/api/placeholder/150/180"
+          location: "Shri Shatchandi Jan Kalyan Samiti, Pauri Garhwal",
+          image: "/Chairman_sir.jpg"
         },
         {
           name: "Mr. Nripesh Tiwari",
           position: "General Secretary",
           qualification: "Garhwal Institute of Paramedical Sciences",
           location: "Shri Bhatchandi Jankiya Van Samiti, Pauri Garhwal",
-          image: "/api/placeholder/150/180"
+          image: ""
         }
       ]
     },
@@ -33,7 +34,7 @@ export default function AboutGipsPage() {
           position: "Associate Professor / Vice-Principal / Academic In-Charge",
           qualification: "Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           degree: "B.OPTOMETRY, MSc., Ph.D. ONTOMETRY",
-          image: "/api/placeholder/150/180"
+          image: "/Principal-Sir.jpg"
         }
       ]
     },
@@ -44,15 +45,15 @@ export default function AboutGipsPage() {
           name: "Dr. Siddharth Kuriyal",
           position: "Assistant Professor / Controller of Examinations / Faculty In-Charge",
           qualification: "Dept. of Physiotherapy, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
-          degree: "MPT (NEUROLOGY & PSYCHOSOMATIC DISORDERS)",
-          image: "/api/placeholder/150/180"
+          degree: "MPT (NEUROLOGY), Ph.D. Scholar (Neurology and psychosomatic Disorders)",
+          image: "/Sid_sir.png"
         },
         {
           name: "Dr. Priyanka Shah",
           position: "Lecturer / Sports & Cultural In-Charge",
           qualification: "Dept. of Physiotherapy, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           degree: "BACHELORS IN PHYSIOTHERAPY",
-          image: "/api/placeholder/150/180"
+          image: "/priyanka-mam.png"
         }
       ]
     },
@@ -64,7 +65,15 @@ export default function AboutGipsPage() {
           position: "Faculty In-Charge / In-Charge, Anti-Ragging Committee",
           qualification: "Dept. of Operation Theatre Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           hospital: "BOTT (SGRH, DOON HOSPITAL, DEHRADUN)",
-          image: "/api/placeholder/150/180"
+          image: "/Hritik.png"
+        },
+
+        {
+          name: "Ms. Aastha",
+          position: "Lecturer",
+          qualification: "Dept. of Operation Theatre Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
+          hospital: "Uttranchal P.G Collage Of Biomedical Science and Hospital",
+          image: "/Ms.Astha.jpg"
         }
       ]
     },
@@ -76,14 +85,14 @@ export default function AboutGipsPage() {
           position: "Faculty In-Charge / In-Charge, Anti-Ragging Committee",
           qualification: "Dept. of Medical Radio-Imaging Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           hospital: "BMRIT (VCSGG GOVT. MEDICAL COLLEGE, SRINAGAR)",
-          image: "/api/placeholder/150/180"
+          image: "/Nidhi-mam.png"
         },
         {
           name: "Miss. Sunita Kaswal",
           position: "Lecturer",
           qualification: "Dept. of Medical Radio-Imaging Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           degree: "BACHELORS IN MEDICAL RADIO-IMAGING TECHNOLOGY",
-          image: "/api/placeholder/150/180"
+          image: ""
         }
       ]
     }
@@ -314,10 +323,12 @@ export default function AboutGipsPage() {
                     {department.members.map((faculty, index) => (
                       <div key={index} className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 hover:border-indigo-500 hover:shadow-xl transition-all">
                         {/* Faculty Image */}
-                        <div className="bg-gray-200 w-40 h-48 mx-auto rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                          <img 
+                        <div className="bg-white w-60 h-79 mx-auto rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                          <Image
                             src={faculty.image} 
                             alt={faculty.name}
+                            width={175}
+                            height={10}
                             className="w-full h-full object-cover"
                           />
                         </div>

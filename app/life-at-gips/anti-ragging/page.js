@@ -307,14 +307,14 @@ export default function AntiRagging() {
         </div>
 
         {/* Punishments */}
-        <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl shadow-xl p-10 mb-12 text-white">
+        <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl shadow-xl p-10 mb-12 ">
           <div className="flex items-center justify-center mb-8">
             <Gavel className="w-10 h-10 mr-4" />
             <h2 className="text-4xl font-bold">Consequences of Ragging</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {punishments.map((punishment, index) => (
-              <div key={index} className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+              <div key={index} className=" bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
                 <h4 className="text-2xl font-bold mb-4">{punishment.severity} Offense</h4>
                 <ul className="space-y-2">
                   {punishment.actions.map((action, idx) => (

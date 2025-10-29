@@ -182,7 +182,7 @@ export default function Nav() {
       href: "#",
       hoverColor: "hover:text-violet-700 hover:bg-violet-100",
       dropdown: [
-        { name: "Career", href: "more/career" },
+        { name: "Career", href: "/career" },
         { name: "Alumni", href: "/alumni" },
         { name: "News & Events", href: "/news-events" },
         { name: "Contact Us", href: "/contact" },
@@ -258,7 +258,7 @@ export default function Nav() {
 
         {/* Email */}
         <a
-          href="mailto:info@example.com"
+          href="mailto:garhwalparamedicalinstitute@gmail.com"
           className="flex items-center justify-center w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg transition-colors"
         >
           <Mail className="w-6 h-6" />
@@ -343,7 +343,7 @@ export default function Nav() {
               ))}
 
               <a
-                href="/apply-now"
+                href="/admissions"
                 className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-md transition-colors"
               >
                 Apply Now

@@ -168,7 +168,7 @@ export default function ContactPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { name: "Dr. P. C. Sharma", role: "Principal", img: "/principal.jpg" },
+              { name: "Dr. Animsh Mondol", role: "Vice Principal", img: "/Principal-Sir.jpg" },
               { name: "Admission Office", role: "Student Inquiries", img: "/admission.jpg" },
               { name: "Administration", role: "General Information", img: "/office.jpg" },
             ].map((member, i) => (

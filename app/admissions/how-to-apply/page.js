@@ -512,7 +512,7 @@ export default function HowToApply() {
               <Phone className="w-8 h-8 text-blue-600 mr-4" />
               <div className="text-left">
                 <h4 className="font-bold text-gray-800 mb-1">Call Helpline</h4>
-                <p className="text-gray-700">+91-XXXX-XXXXXX</p>
+                <p className="text-gray-700">+9182739 68106</p>
                 <p className="text-sm text-gray-600">Mon-Sat: 9 AM - 6 PM</p>
               </div>
             </div>
@@ -520,14 +520,14 @@ export default function HowToApply() {
               <Mail className="w-8 h-8 text-purple-600 mr-4" />
               <div className="text-left">
                 <h4 className="font-bold text-gray-800 mb-1">Email Support</h4>
-                <p className="text-gray-700">admissions@gips.edu.in</p>
+                <p className="text-gray-700">garhwalparamedicalinstitute@gmail.com</p>
                 <p className="text-sm text-gray-600">24/7 Email Support</p>
               </div>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
+          <a href='/admissions' className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
             Start Application Now
-          </button>
+          </a>
         </div>
       </div>
     </div>

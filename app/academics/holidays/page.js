@@ -7,7 +7,7 @@ export default function Holidays() {
   const [selectedMonth, setSelectedMonth] = useState('all');
   const [viewMode, setViewMode] = useState('grid'); // grid or list
 
-  const academicYear = "2024-2025";
+  const academicYear = "2025-2026";
 
   const holidayCategories = [
     { id: 'national', name: 'National Holidays', color: 'from-orange-500 to-red-600', icon: '🇮🇳' },
@@ -16,34 +16,60 @@ export default function Holidays() {
   ];
 
   const holidays = [
-    // National Holidays
-    { date: '2024-08-15', day: 'Thursday', occasion: 'Independence Day', type: 'national', description: 'Celebrating 78th Independence Day of India', month: 'August' },
-    { date: '2024-10-02', day: 'Wednesday', occasion: 'Gandhi Jayanti', type: 'national', description: 'Birth anniversary of Mahatma Gandhi', month: 'October' },
-    { date: '2025-01-26', day: 'Sunday', occasion: 'Republic Day', type: 'national', description: 'Celebrating the Constitution of India', month: 'January' },
-    { date: '2025-05-01', day: 'Thursday', occasion: 'Labour Day', type: 'national', description: 'International Workers Day', month: 'May' },
+    // January 2025
+    { date: '2025-01-26', day: 'Sunday', occasion: 'Republic Day', type: 'national', description: 'National holiday celebrating the Constitution of India', month: 'January' },
     
-    // Festival Holidays
-    { date: '2024-08-26', day: 'Monday', occasion: 'Janmashtami', type: 'festival', description: 'Birth of Lord Krishna', month: 'August' },
-    { date: '2024-10-12', day: 'Saturday', occasion: 'Dussehra', type: 'festival', description: 'Victory of good over evil', month: 'October' },
-    { date: '2024-10-31', day: 'Thursday', occasion: 'Diwali', type: 'festival', description: 'Festival of lights', month: 'October' },
-    { date: '2024-11-01', day: 'Friday', occasion: 'Govardhan Puja', type: 'festival', description: 'Day after Diwali', month: 'November' },
-    { date: '2024-11-02', day: 'Saturday', occasion: 'Bhai Dooj', type: 'festival', description: 'Brother-sister celebration', month: 'November' },
-    { date: '2024-12-25', day: 'Wednesday', occasion: 'Christmas', type: 'festival', description: 'Birth of Jesus Christ', month: 'December' },
-    { date: '2025-01-01', day: 'Wednesday', occasion: 'New Year', type: 'festival', description: 'Beginning of calendar year', month: 'January' },
-    { date: '2025-02-19', day: 'Wednesday', occasion: 'Maha Shivaratri', type: 'festival', description: 'Great night of Lord Shiva', month: 'February' },
-    { date: '2025-03-08', day: 'Saturday', occasion: 'Holi', type: 'festival', description: 'Festival of colors', month: 'March' },
-    { date: '2025-04-14', day: 'Monday', occasion: 'Ambedkar Jayanti', type: 'festival', description: 'Birth anniversary of Dr. B.R. Ambedkar', month: 'April' },
-    { date: '2025-04-18', day: 'Friday', occasion: 'Good Friday', type: 'festival', description: 'Crucifixion of Jesus Christ', month: 'April' },
+    // February 2025
+    { date: '2025-02-02', day: 'Sunday', occasion: 'Basant Panchami', type: 'festival', description: 'Festival marking the arrival of spring', month: 'February' },
+    { date: '2025-02-26', day: 'Wednesday', occasion: 'Maha Shivratri Holiday', type: 'festival', description: 'Great night of Lord Shiva', month: 'February' },
     
-    // Academic Breaks
-    { date: '2024-12-26', day: 'Thursday', occasion: 'Winter Break Start', type: 'academic', description: 'Year-end vacation begins', month: 'December' },
-    { date: '2024-12-31', day: 'Tuesday', occasion: 'Winter Break', type: 'academic', description: 'Continued vacation', month: 'December' },
-    { date: '2025-05-25', day: 'Sunday', occasion: 'Summer Vacation Begins', type: 'academic', description: 'Summer break starts', month: 'May' },
-    { date: '2025-06-30', day: 'Monday', occasion: 'Summer Vacation Ends', type: 'academic', description: 'Preparing for new session', month: 'June' }
+    // March 2025
+    { date: '2025-03-12', day: 'Wednesday', occasion: 'Holi Vacation Start', type: 'academic', description: 'Festival of colors - vacation begins', month: 'March' },
+    { date: '2025-03-13', day: 'Thursday', occasion: 'Holi Vacation', type: 'academic', description: 'Continued vacation', month: 'March' },
+    { date: '2025-03-14', day: 'Friday', occasion: 'Holi Vacation', type: 'academic', description: 'Continued vacation', month: 'March' },
+    { date: '2025-03-15', day: 'Saturday', occasion: 'Holi Vacation End', type: 'academic', description: 'Last day of Holi vacation', month: 'March' },
+    
+    // April 2025
+    { date: '2025-04-14', day: 'Monday', occasion: 'B.R. Ambedkar Jayanti', type: 'national', description: 'Birth anniversary of Dr. B.R. Ambedkar', month: 'April' },
+    
+    // May 2025
+    { date: '2025-05-12', day: 'Monday', occasion: 'Buddha Purnima', type: 'festival', description: 'Birth anniversary of Gautama Buddha', month: 'May' },
+    
+    // June 2025
+    { date: '2025-06-01', day: 'Sunday', occasion: 'Summer Vacation Start', type: 'academic', description: 'Summer break begins', month: 'June' },
+    { date: '2025-06-10', day: 'Tuesday', occasion: 'Summer Vacation End', type: 'academic', description: 'Last day of summer vacation', month: 'June' },
+    
+    // July 2025
+    { date: '2025-07-16', day: 'Wednesday', occasion: 'Harela', type: 'festival', description: 'Traditional festival of Uttarakhand', month: 'July' },
+    
+    // August 2025
+    { date: '2025-08-09', day: 'Saturday', occasion: 'Raksha Bandhan', type: 'festival', description: 'Festival celebrating brother-sister bond', month: 'August' },
+    { date: '2025-08-15', day: 'Friday', occasion: 'Independence Day', type: 'national', description: 'Celebrating India\'s Independence', month: 'August' },
+    { date: '2025-08-16', day: 'Saturday', occasion: 'Krishna Janmashtami', type: 'festival', description: 'Birth of Lord Krishna', month: 'August' },
+    
+    // September 2025
+    { date: '2025-09-29', day: 'Monday', occasion: 'Dussehra Start', type: 'festival', description: 'Victory of good over evil - celebration begins', month: 'September' },
+    { date: '2025-09-30', day: 'Tuesday', occasion: 'Dussehra', type: 'festival', description: 'Continued celebration', month: 'September' },
+    
+    // October 2025
+    { date: '2025-10-01', day: 'Wednesday', occasion: 'Dussehra', type: 'festival', description: 'Continued celebration', month: 'October' },
+    { date: '2025-10-02', day: 'Thursday', occasion: 'Dussehra End', type: 'festival', description: 'Last day of Dussehra celebration', month: 'October' },
+    { date: '2025-10-18', day: 'Saturday', occasion: 'Diwali Holiday Start', type: 'festival', description: 'Festival of lights - holiday begins', month: 'October' },
+    { date: '2025-10-19', day: 'Sunday', occasion: 'Diwali Holiday', type: 'festival', description: 'Continued holiday', month: 'October' },
+    { date: '2025-10-20', day: 'Monday', occasion: 'Diwali Holiday', type: 'festival', description: 'Continued holiday', month: 'October' },
+    { date: '2025-10-21', day: 'Tuesday', occasion: 'Diwali Holiday', type: 'festival', description: 'Continued holiday', month: 'October' },
+    { date: '2025-10-22', day: 'Wednesday', occasion: 'Diwali Holiday End', type: 'festival', description: 'Last day of Diwali holidays', month: 'October' },
+    
+    // December 2025
+    { date: '2025-12-25', day: 'Thursday', occasion: 'Christmas Day', type: 'festival', description: 'Birth of Jesus Christ', month: 'December' },
+    
+    // January 2026
+    { date: '2026-01-01', day: 'Thursday', occasion: 'Winter Vacation Start', type: 'academic', description: 'Year-end break begins', month: 'January' },
+    { date: '2026-01-20', day: 'Tuesday', occasion: 'Winter Vacation End', type: 'academic', description: 'Last day of winter vacation', month: 'January' },
   ];
 
-  const months = ['July', 'August', 'September', 'October', 'November', 'December', 
-                  'January', 'February', 'March', 'April', 'May', 'June'];
+  const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                  'July', 'August', 'September', 'October', 'November', 'December'];
 
   const filteredHolidays = holidays.filter(holiday => {
     const typeMatch = filterType === 'all' || holiday.type === filterType;
@@ -69,13 +95,29 @@ export default function Holidays() {
     .filter(h => new Date(h.date) >= new Date())
     .slice(0, 3);
 
+  // Download function - ADD THIS
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    
+    // Use the same file from public folder
+    // Make sure to use the correct filename without spaces or with %20
+    link.href = '/Academic Calendar_GIPS_2025-26.docx';
+    
+    // Set download filename
+    link.download = 'Academic Calendar_GIPS_2025-26.docx';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-orange-600 via-pink-600 to-purple-600 text-white px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center mb-6">
-            <div className="bg-red bg-opacity-20 p-4 rounded-full backdrop-blur-sm animate-bounce">
+            <div className="bg-white bg-opacity-20 p-4 rounded-full backdrop-blur-sm animate-bounce">
               <PartyPopper className="w-16 h-16" />
             </div>
           </div>
@@ -83,7 +125,7 @@ export default function Holidays() {
           <p className="text-2xl text-orange-100 text-center mb-6">
             Academic Year {academicYear}
           </p>
-          <div className="bg-pink-900 bg-opacity-20 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
+          <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 max-w-3xl mx-auto">
             <p className="text-center text-lg">
               Plan your year ahead with our comprehensive list of holidays, festivals, and academic breaks 
               observed at GIPS throughout the academic session.
@@ -294,7 +336,7 @@ export default function Holidays() {
           <ul className="space-y-3 text-lg">
             <li className="flex items-start">
               <span className="text-2xl mr-3">📌</span>
-              <span>Holidays falling on Sundays may be compensated with a working Saturday</span>
+              <span>University exam schedules will be announced as per HNBUMU calendar</span>
             </li>
             <li className="flex items-start">
               <span className="text-2xl mr-3">📌</span>
@@ -311,14 +353,23 @@ export default function Holidays() {
           </ul>
         </div>
 
-        {/* Download Section */}
+        {/* Download Section - UPDATED WITH DOWNLOAD FUNCTIONALITY */}
         <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
-          <Download className="w-16 h-16 text-orange-600 mx-auto mb-4" />
+          <div className="bg-gradient-to-r from-orange-100 to-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Download className="w-10 h-10 text-orange-600" />
+          </div>
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Download Holiday List</h3>
-          <p className="text-gray-600 mb-6">Get a printable PDF version of the complete holiday list</p>
-          <button className="bg-gradient-to-r from-orange-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
-            Download PDF
+          <p className="text-gray-600 mb-6">Get a printable version of the complete holiday calendar</p>
+          <button 
+            onClick={handleDownload}
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl hover:scale-105 transition-all transform"
+          >
+            <Download className="w-6 h-6" />
+            Download Calendar
           </button>
+          <p className="text-sm text-gray-500 mt-4">
+            File format: DOCX | Academic Year 2025-26
+          </p>
         </div>
       </div>
     </div>

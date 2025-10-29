@@ -1,16 +1,16 @@
 "use client";
 import { useState } from 'react';
-import { Calendar, Clock, BookOpen, GraduationCap, FileText, AlertCircle, CheckCircle, Award, Bell } from 'lucide-react';
+import { Calendar, Clock, BookOpen, GraduationCap, FileText, AlertCircle, CheckCircle, Award, Bell, Download } from 'lucide-react';
 
 export default function AcademicCalendar() {
   const [selectedSemester, setSelectedSemester] = useState('all');
   const [selectedMonth, setSelectedMonth] = useState('all');
 
-  const academicYear = "2024-2025";
+  const academicYear = "2025-2026";
 
   const semesters = [
+    { id: 'even', name: 'Even Semester (Jan - Jun)', color: 'purple' },
     { id: 'odd', name: 'Odd Semester (Jul - Dec)', color: 'blue' },
-    { id: 'even', name: 'Even Semester (Jan - Jun)', color: 'purple' }
   ];
 
   const eventCategories = [
@@ -22,67 +22,57 @@ export default function AcademicCalendar() {
   ];
 
   const calendarEvents = [
-    // July 2024
-    { month: 'July', date: '1-7', title: 'Admission Process', type: 'registration', semester: 'odd', description: 'New student admissions open' },
-    { month: 'July', date: '15', title: 'Odd Semester Begins', type: 'important', semester: 'odd', description: 'Classes commence for all courses' },
-    { month: 'July', date: '20', title: 'Orientation Program', type: 'activity', semester: 'odd', description: 'Welcome program for new students' },
-    
-    // August 2024
-    { month: 'August', date: '15', title: 'Independence Day', type: 'holiday', semester: 'odd', description: 'National holiday' },
-    { month: 'August', date: '26', title: 'Janmashtami', type: 'holiday', semester: 'odd', description: 'Festival holiday' },
-    
-    // September 2024
-    { month: 'September', date: '5', title: 'Teachers Day Celebration', type: 'activity', semester: 'odd', description: 'Honoring faculty members' },
-    { month: 'September', date: '20-25', title: 'Mid-Term Examinations', type: 'exam', semester: 'odd', description: 'First internal assessment' },
-    
-    // October 2024
-    { month: 'October', date: '2', title: 'Gandhi Jayanti', type: 'holiday', semester: 'odd', description: 'National holiday' },
-    { month: 'October', date: '12', title: 'Dussehra', type: 'holiday', semester: 'odd', description: 'Festival holiday' },
-    { month: 'October', date: '31', title: 'Diwali Break Begins', type: 'holiday', semester: 'odd', description: 'Festival vacation starts' },
-    
-    // November 2024
-    { month: 'November', date: '1-5', title: 'Diwali Vacation', type: 'holiday', semester: 'odd', description: 'Festival break' },
-    { month: 'November', date: '15', title: 'Sports Week', type: 'activity', semester: 'odd', description: 'Inter-departmental sports' },
-    { month: 'November', date: '25-30', title: 'Pre-Final Examinations', type: 'exam', semester: 'odd', description: 'Second internal assessment' },
-    
-    // December 2024
-    { month: 'December', date: '5-20', title: 'End Semester Exams', type: 'exam', semester: 'odd', description: 'Final theory and practical exams' },
-    { month: 'December', date: '25', title: 'Christmas', type: 'holiday', semester: 'odd', description: 'Festival holiday' },
-    { month: 'December', date: '26-31', title: 'Winter Break', type: 'holiday', semester: 'odd', description: 'Year-end vacation' },
-    
     // January 2025
-    { month: 'January', date: '1', title: 'New Year', type: 'holiday', semester: 'even', description: 'Public holiday' },
-    { month: 'January', date: '10', title: 'Result Declaration', type: 'important', semester: 'even', description: 'Odd semester results' },
-    { month: 'January', date: '15', title: 'Even Semester Begins', type: 'important', semester: 'even', description: 'New semester starts' },
+    { month: 'January', date: '1-20', title: 'Semester Commencement Meet/Faculty Semester Introduction/Orientation', type: 'important', semester: 'even', description: 'As per Counselling result' },
     { month: 'January', date: '26', title: 'Republic Day', type: 'holiday', semester: 'even', description: 'National holiday' },
-    
+
     // February 2025
-    { month: 'February', date: '14', title: 'Valentine Social Activity', type: 'activity', semester: 'even', description: 'Blood donation camp' },
-    { month: 'February', date: '19', title: 'Maha Shivaratri', type: 'holiday', semester: 'even', description: 'Festival holiday' },
-    { month: 'February', date: '24-28', title: 'Mid-Term Examinations', type: 'exam', semester: 'even', description: 'First internal assessment' },
-    
+    { month: 'February', date: '2', title: 'Basant Panchami', type: 'holiday', semester: 'even', description: 'Festival holiday' },
+    { month: 'February', date: '3rd Week', title: '1st Sessional Examinations', type: 'exam', semester: 'even', description: 'First internal assessment' },
+    { month: 'February', date: '26', title: 'Maha Shivratri Holiday', type: 'holiday', semester: 'even', description: 'Festival holiday' },
+    { month: 'February', date: 'After 1 week', title: 'Results of 1st Sessional Examinations/Result Analysis', type: 'important', semester: 'even', description: '1 week after examinations' },
+
     // March 2025
-    { month: 'March', date: '8', title: 'Holi', type: 'holiday', semester: 'even', description: 'Festival holiday' },
-    { month: 'March', date: '14', title: 'Science Exhibition', type: 'activity', semester: 'even', description: 'Student project showcase' },
-    { month: 'March', date: '25-30', title: 'Pre-Final Examinations', type: 'exam', semester: 'even', description: 'Second internal assessment' },
-    
+    { month: 'March', date: '12-15', title: 'Holi Vacations', type: 'holiday', semester: 'even', description: 'Festival break' },
+
     // April 2025
-    { month: 'April', date: '10', title: 'Clinical Training Begins', type: 'important', semester: 'even', description: 'Hospital rotation starts' },
-    { month: 'April', date: '14', title: 'Ambedkar Jayanti', type: 'holiday', semester: 'even', description: 'National holiday' },
-    { month: 'April', date: '18', title: 'Good Friday', type: 'holiday', semester: 'even', description: 'Festival holiday' },
-    
+    { month: 'April', date: '14', title: 'B.R. Ambedkar Jayanti', type: 'holiday', semester: 'even', description: 'National holiday' },
+
     // May 2025
-    { month: 'May', date: '1', title: 'Labour Day', type: 'holiday', semester: 'even', description: 'Public holiday' },
-    { month: 'May', date: '5-20', title: 'End Semester Exams', type: 'exam', semester: 'even', description: 'Final examinations' },
-    { month: 'May', date: '25', title: 'Summer Vacation Begins', type: 'holiday', semester: 'even', description: 'Break period starts' },
-    
+    { month: 'May', date: '12', title: 'Buddha Purnima', type: 'holiday', semester: 'even', description: 'Festival holiday' },
+
     // June 2025
-    { month: 'June', date: '1-30', title: 'Summer Break', type: 'holiday', semester: 'even', description: 'Vacation period' },
-    { month: 'June', date: '15', title: 'Result Declaration', type: 'important', semester: 'even', description: 'Even semester results' }
+    { month: 'June', date: '1-10', title: 'Summer Vacations', type: 'holiday', semester: 'even', description: 'Summer break' },
+
+    // July 2025
+    { month: 'July', date: '16', title: 'Harela', type: 'holiday', semester: 'odd', description: 'Regional festival' },
+
+    // August 2025
+    { month: 'August', date: '9', title: 'Raksha Bandhan', type: 'holiday', semester: 'odd', description: 'Festival holiday' },
+    { month: 'August', date: '15', title: 'Independence Day', type: 'holiday', semester: 'odd', description: 'National holiday' },
+    { month: 'August', date: '16', title: 'Krishna Janmashtami', type: 'holiday', semester: 'odd', description: 'Festival holiday' },
+    { month: 'August', date: '3rd Week', title: '2nd Sessional Examinations', type: 'exam', semester: 'odd', description: 'Second internal assessment' },
+    { month: 'August', date: 'After 1 week', title: 'Results of 2nd Sessional Examinations/Result Analysis', type: 'important', semester: 'odd', description: '1 week after examinations' },
+
+    // September 2025
+    { month: 'September', date: '29 - Oct 2', title: 'Dussehra', type: 'holiday', semester: 'odd', description: 'Festival holiday' },
+
+    // October 2025
+    { month: 'October', date: '18-22', title: 'Diwali Holidays', type: 'holiday', semester: 'odd', description: 'Festival break' },
+    { month: 'October', date: 'TBA', title: 'Pre-University Examinations', type: 'exam', semester: 'odd', description: 'As per HNBUMU Exam Schedule' },
+
+    // December 2025
+    { month: 'December', date: '25', title: 'Christmas Day', type: 'holiday', semester: 'odd', description: 'Festival holiday' },
+    { month: 'December', date: 'TBA', title: 'Final University Examinations', type: 'exam', semester: 'odd', description: 'As per HNBUMU Exam Schedule' },
+
+    // January 2026
+    { month: 'January', date: '1-20', title: 'Winter Vacations', type: 'holiday', semester: 'odd', description: 'Year-end break' },
   ];
 
-  const months = ['July', 'August', 'September', 'October', 'November', 'December', 
-                  'January', 'February', 'March', 'April', 'May', 'June'];
+  const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
 
   const filteredEvents = calendarEvents.filter(event => {
     const semesterMatch = selectedSemester === 'all' || event.semester === selectedSemester;
@@ -100,13 +90,32 @@ export default function AcademicCalendar() {
     return category ? category.color : 'bg-gray-500';
   };
 
+  // Download function for the calendar file
+  const handleDownload = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    
+    // Set the file path (file should be in public folder)
+    // Example: public/documents/Academic-Calendar-2025-26.pdf
+    // or public/documents/Academic-Calendar-2025-26.docx
+    link.href = '/Academic Calendar_GIPS_2025-26.docx';
+    
+    // Set the download attribute with desired filename
+    link.download = 'Academic Calendar_GIPS_2025-26.docx';
+    
+    // Append to body, click, and remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 mt-0">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center mb-6">
-            <div className=" bg-opacity-20 p-4 rounded-full backdrop-blur-sm">
+            <div className="bg-white bg-opacity-20 p-4 rounded-full backdrop-blur-sm">
               <Calendar className="w-16 h-16" />
             </div>
           </div>
@@ -115,7 +124,7 @@ export default function AcademicCalendar() {
             Academic Year {academicYear}
           </p>
           <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
-            <p className="text-center text-blue-500 text-lg">
+            <p className="text-center text-white text-lg">
               Plan your academic journey with our comprehensive calendar featuring important dates, 
               examinations, holidays, and campus activities throughout the year.
             </p>
@@ -271,7 +280,11 @@ export default function AcademicCalendar() {
             </li>
             <li className="flex items-start">
               <CheckCircle className="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
-              <span>Exam schedules and hall tickets will be published 2 weeks before examinations</span>
+              <span>University exam schedules (Pre-University and Final) will be announced as per HNBUMU</span>
+            </li>
+            <li className="flex items-start">
+              <CheckCircle className="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
+              <span>Sessional examination results will be declared within 1 week of completion</span>
             </li>
             <li className="flex items-start">
               <CheckCircle className="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
@@ -284,14 +297,23 @@ export default function AcademicCalendar() {
           </ul>
         </div>
 
-        {/* Download Section */}
+        {/* Download Section - UPDATED */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mt-8 text-center">
-          <GraduationCap className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
+          <div className="bg-gradient-to-r from-indigo-100 to-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Download className="w-10 h-10 text-indigo-600" />
+          </div>
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Need a Printable Version?</h3>
-          <p className="text-gray-600 mb-6">Download the complete academic calendar as PDF</p>
-          <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">
+          <p className="text-gray-600 mb-6">Download the complete academic calendar for offline reference</p>
+          <button 
+            onClick={handleDownload}
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl hover:scale-105 transition-all"
+          >
+            <Download className="w-6 h-6" />
             Download Calendar PDF
           </button>
+          <p className="text-sm text-gray-500 mt-4">
+            File format: PDF | Size: ~200KB
+          </p>
         </div>
       </div>
     </div>

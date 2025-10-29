@@ -521,25 +521,25 @@ export default function After12th() {
             <div className="flex flex-col items-center bg-blue-50 rounded-lg p-6">
               <Phone className="w-10 h-10 text-blue-600 mb-3" />
               <h4 className="font-bold text-gray-800 mb-2">Call Us</h4>
-              <p className="text-gray-700">+91-XXXX-XXXXXX</p>
+              <p className="text-gray-700">+9182739 68106</p>
               <p className="text-sm text-gray-600">Mon-Sat: 9 AM - 6 PM</p>
             </div>
             <div className="flex flex-col items-center bg-purple-50 rounded-lg p-6">
               <Mail className="w-10 h-10 text-purple-600 mb-3" />
               <h4 className="font-bold text-gray-800 mb-2">Email Us</h4>
-              <p className="text-gray-700">admissions@gips.edu.in</p>
+              <p className="text-gray-700">garhwalparamedicalinstitute@gmail.com</p>
               <p className="text-sm text-gray-600">24/7 Support</p>
             </div>
             <div className="flex flex-col items-center bg-green-50 rounded-lg p-6">
               <MapPin className="w-10 h-10 text-green-600 mb-3" />
               <h4 className="font-bold text-gray-800 mb-2">Visit Us</h4>
               <p className="text-gray-700">GIPS Campus</p>
-              <p className="text-sm text-gray-600">Garhwal, Uttarakhand</p>
+              <p className="text-sm text-gray-600">Pauri Garhwal, Uttarakhand</p>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
+          <a href='/admissions' className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
             Start Your Application
-          </button>
+          </a>
         </div>
       </div>
     </div>

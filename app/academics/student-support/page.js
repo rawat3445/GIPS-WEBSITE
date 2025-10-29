@@ -24,8 +24,8 @@ export default function StudentSupport() {
           "Stress management and coping techniques",
           "Personal development and goal setting"
         ],
-        availability: "Monday to Friday: 9:00 AM - 5:00 PM",
-        contact: "counseling@gips.edu.in"
+        availability: "Monday to Saturday: 9:00 AM - 4:00 PM",
+        contact: "garhwalparamedicalinstitute@gmail.com"
       }
     },
     {
@@ -47,7 +47,7 @@ export default function StudentSupport() {
           "Nutritional guidance and diet counseling"
         ],
         availability: "24/7 Emergency Support Available",
-        contact: "health@gips.edu.in"
+        contact: "garhwalparamedicalinstitute@gmail.com"
       }
     },
     {
@@ -69,7 +69,7 @@ export default function StudentSupport() {
           "Work-study opportunities on campus"
         ],
         availability: "Office Hours: 10:00 AM - 4:00 PM",
-        contact: "financial@gips.edu.in"
+        contact: "garhwalparamedicalinstitute@gmail.com"
       }
     },
     {
@@ -91,7 +91,7 @@ export default function StudentSupport() {
           "Skill development workshops"
         ],
         availability: "Monday to Saturday: 9:00 AM - 5:00 PM",
-        contact: "placement@gips.edu.in"
+        contact: "garhwalparamedicalinstitute@gmail.com"
       }
     },
     {
@@ -113,7 +113,7 @@ export default function StudentSupport() {
           "Women's safety cell and helpline"
         ],
         availability: "24/7 Emergency Helpline Available",
-        contact: "safety@gips.edu.in"
+        contact: "garhwalparamedicalinstitute@gmail.com"
       }
     },
     {
@@ -134,16 +134,16 @@ export default function StudentSupport() {
           "Language and communication skills",
           "Research guidance and support"
         ],
-        availability: "Monday to Saturday: 8:00 AM - 6:00 PM",
-        contact: "academic@gips.edu.in"
+        availability: "Monday to Saturday: 9:00 AM - 4:00 PM",
+        contact: "garhwalparamedicalinstitute@gmail.com"
       }
     }
   ];
 
   const quickHelp = [
-    { icon: Phone, title: "Emergency", value: "+91-XXXX-XXXXXX", color: "text-red-600" },
-    { icon: Mail, title: "General Inquiries", value: "support@gips.edu.in", color: "text-blue-600" },
-    { icon: MessageCircle, title: "WhatsApp Support", value: "+91-XXXX-XXXXXX", color: "text-green-600" },
+    { icon: Phone, title: "Emergency", value: "+9182739 68106", color: "text-red-600" },
+    { icon: Mail, title: "General Inquiries", value: "garhwalparamedicalinstitute@gmail.com", color: "text-blue-600" },
+    { icon: MessageCircle, title: "WhatsApp Support", value: "+9182739 68106", color: "text-green-600" },
     { icon: MapPin, title: "Student Services Office", value: "Admin Block, Ground Floor", color: "text-purple-600" }
   ];
 
@@ -225,15 +225,15 @@ export default function StudentSupport() {
             <div className="space-y-4">
               <div className="bg-red-50 p-4 rounded-lg">
                 <p className="font-semibold text-red-800 mb-2">24/7 Emergency Helpline</p>
-                <p className="text-2xl font-bold text-red-600">+91-XXXX-XXXXXX</p>
+                <p className="text-2xl font-bold text-red-600">+9182739 68106</p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
                 <p className="font-semibold text-blue-800 mb-2">Campus Security</p>
-                <p className="text-xl font-bold text-blue-600">+91-XXXX-XXXXXX</p>
+                <p className="text-xl font-bold text-blue-600">+9182739 68106</p>
               </div>
               <div className="bg-green-50 p-4 rounded-lg">
                 <p className="font-semibold text-green-800 mb-2">Medical Emergency</p>
-                <p className="text-xl font-bold text-green-600">+91-XXXX-XXXXXX</p>
+                <p className="text-xl font-bold text-green-600">+9182739 68106</p>
               </div>
             </div>
           </div>

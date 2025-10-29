@@ -10,6 +10,7 @@ import {
   Award,
   GraduationCap,
   BookOpen,
+  Glasses,
 } from "lucide-react";
 
 export default function Program() {
@@ -35,22 +36,22 @@ export default function Program() {
           </p>
         </div>
 
-        {/* Quick Stats */}
+        {/* Quick Stats - Updated to show 5 programs */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           <div className="bg-white p-4 rounded-xl shadow-lg text-center">
             <BookOpen className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-            <h3 className="font-bold text-2xl text-blue-600">4</h3>
+            <h3 className="font-bold text-2xl text-blue-600">5</h3>
             <p className="text-sm text-gray-600">Programs Offered</p>
           </div>
           <div className="bg-white p-4 rounded-xl shadow-lg text-center">
             <Clock className="w-6 h-6 text-green-600 mx-auto mb-2" />
-            <h3 className="font-bold text-2xl text-green-600">3-4</h3>
+            <h3 className="font-bold text-2xl text-green-600">2-4</h3>
             <p className="text-sm text-gray-600">Years Duration</p>
           </div>
           <div className="bg-white p-4 rounded-xl shadow-lg text-center">
             <Users className="w-6 h-6 text-purple-600 mx-auto mb-2" />
             <h3 className="font-bold text-2xl text-purple-600">100%</h3>
-            <p className="text-sm text-gray-600">Placement Focus</p>
+            <p className="text-sm text-gray-600">Placement Record</p>
           </div>
           <div className="bg-white p-4 rounded-xl shadow-lg text-center">
             <Award className="w-6 h-6 text-orange-600 mx-auto mb-2" />
@@ -63,8 +64,12 @@ export default function Program() {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* BPT Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
-              <div className="flex items-center gap-4 text-white">
+            <div
+              className="relative p-6 bg-center bg-cover"
+              style={{ backgroundImage: "url('/physio.jpg')" }}
+            >
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="relative flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Activity className="w-8 h-8" />
                 </div>
@@ -72,7 +77,7 @@ export default function Program() {
                   <h2 className="text-2xl font-bold">
                     Bachelor of Physiotherapy
                   </h2>
-                  <p className="text-green-100">BPT</p>
+                  <p className="text-white/80">BPT</p>
                 </div>
               </div>
             </div>
@@ -150,14 +155,22 @@ export default function Program() {
 
           {/* B.Optom Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6">
-              <div className="flex items-center gap-4 text-white">
-                <div className="bg-white/20 p-3 rounded-full">
-                  <Eye className="w-8 h-8" />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold">Bachelor of Optometry</h2>
-                  <p className="text-blue-100">B.Optom</p>
+            <div className=" p-6">
+              <div
+                className="relative p-6 bg-center bg-cover"
+                style={{ backgroundImage: "url('/opto.jpg')" }}
+              >
+                <div className="absolute inset-0 bg-black/40" />
+                <div className="relative flex items-center gap-4 text-white">
+                  <div className="bg-white/20 p-3 rounded-full">
+                    <Eye className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold">
+                      Bachelor of Optometry
+                    </h2>
+                    <p className="text-white/80">B.Optom</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,10 +245,102 @@ export default function Program() {
             </div>
           </div>
 
+          {/* NEW: Diploma in Optometry Program */}
+          <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div
+              className="relative p-6 bg-center bg-cover"
+              style={{ backgroundImage: "url('/d-opto.jpg')" }}
+            >
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="relative flex items-center gap-4 text-white">
+                <div className="bg-white/20 p-3 rounded-full">
+                  <Eye className="w-8 h-8" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold">Bachelor of Optometry</h2>
+                  <p className="text-white/80">B.Optom</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6">
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Foundational diploma program designed to provide essential
+                knowledge and skills in eye care and vision science. Prepares
+                students for assisting optometrists and working in optical
+                dispensing, eye examination, and vision care centers.
+              </p>
+
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-3">
+                  <Clock className="w-4 h-4 text-amber-600" />
+                  <span className="text-sm text-gray-600">
+                    <strong>Duration:</strong> 2 Years
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Users className="w-4 h-4 text-green-600" />
+                  <span className="text-sm text-gray-600">
+                    <strong>Eligibility:</strong> 10+2 (PCB)
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <TrendingUp className="w-4 h-4 text-purple-600" />
+                  <span className="text-sm text-gray-600">
+                    <strong>Salary Range:</strong> ₹2-6 LPA
+                  </span>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 p-4 rounded-lg mb-4">
+                <h4 className="font-semibold text-amber-800 mb-2">
+                  Core Subjects:
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-amber-200 text-amber-800 px-2 py-1 rounded-full text-xs">
+                    Ocular Anatomy
+                  </span>
+                  <span className="bg-amber-200 text-amber-800 px-2 py-1 rounded-full text-xs">
+                    Ophthalmic Optics
+                  </span>
+                  <span className="bg-amber-200 text-amber-800 px-2 py-1 rounded-full text-xs">
+                    Contact Lens
+                  </span>
+                  <span className="bg-amber-200 text-amber-800 px-2 py-1 rounded-full text-xs">
+                    Clinical Practice
+                  </span>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-4 rounded-lg mb-6">
+                <h4 className="font-semibold text-gray-800 mb-2">
+                  Career Opportunities:
+                </h4>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Optometrist Assistant</li>
+                  <li>• Optical Dispensing Technician</li>
+                  <li>• Vision Consultant</li>
+                  <li>• Eye Care Center Staff</li>
+                </ul>
+              </div>
+
+              <Link
+                href="/programs/diploma-optometry"
+                className="inline-flex items-center gap-2 w-full justify-center bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-6 rounded-full transition-colors"
+              >
+                Explore D.OPTOM Program →
+              </Link>
+            </div>
+          </div>
+
           {/* BMRIT Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-purple-500 to-indigo-600 p-6">
-              <div className="flex items-center gap-4 text-white">
+            <div
+              className="relative p-6 bg-center bg-cover"
+              style={{ backgroundImage: "url('/BMRIT.jpg')" }}
+            >
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="relative flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Monitor className="w-8 h-8" />
                 </div>
@@ -243,7 +348,7 @@ export default function Program() {
                   <h2 className="text-2xl font-bold">
                     Medical Radiology & Imaging
                   </h2>
-                  <p className="text-purple-100">BMRIT</p>
+                  <p className="text-white/80">BMRIT</p>
                 </div>
               </div>
             </div>
@@ -320,8 +425,12 @@ export default function Program() {
 
           {/* BOTT Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-teal-500 to-cyan-600 p-6">
-              <div className="flex items-center gap-4 text-white">
+            <div
+              className="relative p-6 bg-center bg-cover"
+              style={{ backgroundImage: "url('/OT.jpg')" }}
+            >
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="relative flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Scissors className="w-8 h-8" />
                 </div>
@@ -329,7 +438,7 @@ export default function Program() {
                   <h2 className="text-2xl font-bold">
                     Operation Theater Technology
                   </h2>
-                  <p className="text-teal-100">BOTT</p>
+                  <p className="text-white/80">BOTT</p>
                 </div>
               </div>
             </div>

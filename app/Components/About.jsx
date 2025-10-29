@@ -126,7 +126,8 @@ export default function AboutPage() {
     {
       icon: GraduationCap,
       title: "Modern Education",
-      description: "State-of-the-art curriculum aligned with industry standards",
+      description:
+        "State-of-the-art curriculum aligned with industry standards",
     },
     {
       icon: Stethoscope,
@@ -159,10 +160,7 @@ export default function AboutPage() {
           transition={{ duration: 0.8 }}
           className="relative z-10"
         >
-          <motion.div
-            animate={floatingAnimation}
-            className="inline-block mb-6"
-          >
+          <motion.div animate={floatingAnimation} className="inline-block mb-6">
             <BookOpen className="w-16 h-16 text-blue-600 mx-auto" />
           </motion.div>
 
@@ -178,9 +176,9 @@ export default function AboutPage() {
           >
             Garhwal Institute of Paramedical Sciences (GIPS) is a premier
             institution dedicated to excellence in paramedical education and
-            healthcare training. Since its establishment, GIPS has been committed
-            to nurturing skilled healthcare professionals who combine academic
-            excellence with a human touch.
+            healthcare training. Since its establishment, GIPS has been
+            committed to nurturing skilled healthcare professionals who combine
+            academic excellence with a human touch.
           </motion.p>
 
           {/* Decorative dots */}
@@ -266,9 +264,7 @@ export default function AboutPage() {
                   </div>
 
                   {/* Corner accent */}
-                  <motion.div
-                    className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-white/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
-                  />
+                  <motion.div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-white/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
                 </motion.div>
               </Link>
             </motion.div>
@@ -316,8 +312,9 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-12">
-              With a legacy of excellence, GIPS combines modern education, expert
-              faculty, and hands-on training to shape healthcare leaders of tomorrow.
+              With a legacy of excellence, GIPS combines modern education,
+              expert faculty, and hands-on training to shape healthcare leaders
+              of tomorrow.
             </p>
           </motion.div>
 
