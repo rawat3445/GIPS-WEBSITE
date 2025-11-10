@@ -4,6 +4,7 @@ import {
   MessageCircle,
   ChevronDown,
   Menu,
+  X,
   Phone,
   FacebookIcon,
   InstagramIcon,
@@ -18,14 +19,19 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mounted, setMounted] = useState(false);
 
   const navRef = useRef(null);
-  const navItemsRef = useRef([]); // store references to nav items
+  const navItemsRef = useRef([]);
+  const mobileMenuRef = useRef(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const navElement = navRef.current;
 
-    // Initially hide the navbar and its children
     gsap.set(navElement, { y: -150, opacity: 0 });
     gsap.set(navItemsRef.current, { y: 30, opacity: 0 });
 
@@ -38,7 +44,6 @@ export default function Nav() {
       if (scrollY > 50 && !hasShown) {
         hasShown = true;
 
-        // Create timeline animation
         const tl = gsap.timeline({ ease: "power4.out" });
         tl.to(navElement, {
           y: 0,
@@ -49,10 +54,10 @@ export default function Nav() {
           {
             y: 0,
             opacity: 1,
-            stagger: 0.08, // each item appears one by one
+            stagger: 0.08,
             duration: 0.4,
           },
-          "-=0.2" // overlap slightly with navbar animation
+          "-=0.2"
         );
       }
     };
@@ -60,6 +65,26 @@ export default function Nav() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Animate mobile menu
+  useEffect(() => {
+    if (mobileMenuRef.current) {
+      if (isOpen) {
+        gsap.fromTo(
+          mobileMenuRef.current,
+          { height: 0, opacity: 0 },
+          { height: "auto", opacity: 1, duration: 0.4, ease: "power3.out" }
+        );
+      } else {
+        gsap.to(mobileMenuRef.current, {
+          height: 0,
+          opacity: 0,
+          duration: 0.3,
+          ease: "power3.in",
+        });
+      }
+    }
+  }, [isOpen]);
 
   const menuItems = [
     {
@@ -198,7 +223,6 @@ export default function Nav() {
     <>
       {/* Fixed Side Support Links */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 space-y-3">
-        {/* WhatsApp */}
         <a
           href="https://wa.me/8273968106"
           className="flex items-center justify-center w-12 h-12 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-colors"
@@ -208,7 +232,6 @@ export default function Nav() {
           <MessageCircle className="w-6 h-6" />
         </a>
 
-        {/* Phone */}
         <a
           href="tel:+"
           className="flex items-center justify-center w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-colors"
@@ -216,7 +239,6 @@ export default function Nav() {
           <Phone className="w-6 h-6" />
         </a>
 
-        {/* Facebook */}
         <a
           href="https://facebook.com"
           className="flex items-center justify-center w-12 h-12 bg-blue-700 hover:bg-blue-800 text-white rounded-full shadow-lg transition-colors"
@@ -226,7 +248,6 @@ export default function Nav() {
           <FacebookIcon className="w-6 h-6" />
         </a>
 
-        {/* Instagram */}
         <a
           href="https://www.instagram.com/gips.pauri/"
           className="flex items-center justify-center w-12 h-12 bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white rounded-full shadow-lg transition-opacity"
@@ -236,7 +257,6 @@ export default function Nav() {
           <InstagramIcon className="w-6 h-6" />
         </a>
 
-        {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/company/108915163/admin/page-posts/published/"
           className="flex items-center justify-center w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition-colors"
@@ -246,7 +266,6 @@ export default function Nav() {
           <Linkedin className="w-6 h-6" />
         </a>
 
-        {/* Twitter/X */}
         <a
           href="https://twitter.com"
           className="flex items-center justify-center w-12 h-12 bg-black hover:bg-gray-800 text-white rounded-full shadow-lg transition-colors"
@@ -256,7 +275,6 @@ export default function Nav() {
           <Twitter className="w-6 h-6" />
         </a>
 
-        {/* Email */}
         <a
           href="mailto:garhwalparamedicalinstitute@gmail.com"
           className="flex items-center justify-center w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg transition-colors"
@@ -273,7 +291,7 @@ export default function Nav() {
             : "bg-gradient-to-r from-yellow-400/70 via-white/50 to-blue-500/70"
         }`}
       >
-        <div className="mx-auto">
+        <div className="mx-auto px-4">
           <div className="flex justify-between items-center h-40">
             {/* --- Logo --- */}
             <a
@@ -355,14 +373,80 @@ export default function Nav() {
               className="lg:hidden p-2 text-gray-700 hover:text-blue-700 focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
               ref={(el) => (navItemsRef.current[2] = el)}
+              aria-label="Toggle menu"
             >
-              {isOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
+              {mounted && (
+                <>
+                  {isOpen ? (
+                    <X className="w-6 h-6" />
+                  ) : (
+                    <Menu className="w-6 h-6" />
+                  )}
+                </>
               )}
+              {!mounted && <Menu className="w-6 h-6" />}
             </button>
           </div>
+
+          {/* --- Mobile Menu Dropdown --- */}
+          {isOpen && (
+            <div
+              ref={mobileMenuRef}
+              className="lg:hidden overflow-hidden bg-white/95 backdrop-blur-md rounded-b-2xl shadow-xl"
+            >
+              <div className="px-4 py-6 space-y-3 max-h-[70vh] overflow-y-auto">
+                {menuItems.map((item, index) => (
+                  <div key={index}>
+                    {item.dropdown ? (
+                      <div>
+                        <button
+                          onClick={() => handleDropdownToggle(index)}
+                          className={`flex items-center justify-between w-full px-4 py-3 text-left text-gray-700 ${item.hoverColor} rounded-lg transition-colors font-medium`}
+                        >
+                          {item.name}
+                          <ChevronDown
+                            className={`w-5 h-5 transition-transform ${
+                              activeDropdown === index ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                        {activeDropdown === index && (
+                          <div className="mt-2 ml-4 space-y-2">
+                            {item.dropdown.map((dropdownItem, dropIndex) => (
+                              <a
+                                key={dropIndex}
+                                href={dropdownItem.href}
+                                className="block px-4 py-2 text-sm text-gray-600 hover:bg-emerald-100 hover:text-emerald-800 rounded-lg transition-colors"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {dropdownItem.name}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <a
+                        href={item.href}
+                        className={`block px-4 py-3 text-gray-700 ${item.hoverColor} rounded-lg transition-colors font-medium`}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.name}
+                      </a>
+                    )}
+                  </div>
+                ))}
+
+                <a
+                  href="/admissions"
+                  className="block w-full px-4 py-3 mt-4 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold rounded-lg transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Apply Now
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
     </>

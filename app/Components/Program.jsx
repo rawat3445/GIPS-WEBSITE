@@ -1,4 +1,8 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
+import gsap from "gsap";
 import {
   Activity,
   Eye,
@@ -10,15 +14,113 @@ import {
   Award,
   GraduationCap,
   BookOpen,
-  Glasses,
 } from "lucide-react";
 
 export default function Program() {
+  // Refs for GSAP animations
+  const headerRef = useRef(null);
+  const statsRef = useRef(null);
+  const programCardsRef = useRef([]);
+  const marketOutlookRef = useRef(null);
+  const admissionRef = useRef(null);
+  const ctaRef = useRef(null);
+
+  useEffect(() => {
+    // Set initial state immediately (prevents flash)
+    gsap.set(programCardsRef.current, {
+      opacity: 0,
+      x: -40,
+      scale: 0.98,
+    });
+
+    // Create main timeline
+    const tl = gsap.timeline({
+      defaults: { ease: "power1.out" }, // Gentlest easing
+    });
+
+    // Animate header section
+    tl.fromTo(
+      headerRef.current,
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1 }
+    );
+
+    // Animate stats cards
+    tl.fromTo(
+      statsRef.current.children,
+      { x: -80, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.15,
+      },
+      "-=0.5"
+    );
+
+    // ULTRA SMOOTH: Program cards with minimal movement
+    tl.to(
+      programCardsRef.current,
+      {
+        x: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 1.2, // Longer, smoother duration
+        stagger: {
+          each: 0.15, // Consistent delay between cards
+          ease: "sine.inOut", // Smoothest possible easing
+        },
+        ease: "sine.out",
+        force3D: true, // Enable GPU acceleration
+        clearProps: "all",
+      },
+      "-=0.3"
+    );
+
+    // Rest of animations...
+    tl.fromTo(
+      marketOutlookRef.current,
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 0.9 },
+      "-=0.8"
+    );
+
+    tl.fromTo(
+      admissionRef.current,
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 0.9 },
+      "-=0.5"
+    );
+
+    tl.fromTo(
+      ctaRef.current,
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 0.9 },
+      "-=0.5"
+    );
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+
+  const courses = [
+    "Bachelor in Physiotherapy",
+    "Bachelor in Operation Theater Technologist",
+    "Diploma in Optometry",
+    "B.Sc in Optometry",
+    "Bachelor in Medical Radio Imaging Technology",
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-6 mt-0">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="bg-white shadow-xl rounded-3xl p-8 mb-8 text-center">
+        <div
+          ref={headerRef}
+          className="bg-white shadow-xl rounded-3xl p-8 mb-8 text-center"
+        >
           <div className="flex justify-center mb-4">
             <div className="bg-blue-600 p-4 rounded-full">
               <GraduationCap className="w-10 h-10 text-white" />
@@ -37,7 +139,10 @@ export default function Program() {
         </div>
 
         {/* Quick Stats - Updated to show 5 programs */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div
+          ref={statsRef}
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"
+        >
           <div className="bg-white p-4 rounded-xl shadow-lg text-center">
             <BookOpen className="w-6 h-6 text-blue-600 mx-auto mb-2" />
             <h3 className="font-bold text-2xl text-blue-600">5</h3>
@@ -63,7 +168,10 @@ export default function Program() {
         {/* Programs Grid */}
         <div className="grid lg:grid-cols-2 gap-8">
           {/* BPT Program */}
-          <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            ref={(el) => (programCardsRef.current[0] = el)}
+            className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
             <div
               className="relative p-6 bg-center bg-cover"
               style={{ backgroundImage: "url('/physio.jpg')" }}
@@ -154,7 +262,10 @@ export default function Program() {
           </div>
 
           {/* B.Optom Program */}
-          <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            ref={(el) => (programCardsRef.current[1] = el)}
+            className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
             <div className=" p-6">
               <div
                 className="relative p-6 bg-center bg-cover"
@@ -246,7 +357,10 @@ export default function Program() {
           </div>
 
           {/* NEW: Diploma in Optometry Program */}
-          <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            ref={(el) => (programCardsRef.current[2] = el)}
+            className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
             <div
               className="relative p-6 bg-center bg-cover"
               style={{ backgroundImage: "url('/d-opto.jpg')" }}
@@ -257,8 +371,8 @@ export default function Program() {
                   <Eye className="w-8 h-8" />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold">Bachelor of Optometry</h2>
-                  <p className="text-white/80">B.Optom</p>
+                  <h2 className="text-2xl font-bold">Diploma in Optometry</h2>
+                  <p className="text-white/80">D.Optom</p>
                 </div>
               </div>
             </div>
@@ -334,7 +448,10 @@ export default function Program() {
           </div>
 
           {/* BMRIT Program */}
-          <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            ref={(el) => (programCardsRef.current[3] = el)}
+            className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
             <div
               className="relative p-6 bg-center bg-cover"
               style={{ backgroundImage: "url('/BMRIT.jpg')" }}
@@ -424,7 +541,10 @@ export default function Program() {
           </div>
 
           {/* BOTT Program */}
-          <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div
+            ref={(el) => (programCardsRef.current[4] = el)}
+            className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
             <div
               className="relative p-6 bg-center bg-cover"
               style={{ backgroundImage: "url('/OT.jpg')" }}
@@ -515,7 +635,10 @@ export default function Program() {
         </div>
 
         {/* Market Outlook Section */}
-        <div className="bg-white shadow-xl rounded-3xl p-8 mt-8">
+        <div
+          ref={marketOutlookRef}
+          className="bg-white shadow-xl rounded-3xl p-8 mt-8"
+        >
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             Healthcare Industry Outlook
           </h2>
@@ -575,7 +698,10 @@ export default function Program() {
         </div>
 
         {/* Admission Information */}
-        <div className="bg-white shadow-xl rounded-3xl p-8 mt-8">
+        <div
+          ref={admissionRef}
+          className="bg-white shadow-xl rounded-3xl p-8 mt-8"
+        >
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             Admission Information
           </h2>
@@ -619,7 +745,10 @@ export default function Program() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 shadow-xl rounded-3xl p-8 mt-8 text-center">
+        <div
+          ref={ctaRef}
+          className="bg-gradient-to-r from-blue-600 to-indigo-700 shadow-xl rounded-3xl p-8 mt-8 text-center"
+        >
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Start Your Healthcare Career?
           </h2>

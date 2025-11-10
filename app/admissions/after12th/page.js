@@ -1,4 +1,5 @@
 "use client"
+
 import { useState } from 'react';
 import { GraduationCap, FileText, CheckCircle, Calendar, DollarSign, MapPin, Phone, Mail, Download, AlertCircle, Users, BookOpen, Award, TrendingUp, Clock } from 'lucide-react';
 
@@ -11,7 +12,6 @@ export default function After12th() {
       duration: "4.5 years (4 years + 6 months internship)",
       eligibility: "10+2 with Physics, Chemistry, Biology (PCB) - Min 50% marks",
       seats: "60",
-      fee: "₹80,000 - ₹1,00,000 per year",
       career: "Physiotherapist, Rehabilitation Specialist, Sports Therapist, Clinical Researcher"
     },
     {
@@ -19,7 +19,6 @@ export default function After12th() {
       duration: "3 years",
       eligibility: "10+2 with Physics, Chemistry, Biology (PCB) - Min 50% marks",
       seats: "40",
-      fee: "₹70,000 - ₹90,000 per year",
       career: "Radiographer, MRI/CT Scan Technician, Imaging Specialist, Hospital Technologist"
     },
     {
@@ -27,7 +26,6 @@ export default function After12th() {
       duration: "3 years",
       eligibility: "10+2 with Physics, Chemistry, Biology (PCB) - Min 50% marks",
       seats: "40",
-      fee: "₹65,000 - ₹85,000 per year",
       career: "OT Technician, Surgical Assistant, Sterilization Technician, Hospital Administrator"
     },
     {
@@ -35,7 +33,6 @@ export default function After12th() {
       duration: "4 years",
       eligibility: "10+2 with Physics, Chemistry, Biology/Math - Min 50% marks",
       seats: "30",
-      fee: "₹75,000 - ₹95,000 per year",
       career: "Optometrist, Vision Therapist, Contact Lens Specialist, Eye Care Professional"
     },
     {
@@ -43,7 +40,6 @@ export default function After12th() {
       duration: "2 years",
       eligibility: "10+2 with Physics, Chemistry, Biology/Math - Min 45% marks",
       seats: "30",
-      fee: "₹45,000 - ₹60,000 per year",
       career: "Optometry Technician, Vision Screening Specialist, Optical Store Manager"
     }
   ];
@@ -408,8 +404,7 @@ export default function After12th() {
                       </div>
                       <div>
                         <h4 className="font-bold text-gray-800 mb-2 flex items-center">
-                          <DollarSign className="w-5 h-5 text-green-600 mr-2" />
-                          Fee Structure
+                          
                         </h4>
                         <p className="text-gray-700">{course.fee}</p>
                       </div>

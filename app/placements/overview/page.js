@@ -208,7 +208,7 @@ export default function PlacementOverview() {
             and professional success in healthcare education.
           </p>
           <a
-            href="/admission"
+            href="/admissions"
             className="inline-block bg-white text-purple-700 font-semibold px-8 py-3 rounded-full shadow-md hover:bg-gray-100 transition-all"
           >
             Apply Now

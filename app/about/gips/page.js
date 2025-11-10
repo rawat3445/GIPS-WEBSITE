@@ -14,15 +14,15 @@ export default function AboutGipsPage() {
           name: "Mr. Kavinder Istwal",
           position: "Chairman",
           qualification: "Garhwal Institute of Paramedical Sciences",
-          location: "Shri Shatchandi Jan Kalyan Samiti, Pauri Garhwal",
+          location: "Shree Satchandi Jankalyan Samiti",
           image: "/Chairman_sir.jpg"
         },
         {
           name: "Mr. Nripesh Tiwari",
           position: "General Secretary",
           qualification: "Garhwal Institute of Paramedical Sciences",
-          location: "Shri Bhatchandi Jankiya Van Samiti, Pauri Garhwal",
-          image: ""
+          location: "Shree Satchandi Jankalyan Samiti",
+          image: "/Nripesh_sir.png"
         }
       ]
     },
@@ -87,13 +87,6 @@ export default function AboutGipsPage() {
           hospital: "BMRIT (VCSGG GOVT. MEDICAL COLLEGE, SRINAGAR)",
           image: "/Nidhi-mam.png"
         },
-        {
-          name: "Miss. Sunita Kaswal",
-          position: "Lecturer",
-          qualification: "Dept. of Medical Radio-Imaging Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
-          degree: "BACHELORS IN MEDICAL RADIO-IMAGING TECHNOLOGY",
-          image: ""
-        }
       ]
     }
   ];

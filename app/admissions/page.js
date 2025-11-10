@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 
 export default function AdmissionPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     // Personal Information
@@ -24,8 +25,8 @@ export default function AdmissionPage() {
     middleName: "",
     lastName: "",
     dateOfBirth: "",
-    gender: "",
     bloodGroup: "",
+    gender: "",
     aadharNumber: "",
     email: "",
     phone: "",
@@ -98,7 +99,8 @@ export default function AdmissionPage() {
     const { name, value, type, checked, files } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : type === "file" ? files[0] : value,
+      [name]:
+        type === "checkbox" ? checked : type === "file" ? files[0] : value,
     }));
   };
 
@@ -117,10 +119,158 @@ export default function AdmissionPage() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Application submitted successfully! We will contact you soon.");
+
+    console.log("📝 Form Data before submission:", formData);
+
+    // Check required fields
+    const requiredFields = [
+      "firstName",
+      "lastName",
+      "dateOfBirth",
+      "gender",
+      "aadharNumber",
+      "email",
+      "phone",
+      "streetAddress",
+      "city",
+      "state",
+      "country",
+      "pinCode",
+      "permanentStreet",
+      "permanentCity",
+      "permanentState",
+      "permanentCountry",
+      "permanentPinCode",
+      "tenthBoard",
+      "tenthSchool",
+      "tenthYear",
+      "tenthPercentage",
+      "tenthRollNumber",
+      "twelfthBoard",
+      "twelfthSchool",
+      "twelfthYear",
+      "twelfthPercentage",
+      "twelfthRollNumber",
+      "twelfthStream",
+      "courseApplied",
+      "fatherName",
+      "motherName",
+      "category",
+    ];
+
+    const missingFields = requiredFields.filter(
+      (field) =>
+        !formData[field] ||
+        (typeof formData[field] === "string" && formData[field].trim() === "")
+    );
+
+    if (missingFields.length > 0) {
+      alert(
+        `❌ Please fill all required fields:\n\n${missingFields.join(", ")}`
+      );
+      console.log("Missing fields:", missingFields);
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // ✅ Create FormData and append all keys
+      const sendData = new FormData();
+      for (const key in formData) {
+        if (formData[key] !== null && formData[key] !== undefined) {
+          sendData.append(key, formData[key]);
+        }
+      }
+
+      // ✅ Now send formData (no headers manually)
+      const response = await fetch("/api/admission", {
+        method: "POST",
+        body: sendData,
+      });
+
+      const result = await response.json();
+      console.log("📬 Server Response:", result);
+
+      if (result.success) {
+        alert(
+          `✅ ${result.message}\n\n📋 Application ID: ${result.applicationId}\n\n⚠️ Save this Application ID for future reference!`
+        );
+
+        // Reset form
+        setFormData({
+          firstName: "",
+          middleName: "",
+          lastName: "",
+          dateOfBirth: "",
+          gender: "",
+          bloodGroup: "",
+          aadharNumber: "",
+          email: "",
+          phone: "",
+          alternatePhone: "",
+          streetAddress: "",
+          city: "",
+          state: "",
+          country: "",
+          pinCode: "",
+          sameAsAbove: false,
+          permanentStreet: "",
+          permanentCity: "",
+          permanentState: "",
+          permanentCountry: "",
+          permanentPinCode: "",
+          tenthBoard: "",
+          tenthSchool: "",
+          tenthYear: "",
+          tenthPercentage: "",
+          tenthRollNumber: "",
+          twelfthBoard: "",
+          twelfthSchool: "",
+          twelfthYear: "",
+          twelfthPercentage: "",
+          twelfthRollNumber: "",
+          twelfthStream: "",
+          physicsMarks: "",
+          chemistryMarks: "",
+          biologyMarks: "",
+          courseApplied: "",
+          secondPreference: "",
+          fatherName: "",
+          fatherOccupation: "",
+          fatherPhone: "",
+          motherName: "",
+          motherOccupation: "",
+          motherPhone: "",
+          guardianName: "",
+          guardianRelation: "",
+          guardianPhone: "",
+          annualIncome: "",
+          category: "",
+          photo: null,
+          signature: null,
+          tenthMarksheet: null,
+          twelfthMarksheet: null,
+          transferCertificate: null,
+          aadharCard: null,
+          incomeCertificate: null,
+          categoryCertificate: null,
+        });
+
+        setCurrentStep(1);
+      } else {
+        alert(`❌ Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error("❌ Submission error:", error);
+      alert(
+        "❌ Network error. Please check your internet connection and try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const nextStep = () => {
@@ -157,9 +307,7 @@ export default function AdmissionPage() {
           <p className="text-lg text-gray-600">
             Garhwal Institute of Paramedical Sciences (GIPS)
           </p>
-          <p className="text-sm text-gray-500 mt-2">
-            Academic Year 2025-26
-          </p>
+          <p className="text-sm text-gray-500 mt-2">Academic Year 2025-26</p>
         </div>
 
         {/* Progress Steps */}
@@ -209,7 +357,7 @@ export default function AdmissionPage() {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} encType="multipart/form-data">
           <div className="bg-white shadow-xl rounded-3xl p-8 mb-6">
             {/* Step 1: Personal Information */}
             {currentStep === 1 && (
@@ -543,7 +691,8 @@ export default function AdmissionPage() {
                         </div>
                         <div>
                           <label className="block text-sm font-semibold text-gray-700 mb-2">
-                            State/Province <span className="text-red-500">*</span>
+                            State/Province{" "}
+                            <span className="text-red-500">*</span>
                           </label>
                           <input
                             type="text"
@@ -648,7 +797,8 @@ export default function AdmissionPage() {
                     <div className="grid md:grid-cols-3 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Year of Passing <span className="text-red-500">*</span>
+                          Year of Passing{" "}
+                          <span className="text-red-500">*</span>
                         </label>
                         <input
                           type="text"
@@ -734,7 +884,8 @@ export default function AdmissionPage() {
                     <div className="grid md:grid-cols-3 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Year of Passing <span className="text-red-500">*</span>
+                          Year of Passing{" "}
+                          <span className="text-red-500">*</span>
                         </label>
                         <input
                           type="text"
@@ -790,8 +941,12 @@ export default function AdmissionPage() {
                         className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       >
                         <option value="">Select stream</option>
-                        <option value="PCB">PCB (Physics, Chemistry, Biology)</option>
-                        <option value="PCM">PCM (Physics, Chemistry, Mathematics)</option>
+                        <option value="PCB">
+                          PCB (Physics, Chemistry, Biology)
+                        </option>
+                        <option value="PCM">
+                          PCM (Physics, Chemistry, Mathematics)
+                        </option>
                       </select>
                     </div>
 
@@ -812,7 +967,8 @@ export default function AdmissionPage() {
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Chemistry Marks <span className="text-red-500">*</span>
+                          Chemistry Marks{" "}
+                          <span className="text-red-500">*</span>
                         </label>
                         <input
                           type="text"
@@ -913,7 +1069,8 @@ export default function AdmissionPage() {
                     <div className="grid md:grid-cols-3 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Father&apos;s Name <span className="text-red-500">*</span>
+                          Father&apos;s Name{" "}
+                          <span className="text-red-500">*</span>
                         </label>
                         <input
                           type="text"
@@ -961,7 +1118,8 @@ export default function AdmissionPage() {
                     <div className="grid md:grid-cols-3 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Mother&apos;s Name <span className="text-red-500">*</span>
+                          Mother&apos;s Name{" "}
+                          <span className="text-red-500">*</span>
                         </label>
                         <input
                           type="text"
@@ -1054,7 +1212,8 @@ export default function AdmissionPage() {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Annual Family Income <span className="text-red-500">*</span>
+                          Annual Family Income{" "}
+                          <span className="text-red-500">*</span>
                         </label>
                         <select
                           name="annualIncome"
@@ -1068,7 +1227,9 @@ export default function AdmissionPage() {
                           <option value="1-3 Lakhs">₹1 - 3 Lakhs</option>
                           <option value="3-5 Lakhs">₹3 - 5 Lakhs</option>
                           <option value="5-10 Lakhs">₹5 - 10 Lakhs</option>
-                          <option value="Above 10 Lakhs">Above ₹10 Lakhs</option>
+                          <option value="Above 10 Lakhs">
+                            Above ₹10 Lakhs
+                          </option>
                         </select>
                       </div>
                       <div>
@@ -1122,7 +1283,9 @@ export default function AdmissionPage() {
                       accept=".jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">JPG/PNG, max 2MB</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      JPG/PNG, max 2MB
+                    </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -1137,7 +1300,9 @@ export default function AdmissionPage() {
                       accept=".jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">JPG/PNG, max 2MB</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      JPG/PNG, max 2MB
+                    </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -1152,7 +1317,9 @@ export default function AdmissionPage() {
                       accept=".pdf,.jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">PDF/JPG, max 2MB</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      PDF/JPG, max 2MB
+                    </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -1167,12 +1334,15 @@ export default function AdmissionPage() {
                       accept=".pdf,.jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">PDF/JPG, max 2MB</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      PDF/JPG, max 2MB
+                    </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Transfer Certificate <span className="text-red-500">*</span>
+                      Transfer Certificate{" "}
+                      <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="file"
@@ -1182,7 +1352,9 @@ export default function AdmissionPage() {
                       accept=".pdf,.jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">PDF/JPG, max 2MB</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      PDF/JPG, max 2MB
+                    </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -1197,7 +1369,9 @@ export default function AdmissionPage() {
                       accept=".pdf,.jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">PDF/JPG, max 2MB</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      PDF/JPG, max 2MB
+                    </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -1211,7 +1385,9 @@ export default function AdmissionPage() {
                       accept=".pdf,.jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">PDF/JPG, max 2MB (if applicable)</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      PDF/JPG, max 2MB (if applicable)
+                    </p>
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -1225,7 +1401,9 @@ export default function AdmissionPage() {
                       accept=".pdf,.jpg,.jpeg,.png"
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
-                    <p className="text-xs text-gray-500 mt-1">PDF/JPG, max 2MB (if applicable)</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      PDF/JPG, max 2MB (if applicable)
+                    </p>
                   </div>
                 </div>
 
@@ -1241,11 +1419,11 @@ export default function AdmissionPage() {
                       className="mt-1 w-5 h-5 text-blue-600 border-2 border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
                     />
                     <p className="text-sm text-gray-700">
-                      I hereby declare that all the information provided above is
-                      true and correct to the best of my knowledge. I understand
-                      that any false information may lead to cancellation of my
-                      admission. I agree to abide by all rules and regulations of
-                      GIPS.
+                      I hereby declare that all the information provided above
+                      is true and correct to the best of my knowledge. I
+                      understand that any false information may lead to
+                      cancellation of my admission. I agree to abide by all
+                      rules and regulations of GIPS.
                     </p>
                   </div>
                 </div>
@@ -1278,10 +1456,20 @@ export default function AdmissionPage() {
             ) : (
               <button
                 type="submit"
-                className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold rounded-full transition-all shadow-lg ml-auto"
+                disabled={isSubmitting}
+                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3"
               >
-                <CheckCircle className="w-5 h-5" />
-                Submit Application
+                {isSubmitting ? (
+                  <>
+                    <span className="animate-spin">⏳</span>
+                    Submitting Application...
+                  </>
+                ) : (
+                  <>
+                    Submit Application
+                    <CheckCircle className="w-5 h-5" />
+                  </>
+                )}
               </button>
             )}
           </div>
@@ -1289,9 +1477,7 @@ export default function AdmissionPage() {
 
         {/* Help Section */}
         <div className="bg-white shadow-lg rounded-2xl p-6 mt-6">
-          <h3 className="text-lg font-bold text-gray-800 mb-4">
-            Need Help?
-          </h3>
+          <h3 className="text-lg font-bold text-gray-800 mb-4">Need Help?</h3>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-blue-600" />
@@ -1304,13 +1490,17 @@ export default function AdmissionPage() {
               <Mail className="w-5 h-5 text-blue-600" />
               <div>
                 <p className="text-sm font-semibold text-gray-700">Email Us</p>
-                <p className="text-sm text-gray-600">garhwalparamedicalinstitute@gmail.com</p>
+                <p className="text-sm text-gray-600">
+                  garhwalparamedicalinstitute@gmail.com
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Calendar className="w-5 h-5 text-blue-600" />
               <div>
-                <p className="text-sm font-semibold text-gray-700">Office Hours</p>
+                <p className="text-sm font-semibold text-gray-700">
+                  Office Hours
+                </p>
                 <p className="text-sm text-gray-600">Mon-Sat: 9 AM - 5 PM</p>
               </div>
             </div>

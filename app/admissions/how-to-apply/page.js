@@ -65,21 +65,6 @@ export default function HowToApply() {
       duration: "10 minutes"
     },
     {
-      step: 5,
-      title: "Pay Application Fee",
-      description: "Make secure online payment of application fee through available payment methods",
-      icon: CreditCard,
-      details: [
-        "Fee: ₹1,000 (General/OBC)",
-        "Fee: ₹500 (SC/ST/PwD)",
-        "Payment via Debit/Credit Card",
-        "Net Banking/UPI accepted",
-        "Payment gateway is secure",
-        "Save payment receipt"
-      ],
-      duration: "5 minutes"
-    },
-    {
       step: 6,
       title: "Review & Submit",
       description: "Carefully review all entered information before final submission",
@@ -437,31 +422,7 @@ export default function HowToApply() {
           </div>
         </div>
 
-        {/* Application Fee */}
-        <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-xl p-10 mb-12">
-          <div className="flex items-center mb-8">
-            <DollarSign className="w-10 h-10 text-green-600 mr-4" />
-            <h2 className="text-4xl font-bold text-gray-800">Application Fee Structure</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {applicationFees.map((fee, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg flex justify-between items-center">
-                <span className="font-semibold text-gray-800">{fee.category}</span>
-                <span className="text-2xl font-bold text-green-600">{fee.fee}</span>
-              </div>
-            ))}
-          </div>
-          
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Payment Methods</h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            {paymentMethods.map((method, index) => (
-              <div key={index} className="bg-white rounded-lg p-5 shadow-md">
-                <h4 className="font-bold text-gray-800 mb-2">{method.method}</h4>
-                <p className="text-gray-600 text-sm">{method.details}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Important Tips */}
         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-xl p-10 mb-12 text-white">
