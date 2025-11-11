@@ -32,10 +32,10 @@ export default function EventsSection() {
     },
     {
       id: 3,
-      title: "Healthcare Career Fair",
+      title: "Freshers’ Party 2025",
       date: "May 20, 2025",
       description:
-        "Connect with top healthcare institutions and explore career opportunities in various paramedical fields and specializations.",
+        "A warm welcome to the new batch! Join us for an evening full of fun, music, dance, and memories as we celebrate the beginning of your college journey.",
       image: "/Evt/WhatsApp Image 2025-04-12 at 1.55.43 PM.jpeg",
       direction: "top",
     },

@@ -221,7 +221,7 @@ export default function Nav() {
 
   return (
     <>
-      {/* Fixed Side Support Links */}
+      {/* Fixed Side Support Links - ALWAYS VISIBLE */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 space-y-3">
         <a
           href="https://wa.me/8273968106"
@@ -291,25 +291,27 @@ export default function Nav() {
             : "bg-gradient-to-r from-yellow-400/70 via-white/50 to-blue-500/70"
         }`}
       >
-        <div className="mx-auto px-4">
-          <div className="flex justify-between items-center h-40">
-            {/* --- Logo --- */}
+        <div className="mx-auto px-2 sm:px-4">
+          <div className="flex justify-between items-center h-20 sm:h-28 lg:h-40">
+            {/* --- Logo --- RESPONSIVE */}
             <a
               href="/"
-              className="flex flex-col items-center"
+              className="flex flex-col items-start sm:items-center"
               ref={(el) => (navItemsRef.current[0] = el)}
             >
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-2 sm:space-x-3">
                 <img
                   src="/logo-paramedicalfinal-e1717133101289.png"
                   alt="GIPS Logo"
-                  width="80"
-                  height="80"
-                  className="rounded-full object-cover"
+                  width="60"
+                  height="60"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full object-cover"
                 />
-                <span className="text-3xl font-bold text-blue-700">GIPS</span>
+                <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-700">
+                  GIPS
+                </span>
               </div>
-              <p className="text-lg font-medium text-gray-700 mt-1 whitespace-nowrap text-center">
+              <p className="text-xs sm:text-sm lg:text-lg font-medium text-gray-700 mt-1 max-w-[200px] sm:max-w-none sm:whitespace-nowrap text-left sm:text-center">
                 Garhwal Institute of Paramedical Sciences
               </p>
             </a>
@@ -368,9 +370,9 @@ export default function Nav() {
               </a>
             </div>
 
-            {/* --- Mobile Button --- */}
+            {/* --- Mobile Button --- ALWAYS VISIBLE */}
             <button
-              className="lg:hidden p-2 text-gray-700 hover:text-blue-700 focus:outline-none"
+              className="lg:hidden p-2 text-gray-700 hover:text-blue-700 focus:outline-none flex-shrink-0"
               onClick={() => setIsOpen(!isOpen)}
               ref={(el) => (navItemsRef.current[2] = el)}
               aria-label="Toggle menu"

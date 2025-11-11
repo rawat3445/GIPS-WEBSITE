@@ -209,7 +209,7 @@ export default function Hero() {
   // Don't render form if showPopup is false
   if (!showPopup) {
     return (
-      <section className="relative w-full h-screen overflow-hidden">
+      <section className="relative w-full h-[100vh] md:h-screen overflow-hidden">
         {/* Carousel Images */}
         <div className="absolute inset-0">
           {images.map((src, index) => (
@@ -224,7 +224,8 @@ export default function Hero() {
                 alt={`GIPS Banner ${index + 1}`}
                 fill
                 priority={index === 0}
-                className="object-cover"
+                className="object-cover object-center w-full h-full"
+                sizes="100vw"
               />
               <div className="absolute inset-0 bg-black/40" />
             </div>
