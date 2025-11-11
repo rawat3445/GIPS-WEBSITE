@@ -342,7 +342,7 @@ export default function Hero() {
       {/* GLASSMORPHISM FORM with CLOSE BUTTON */}
       <div
         ref={popupRef}
-        className="fixed top-40 right-17 w-80 max-h-[calc(100vh-180px)] z-40 rounded-2xl shadow-2xl flex flex-col"
+        className="fixed top-40 right-17 w-70 max-h-[calc(80vh-170px)] z-40 rounded-2xl shadow-2xl flex flex-col"
         style={{
           background: "rgba(255, 255, 255, 0.15)",
           backdropFilter: "blur(20px)",
