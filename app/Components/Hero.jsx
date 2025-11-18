@@ -255,7 +255,7 @@ export default function Hero() {
           <Link
             ref={buttonRef}
             href="/programs"
-            className="px-8 py-4 bg-cyan-500 hover:bg-cyan-600 text-white text-lg font-semibold rounded-full shadow-lg transition-all"
+            className="px-9 py-4 bg-cyan-500 hover:bg-cyan-600 text-white text-lg font-semibold rounded-full shadow-lg transition-all"
           >
             Explore Courses
           </Link>
@@ -523,7 +523,6 @@ export default function Hero() {
                 ))}
               </select>
             </div>
-
             {/* Submit Button */}
             <button
               type="submit"
