@@ -160,7 +160,7 @@ export default function Hero() {
 
   const courses = [
     "Bachelor in Physiotherapy",
-    "Bachelor in Operation Theater Technologist",
+    "Bachelor in Operation Theater Technology",
     "Diploma in Optometry",
     "B.Sc in Optometry",
     "Bachelor in Medical Radio Imaging Technology",
