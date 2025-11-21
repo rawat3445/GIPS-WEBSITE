@@ -383,7 +383,7 @@ export default function AdmissionPage() {
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 text-gray-900 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       placeholder="Enter first name"
                     />
                   </div>
@@ -396,7 +396,7 @@ export default function AdmissionPage() {
                       name="middleName"
                       value={formData.middleName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       placeholder="Enter middle name"
                     />
                   </div>
@@ -410,7 +410,7 @@ export default function AdmissionPage() {
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       placeholder="Enter last name"
                     />
                   </div>
@@ -427,7 +427,7 @@ export default function AdmissionPage() {
                       value={formData.dateOfBirth}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                   </div>
                   <div>
@@ -439,7 +439,7 @@ export default function AdmissionPage() {
                       value={formData.gender}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     >
                       <option value="">Select gender</option>
                       <option value="Male">Male</option>
@@ -459,7 +459,7 @@ export default function AdmissionPage() {
                       value={formData.bloodGroup}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     >
                       <option value="">Select blood group</option>
                       <option value="A+">A+</option>
@@ -484,7 +484,7 @@ export default function AdmissionPage() {
                       required
                       maxLength="12"
                       pattern="[0-9]{12}"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       placeholder="Enter 12-digit Aadhar"
                     />
                   </div>
@@ -501,7 +501,7 @@ export default function AdmissionPage() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       placeholder="student@example.com"
                     />
                   </div>
@@ -517,7 +517,7 @@ export default function AdmissionPage() {
                       required
                       pattern="[0-9]{10}"
                       maxLength="10"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       placeholder="10-digit mobile number"
                     />
                   </div>
@@ -534,7 +534,7 @@ export default function AdmissionPage() {
                     onChange={handleInputChange}
                     pattern="[0-9]{10}"
                     maxLength="10"
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                    className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     placeholder="Optional alternate number"
                   />
                 </div>
@@ -569,7 +569,7 @@ export default function AdmissionPage() {
                         value={formData.streetAddress}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                        className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                         placeholder="House no, building, street"
                       />
                     </div>
@@ -585,7 +585,7 @@ export default function AdmissionPage() {
                           value={formData.city}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="City"
                         />
                       </div>
@@ -599,7 +599,7 @@ export default function AdmissionPage() {
                           value={formData.state}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="State"
                         />
                       </div>
@@ -616,7 +616,7 @@ export default function AdmissionPage() {
                           value={formData.country}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Country"
                         />
                       </div>
@@ -632,7 +632,7 @@ export default function AdmissionPage() {
                           required
                           pattern="[0-9]{6}"
                           maxLength="6"
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="6-digit PIN"
                         />
                       </div>
@@ -646,7 +646,7 @@ export default function AdmissionPage() {
                     name="sameAsAbove"
                     checked={formData.sameAsAbove}
                     onChange={handleSameAddress}
-                    className="w-5 h-5 text-blue-600 border-2 border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
+                    className="w-5 h-5 border-2 text-gray-900 border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
                   />
                   <label className="text-sm font-medium text-gray-700">
                     Permanent address same as current address
@@ -669,7 +669,7 @@ export default function AdmissionPage() {
                           value={formData.permanentStreet}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="House no, building, street"
                         />
                       </div>
@@ -685,7 +685,7 @@ export default function AdmissionPage() {
                             value={formData.permanentCity}
                             onChange={handleInputChange}
                             required
-                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                            className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                             placeholder="City"
                           />
                         </div>
@@ -700,7 +700,7 @@ export default function AdmissionPage() {
                             value={formData.permanentState}
                             onChange={handleInputChange}
                             required
-                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                            className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                             placeholder="State"
                           />
                         </div>
@@ -717,7 +717,7 @@ export default function AdmissionPage() {
                             value={formData.permanentCountry}
                             onChange={handleInputChange}
                             required
-                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                            className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                             placeholder="Country"
                           />
                         </div>
@@ -733,7 +733,7 @@ export default function AdmissionPage() {
                             required
                             pattern="[0-9]{6}"
                             maxLength="6"
-                            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                            className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                             placeholder="6-digit PIN"
                           />
                         </div>
@@ -774,7 +774,7 @@ export default function AdmissionPage() {
                           value={formData.tenthBoard}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="e.g., CBSE, ICSE, State Board"
                         />
                       </div>
@@ -788,7 +788,7 @@ export default function AdmissionPage() {
                           value={formData.tenthSchool}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="School name"
                         />
                       </div>
@@ -808,7 +808,7 @@ export default function AdmissionPage() {
                           required
                           pattern="[0-9]{4}"
                           maxLength="4"
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="YYYY"
                         />
                       </div>
@@ -822,7 +822,7 @@ export default function AdmissionPage() {
                           value={formData.tenthPercentage}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="e.g., 85.5"
                         />
                       </div>
@@ -836,7 +836,7 @@ export default function AdmissionPage() {
                           value={formData.tenthRollNumber}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Roll number"
                         />
                       </div>
@@ -861,7 +861,7 @@ export default function AdmissionPage() {
                           value={formData.twelfthBoard}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="e.g., CBSE, ICSE, State Board"
                         />
                       </div>
@@ -875,7 +875,7 @@ export default function AdmissionPage() {
                           value={formData.twelfthSchool}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="School name"
                         />
                       </div>
@@ -895,7 +895,7 @@ export default function AdmissionPage() {
                           required
                           pattern="[0-9]{4}"
                           maxLength="4"
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="YYYY"
                         />
                       </div>
@@ -909,7 +909,7 @@ export default function AdmissionPage() {
                           value={formData.twelfthPercentage}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="e.g., 75.5"
                         />
                       </div>
@@ -923,7 +923,7 @@ export default function AdmissionPage() {
                           value={formData.twelfthRollNumber}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Roll number"
                         />
                       </div>
@@ -938,7 +938,7 @@ export default function AdmissionPage() {
                         value={formData.twelfthStream}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                        className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       >
                         <option value="">Select stream</option>
                         <option value="PCB">
@@ -961,7 +961,7 @@ export default function AdmissionPage() {
                           value={formData.physicsMarks}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Out of 100"
                         />
                       </div>
@@ -976,7 +976,7 @@ export default function AdmissionPage() {
                           value={formData.chemistryMarks}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Out of 100"
                         />
                       </div>
@@ -990,7 +990,7 @@ export default function AdmissionPage() {
                           value={formData.biologyMarks}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Out of 100"
                         />
                       </div>
@@ -1028,7 +1028,7 @@ export default function AdmissionPage() {
                         value={formData.courseApplied}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                        className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       >
                         <option value="">Select course</option>
                         {courses.map((course, index) => (
@@ -1046,7 +1046,7 @@ export default function AdmissionPage() {
                         name="secondPreference"
                         value={formData.secondPreference}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                        className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                       >
                         <option value="">Select course</option>
                         {courses.map((course, index) => (
@@ -1078,7 +1078,7 @@ export default function AdmissionPage() {
                           value={formData.fatherName}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Father's name"
                         />
                       </div>
@@ -1092,7 +1092,7 @@ export default function AdmissionPage() {
                           value={formData.fatherOccupation}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Occupation"
                         />
                       </div>
@@ -1108,7 +1108,7 @@ export default function AdmissionPage() {
                           required
                           pattern="[0-9]{10}"
                           maxLength="10"
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="10-digit number"
                         />
                       </div>
@@ -1127,7 +1127,7 @@ export default function AdmissionPage() {
                           value={formData.motherName}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Mother's name"
                         />
                       </div>
@@ -1141,7 +1141,7 @@ export default function AdmissionPage() {
                           value={formData.motherOccupation}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Occupation"
                         />
                       </div>
@@ -1157,7 +1157,7 @@ export default function AdmissionPage() {
                           required
                           pattern="[0-9]{10}"
                           maxLength="10"
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="10-digit number"
                         />
                       </div>
@@ -1174,7 +1174,7 @@ export default function AdmissionPage() {
                           name="guardianName"
                           value={formData.guardianName}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="Guardian name"
                         />
                       </div>
@@ -1187,7 +1187,7 @@ export default function AdmissionPage() {
                           name="guardianRelation"
                           value={formData.guardianRelation}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="e.g., Uncle, Aunt"
                         />
                       </div>
@@ -1202,7 +1202,7 @@ export default function AdmissionPage() {
                           onChange={handleInputChange}
                           pattern="[0-9]{10}"
                           maxLength="10"
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                           placeholder="10-digit number"
                         />
                       </div>
@@ -1220,7 +1220,7 @@ export default function AdmissionPage() {
                           value={formData.annualIncome}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                         >
                           <option value="">Select range</option>
                           <option value="Below 1 Lakh">Below ₹1 Lakh</option>
@@ -1241,7 +1241,7 @@ export default function AdmissionPage() {
                           value={formData.category}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                          className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                         >
                           <option value="">Select category</option>
                           <option value="General">General</option>
@@ -1281,7 +1281,7 @@ export default function AdmissionPage() {
                       onChange={handleInputChange}
                       required
                       accept=".jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       JPG/PNG, max 2MB
@@ -1298,7 +1298,7 @@ export default function AdmissionPage() {
                       onChange={handleInputChange}
                       required
                       accept=".jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       JPG/PNG, max 2MB
@@ -1315,7 +1315,7 @@ export default function AdmissionPage() {
                       onChange={handleInputChange}
                       required
                       accept=".pdf,.jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       PDF/JPG, max 2MB
@@ -1332,7 +1332,7 @@ export default function AdmissionPage() {
                       onChange={handleInputChange}
                       required
                       accept=".pdf,.jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       PDF/JPG, max 2MB
@@ -1350,7 +1350,7 @@ export default function AdmissionPage() {
                       onChange={handleInputChange}
                       required
                       accept=".pdf,.jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       PDF/JPG, max 2MB
@@ -1367,7 +1367,7 @@ export default function AdmissionPage() {
                       onChange={handleInputChange}
                       required
                       accept=".pdf,.jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       PDF/JPG, max 2MB
@@ -1383,7 +1383,7 @@ export default function AdmissionPage() {
                       name="incomeCertificate"
                       onChange={handleInputChange}
                       accept=".pdf,.jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       PDF/JPG, max 2MB (if applicable)
@@ -1399,7 +1399,7 @@ export default function AdmissionPage() {
                       name="categoryCertificate"
                       onChange={handleInputChange}
                       accept=".pdf,.jpg,.jpeg,.png"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
+                      className="w-full px-4 py-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all outline-none"
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       PDF/JPG, max 2MB (if applicable)
