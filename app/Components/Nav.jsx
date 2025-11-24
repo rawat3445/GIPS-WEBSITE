@@ -24,6 +24,18 @@ export default function Nav() {
   const navRef = useRef(null);
   const navItemsRef = useRef([]);
   const mobileMenuRef = useRef(null);
+  const closeTimeout = useRef(null);
+
+  const delayedClose = () => {
+    closeTimeout.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 200); // 200ms delay (perfect speed)
+  };
+
+  const cancelClose = () => {
+    if (closeTimeout.current) clearTimeout(closeTimeout.current);
+  };
+
 
   useEffect(() => {
     setMounted(true);
@@ -305,7 +317,7 @@ export default function Nav() {
                   alt="GIPS Logo"
                   width="60"
                   height="60"
-                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full object-cover"
+                  className="w-10 h-10 xs:w-12 xs:h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain"
                 />
                 <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-700">
                   GIPS
@@ -327,8 +339,11 @@ export default function Nav() {
                     <div className="relative">
                       <button
                         className={`flex items-center px-3 py-2 text-sm font-light text-gray-700 ${item.hoverColor} transition-colors rounded-md`}
-                        onMouseEnter={() => setActiveDropdown(index)}
-                        onMouseLeave={() => setActiveDropdown(null)}
+                        onMouseEnter={() => {
+                          cancelClose();
+                          setActiveDropdown(index);
+                        }}
+                        onMouseLeave={delayedClose}
                       >
                         {item.name}
                         <ChevronDown className="ml-1 w-4 h-4" />
@@ -336,8 +351,11 @@ export default function Nav() {
                       {activeDropdown === index && (
                         <div
                           className="absolute top-full left-0 mt-1 w-64 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50"
-                          onMouseEnter={() => setActiveDropdown(index)}
-                          onMouseLeave={() => setActiveDropdown(null)}
+                          onMouseEnter={() => {
+                            cancelClose();
+                            setActiveDropdown(index);
+                          }}
+                          onMouseLeave={delayedClose}
                         >
                           {item.dropdown.map((dropdownItem, dropIndex) => (
                             <a

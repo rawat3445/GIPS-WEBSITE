@@ -233,29 +233,27 @@ export default function Hero() {
         </div>
 
         {/* Content Overlay */}
-        <div className="relative z-20 flex flex-col mt-55 items-center justify-center h-full text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white m-6 drop-shadow-lg gap-1">
+        <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 pt-10 md:pt-0">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg leading-tight max-w-[90%]">
             <span ref={leftTextRef} className="inline-block">
               Garhwal Institute of{" "}
             </span>
-            <span
-              ref={rightTextRef}
-              className="text-cyan-300 inline-block ml-3"
-            >
+            <span ref={rightTextRef} className="text-cyan-300 inline-block">
               Paramedical Sciences
             </span>
           </h1>
           <p
             ref={paragraphRef}
-            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl"
+            className="text-sm sm:text-base md:text-xl text-gray-200 mb-6 max-w-[90%] leading-relaxed"
           >
             Empowering students with excellence in paramedical education,
             research, and clinical training.
           </p>
+          \
           <Link
             ref={buttonRef}
             href="/programs"
-            className="px-9 py-4 bg-cyan-500 hover:bg-cyan-600 text-white text-lg font-semibold rounded-full shadow-lg transition-all"
+            className="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white text-base sm:text-lg font-semibold rounded-full shadow-lg transition-all"
           >
             Explore Courses
           </Link>

@@ -35,7 +35,6 @@ export default function DepartmentsPage() {
         "Our Physiotherapy department focuses on rehabilitation and physical wellness through evidence-based treatment methods.",
       programs: [
         "Bachelor of Physiotherapy (BPT)",
-        "Post-Graduate Diploma in Physiotherapy",
         "Sports Physiotherapy Specialization",
       ],
       highlights: [
@@ -55,8 +54,7 @@ export default function DepartmentsPage() {
       description:
         "Advanced diagnostic imaging programs training professionals in modern radiological techniques and technology.",
       programs: [
-        "Diploma in Radiography",
-        "Bachelor of Radiography (BRT)",
+        "Bachelor of Medical Radiology & Imaging  (BMRIT)",
         "Advanced Imaging Technology Programs",
       ],
       highlights: [
@@ -76,7 +74,7 @@ export default function DepartmentsPage() {
       description:
         "Specialized training for skilled operation theatre professionals equipped to manage surgical environments.",
       programs: [
-        "Diploma in Operation Theatre Technology (DOTT)",
+        "Bachelor in Operation Theatre Technology (BOTT)",
         "Advanced Surgical Technology",
         "Infection Control & Sterilization Certification",
       ],
