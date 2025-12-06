@@ -1,3 +1,9 @@
+// CORRECT ✅
 export default function MorePage() {
-  return <div>{/* Your content */}</div>;
+  return (
+    <div>
+      <h1>More Content</h1>
+      {/* Your content here */}
+    </div>
+  );
 }
