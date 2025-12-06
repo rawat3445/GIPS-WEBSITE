@@ -2,13 +2,6 @@ import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
 import Admission from "@/models/Admission";
 import cloudinary from "@/lib/cloudinary";
-
-// ❌ REMOVE THIS - It's deprecated in Next.js 16
-// export const config = {
-//   api: { bodyParser: false },
-// };
-
-// ✅ Add this instead (optional but recommended)
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
