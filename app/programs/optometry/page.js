@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { Eye, Clock, Users, BookOpen, Briefcase, TrendingUp, Award, Calendar } from "lucide-react";
+import {
+  Eye,
+  Clock,
+  Users,
+  BookOpen,
+  Briefcase,
+  TrendingUp,
+  Award,
+  Calendar,
+} from "lucide-react";
 
 export default function optometryPage() {
   return (
@@ -22,10 +31,12 @@ export default function optometryPage() {
           </div>
 
           <p className="text-gray-700 text-lg leading-relaxed">
-            The Bachelor of Science in Optometry is a professional undergraduate allied 
-            healthcare program designed to prepare students for a rewarding career in vision 
-            care. This course equips students with in-depth knowledge of the human eye, vision 
-            disorders, and techniques for diagnosis, treatment, and management of eye conditions.
+            The Bachelor of Science in Optometry is a professional undergraduate
+            allied healthcare program designed to prepare students for a
+            rewarding career in vision care. This course equips students with
+            in-depth knowledge of the human eye, vision disorders, and
+            techniques for diagnosis, treatment, and management of eye
+            conditions.
           </p>
         </div>
 
@@ -67,33 +78,48 @@ export default function optometryPage() {
 
             <div className="space-y-6">
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-blue-800 mb-3">Eligibility Criteria</h3>
+                <h3 className="text-lg font-semibold text-blue-800 mb-3">
+                  Eligibility Criteria
+                </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-blue-600 rounded-full mt-0 flex-shrink-0"></span>
-                    <span><strong>Academic:</strong> Successful completion of 10+2 (Science Stream) with Physics, Chemistry, and Biology as core subjects</span>
+                    <span>
+                      <strong>Academic:</strong> Successful completion of 10+2
+                      (Science Stream) with Physics, Chemistry, and Biology as
+                      core subjects
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-blue-600 rounded-full mt-0 flex-shrink-0"></span>
-                    <span><strong>Minimum Score:</strong> 50% aggregate (45% for reserved categories)</span>
+                    <span>
+                      <strong>Minimum Score:</strong> 50% aggregate (45% for
+                      reserved categories)
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-blue-600 rounded-full mt-0 flex-shrink-0"></span>
-                    <span><strong>Age:</strong> 17 years at the time of admission</span>
+                    <span>
+                      <strong>Age:</strong> 17 years at the time of admission
+                    </span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-green-800 mb-3">Admission Process</h3>
+                <h3 className="text-lg font-semibold text-green-800 mb-3">
+                  Admission Process
+                </h3>
                 <p className="text-gray-700">
-                  Based on entrance examination/interview conducted by the institute or 
-                  after passing the qualifying examination.
+                  Based on entrance examination/interview conducted by the
+                  institute or after passing the qualifying examination.
                 </p>
               </div>
 
               <div className="bg-purple-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-purple-800 mb-3">Focus Areas</h3>
+                <h3 className="text-lg font-semibold text-purple-800 mb-3">
+                  Focus Areas
+                </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Anatomy and physiology (general & ocular)</li>
                   <li>• Optometric instrumentation</li>
@@ -114,32 +140,58 @@ export default function optometryPage() {
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Job Roles</h3>
+              <div className="bg-linear-to-rfrom-green-50 to-blue-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                  Job Roles
+                </h3>
                 <div className="grid grid-cols-1 gap-3">
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-green-700">Optometrist</span>
-                    <span className="text-sm text-gray-600 block">in hospitals and clinics (Govt. & Private)</span>
+                    <span className="font-medium text-green-700">
+                      Optometrist
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      in hospitals and clinics (Govt. & Private)
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-blue-700">Optical Retail Consultant</span>
-                    <span className="text-sm text-gray-600 block">in optical chains and retail stores</span>
+                    <span className="font-medium text-blue-700">
+                      Optical Retail Consultant
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      in optical chains and retail stores
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-purple-700">Contact Lens Specialist</span>
-                    <span className="text-sm text-gray-600 block">specialized contact lens practice</span>
+                    <span className="font-medium text-purple-700">
+                      Contact Lens Specialist
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      specialized contact lens practice
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-orange-700">Vision Researcher</span>
-                    <span className="text-sm text-gray-600 block">research institutions and labs</span>
+                    <span className="font-medium text-orange-700">
+                      Vision Researcher
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      research institutions and labs
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-red-700">Vision Therapist</span>
-                    <span className="text-sm text-gray-600 block">specialized vision therapy centers</span>
+                    <span className="font-medium text-red-700">
+                      Vision Therapist
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      specialized vision therapy centers
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-indigo-700">Low Vision Specialist</span>
-                    <span className="text-sm text-gray-600 block">rehabilitation centers</span>
+                    <span className="font-medium text-indigo-700">
+                      Low Vision Specialist
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      rehabilitation centers
+                    </span>
                   </div>
                 </div>
               </div>
@@ -151,7 +203,9 @@ export default function optometryPage() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Entry Level (0-2 years)</span>
+                    <span className="text-gray-700">
+                      Entry Level (0-2 years)
+                    </span>
                     <span className="font-bold text-green-600">₹2-4 LPA</span>
                   </div>
                   <div className="flex justify-between items-center">
@@ -159,8 +213,12 @@ export default function optometryPage() {
                     <span className="font-bold text-blue-600">₹4-6 LPA</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Senior Level (5+ years)</span>
-                    <span className="font-bold text-purple-600">₹6-10+ LPA</span>
+                    <span className="text-gray-700">
+                      Senior Level (5+ years)
+                    </span>
+                    <span className="font-bold text-purple-600">
+                      ₹6-10+ LPA
+                    </span>
                   </div>
                 </div>
               </div>
@@ -174,28 +232,37 @@ export default function optometryPage() {
             <TrendingUp className="w-6 h-6 text-green-600" />
             Industry Outlook
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl">
-              <h3 className="text-xl font-semibold text-blue-800 mb-4">Growing Market</h3>
+              <h3 className="text-xl font-semibold text-blue-800 mb-4">
+                Growing Market
+              </h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
-                  The Indian Spectacles Market is valued at $4.1 billion in 2024 and is projected to expand at a CAGR of 11.4% to reach $7.6 billion by 2030.
+                  The Indian Spectacles Market is valued at $4.1 billion in 2024
+                  and is projected to expand at a CAGR of 11.4% to reach $7.6
+                  billion by 2030.
                 </p>
                 <p className="text-gray-700">
-                  Over half of Indias  population requires vision correction, creating unprecedented demand for optometrists.
+                  Over half of Indias population requires vision correction,
+                  creating unprecedented demand for optometrists.
                 </p>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl">
-              <h3 className="text-xl font-semibold text-green-800 mb-4">Career Growth</h3>
+              <h3 className="text-xl font-semibold text-green-800 mb-4">
+                Career Growth
+              </h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
-                  Multiple specialization opportunities available in contact lenses, low vision, pediatric optometry, and more.
+                  Multiple specialization opportunities available in contact
+                  lenses, low vision, pediatric optometry, and more.
                 </p>
                 <p className="text-gray-700">
-                  Growing opportunities in telemedicine and digital eye care solutions.
+                  Growing opportunities in telemedicine and digital eye care
+                  solutions.
                 </p>
               </div>
             </div>
@@ -204,16 +271,21 @@ export default function optometryPage() {
 
         {/* About the Course */}
         <div className="bg-white shadow-xl rounded-2xl p-8 mt-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">About the Course</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+            About the Course
+          </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Students will learn to use advanced optical instruments, prescribe corrective 
-            lenses, and collaborate with ophthalmologists for surgical and medical care. 
-            The program combines theoretical knowledge with extensive practical training to 
-            ensure graduates are well-prepared for the dynamic field of vision care.
+            Students will learn to use advanced optical instruments, prescribe
+            corrective lenses, and collaborate with ophthalmologists for
+            surgical and medical care. The program combines theoretical
+            knowledge with extensive practical training to ensure graduates are
+            well-prepared for the dynamic field of vision care.
           </p>
-          
+
           <div className="bg-gray-50 p-6 rounded-xl">
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">What You will Learn</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">
+              What You will Learn
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ul className="space-y-2 text-gray-700">
                 <li>• Human eye anatomy and physiology</li>

@@ -136,7 +136,7 @@ export default function EventsSection() {
         {/* Section Title */}
         <div ref={titleRef} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-rfrom-teal-600 via-emerald-600 to-cyan-600 bg-clip-text text-transparent">
               Upcoming Events
             </span>
           </h2>
@@ -207,7 +207,7 @@ export default function EventsSection() {
 
         {/* View All Events Button */}
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all inline-flex items-center gap-2">
+          <button className="bg-linear-to-rfrom-teal-600 to-cyan-600 text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all inline-flex items-center gap-2">
             View All Events
             <svg
               className="w-5 h-5"

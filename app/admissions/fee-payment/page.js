@@ -151,7 +151,7 @@ export default function FeePayment() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-teal-50 to-blue-50 mt-0">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-600 via-teal-600 to-blue-600 text-white px-8 py-20">
+      <div className="bg-linear-to-rfrom-green-600 via-teal-600 to-blue-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <div className="bg-white/20 backdrop-blur-md p-4 rounded-full border border-white/30">
@@ -174,7 +174,7 @@ export default function FeePayment() {
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === tab
-                  ? "bg-gradient-to-r from-green-600 to-teal-600 text-white shadow-lg"
+                  ? "bg-linear-to-rfrom-green-600 to-teal-600 text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -243,7 +243,7 @@ export default function FeePayment() {
                   className="bg-white rounded-2xl shadow-xl overflow-hidden border"
                 >
                   <div
-                    className={`bg-gradient-to-r ${mode.color} text-white p-8 flex items-center`}
+                    className={`bg-linear-to-r${mode.color} text-white p-8 flex items-center`}
                   >
                     <Icon className="w-12 h-12 mr-6" />
                     <div>
@@ -254,7 +254,10 @@ export default function FeePayment() {
                   <div className="p-8 bg-gray-50">
                     <ul className="space-y-3">
                       {mode.details.map((d, idx) => (
-                        <li key={idx} className="flex items-start text-gray-700">
+                        <li
+                          key={idx}
+                          className="flex items-start text-gray-700"
+                        >
                           <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1" />
                           {d}
                         </li>
@@ -276,10 +279,10 @@ export default function FeePayment() {
             <div className="space-y-8">
               {steps.map((s, i) => (
                 <div key={i} className="flex items-start">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold text-2xl mr-6 flex-shrink-0">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center bg-linear-to-rfrom-blue-600 to-green-600 text-white font-bold text-2xl mr-6 flex-shrink-0">
                     {s.step}
                   </div>
-                  <div className="flex-1 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-6">
+                  <div className="flex-1 bg-linear-to-rfrom-blue-50 to-green-50 rounded-xl p-6">
                     <h4 className="text-2xl font-bold text-gray-800 mb-2">
                       {s.title}
                     </h4>
@@ -337,7 +340,7 @@ export default function FeePayment() {
               </span>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
+          <button className="bg-linear-to-rfrom-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
             Pay Now
           </button>
         </div>

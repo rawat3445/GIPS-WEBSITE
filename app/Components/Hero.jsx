@@ -524,7 +524,7 @@ export default function Hero() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-2.5 text-sm rounded-lg transition-all shadow-lg hover:shadow-xl mt-3"
+              className="w-full bg-linear-to-rfrom-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-2.5 text-sm rounded-lg transition-all shadow-lg hover:shadow-xl mt-3"
             >
               Submit Application
             </button>

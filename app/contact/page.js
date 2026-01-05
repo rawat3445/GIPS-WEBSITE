@@ -363,7 +363,7 @@ export default function ContactPage() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white hover:from-teal-700 hover:to-emerald-700 px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105 transform inline-flex items-center gap-3"
+                  className="bg-linear-to-rfrom-teal-600 to-emerald-600 text-white hover:from-teal-700 hover:to-emerald-700 px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:scale-105 transform inline-flex items-center gap-3"
                 >
                   <span>Send Message</span>
                   <svg
@@ -430,7 +430,7 @@ export default function ContactPage() {
                 href="https://maps.google.com/?q=Garhwal+Institute+of+Paramedical+Sciences"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                className="inline-flex items-center gap-3 bg-gradient-to-rfrom-teal-600 to-cyan-600 text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
               >
                 <svg
                   className="w-6 h-6"
@@ -451,7 +451,7 @@ export default function ContactPage() {
           </div>
         </section>
         {/* TEAM SECTION */}
-        <section className="py-20 bg-gradient-to-br from-teal-50 via-cyan-50 to-emerald-50">
+        <section className="py-20 bg-linear-to-br from-teal-50 via-cyan-50 to-emerald-50">
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
               <span className="gradient-text">Meet Our Team</span>
@@ -462,7 +462,7 @@ export default function ContactPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all text-center border-2 border-teal-100">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center shadow-lg text-5xl">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-linear-to-br from-teal-400 to-cyan-500 flex items-center justify-center shadow-lg text-5xl">
                   👨‍⚕️
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
@@ -477,7 +477,7 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all text-center border-2 border-emerald-100">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow-lg text-5xl">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-linear-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow-lg text-5xl">
                   🎓
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
@@ -509,7 +509,7 @@ export default function ContactPage() {
           </div>
         </section>
         {/* CTA SECTION */}
-        <section className="py-20 text-center bg-gradient-to-r from-teal-700 via-emerald-700 to-cyan-700 text-white relative overflow-hidden">
+        <section className="py-20 text-center bg-gradient-to-rfrom-teal-700 via-emerald-700 to-cyan-700 text-white relative overflow-hidden">
           <div className="relative z-10 max-w-4xl mx-auto px-6">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg">
               Stay Connected with GIPS

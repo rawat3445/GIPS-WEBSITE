@@ -1,6 +1,17 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
-import { Zap, Clock, Users, BookOpen, Briefcase, TrendingUp, Award, Calendar, Monitor, Shield } from "lucide-react";
+import {
+  Zap,
+  Clock,
+  Users,
+  BookOpen,
+  Briefcase,
+  TrendingUp,
+  Award,
+  Calendar,
+  Monitor,
+  Shield,
+} from "lucide-react";
 
 export default function BmritPage() {
   return (
@@ -23,11 +34,13 @@ export default function BmritPage() {
           </div>
 
           <p className="text-gray-700 text-lg leading-relaxed">
-            The Bachelor in Medical Radiology & Imaging Technology (BMRIT) is an undergraduate 
-            program designed to train students in the advanced techniques of medical imaging and 
-            radiographic procedures. This course equips students with the knowledge and technical 
-            expertise required to operate imaging equipment such as X-ray, MRI, CT scan, and ultrasound, 
-            assisting in accurate diagnosis and treatment planning.
+            The Bachelor in Medical Radiology & Imaging Technology (BMRIT) is an
+            undergraduate program designed to train students in the advanced
+            techniques of medical imaging and radiographic procedures. This
+            course equips students with the knowledge and technical expertise
+            required to operate imaging equipment such as X-ray, MRI, CT scan,
+            and ultrasound, assisting in accurate diagnosis and treatment
+            planning.
           </p>
         </div>
 
@@ -69,31 +82,54 @@ export default function BmritPage() {
 
             <div className="space-y-6">
               <div className="bg-purple-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-purple-800 mb-3">Course Duration</h3>
+                <h3 className="text-lg font-semibold text-purple-800 mb-3">
+                  Course Duration
+                </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-purple-600 rounded-full mt-0 flex-shrink-0"></span>
-                    <span><strong>Duration:</strong> 3 Years + 1 Year Internship</span>
+                    <span>
+                      <strong>Duration:</strong> 3 Years + 1 Year Internship
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-purple-600 rounded-full mt-0 flex-shrink-0"></span>
-                    <span><strong>Eligibility:</strong> 10+2 (Science Stream – PCB/PCM) or equivalent from a recognized board</span>
+                    <span>
+                      <strong>Eligibility:</strong> 10+2 (Science Stream –
+                      PCB/PCM) or equivalent from a recognized board
+                    </span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-blue-800 mb-3">Course Highlights</h3>
+                <h3 className="text-lg font-semibold text-blue-800 mb-3">
+                  Course Highlights
+                </h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• In-depth training in X-ray, CT scan, MRI, Ultrasound, Mammography, and Fluoroscopy</li>
-                  <li>• Practical exposure through clinical training and internships in reputed diagnostic centers and hospitals</li>
-                  <li>• Emphasis on radiation safety, imaging techniques, and patient positioning</li>
-                  <li>• Hands-on experience with modern diagnostic imaging equipment</li>
+                  <li>
+                    • In-depth training in X-ray, CT scan, MRI, Ultrasound,
+                    Mammography, and Fluoroscopy
+                  </li>
+                  <li>
+                    • Practical exposure through clinical training and
+                    internships in reputed diagnostic centers and hospitals
+                  </li>
+                  <li>
+                    • Emphasis on radiation safety, imaging techniques, and
+                    patient positioning
+                  </li>
+                  <li>
+                    • Hands-on experience with modern diagnostic imaging
+                    equipment
+                  </li>
                 </ul>
               </div>
 
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-green-800 mb-3">Job Roles</h3>
+                <h3 className="text-lg font-semibold text-green-800 mb-3">
+                  Job Roles
+                </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Radiology Technician</li>
                   <li>• MRI/CT Scan Technologist</li>
@@ -113,28 +149,48 @@ export default function BmritPage() {
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Work Environments</h3>
+              <div className="bg-linear-to-rfrom-blue-50 to-purple-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                  Work Environments
+                </h3>
                 <div className="grid grid-cols-1 gap-3">
                   <div className="bg-white p-3 rounded-lg shadow-sm">
                     <span className="font-medium text-blue-700">Hospitals</span>
-                    <span className="text-sm text-gray-600 block">(Government & Private)</span>
+                    <span className="text-sm text-gray-600 block">
+                      (Government & Private)
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-green-700">Diagnostic & Imaging Centers</span>
-                    <span className="text-sm text-gray-600 block">standalone imaging facilities</span>
+                    <span className="font-medium text-green-700">
+                      Diagnostic & Imaging Centers
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      standalone imaging facilities
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-purple-700">Cancer Treatment Centers</span>
-                    <span className="text-sm text-gray-600 block">oncology imaging specialists</span>
+                    <span className="font-medium text-purple-700">
+                      Cancer Treatment Centers
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      oncology imaging specialists
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-orange-700">Research Institutes</span>
-                    <span className="text-sm text-gray-600 block">medical imaging research</span>
+                    <span className="font-medium text-orange-700">
+                      Research Institutes
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      medical imaging research
+                    </span>
                   </div>
                   <div className="bg-white p-3 rounded-lg shadow-sm">
-                    <span className="font-medium text-red-700">Radiology Equipment Companies</span>
-                    <span className="text-sm text-gray-600 block">technical support and sales</span>
+                    <span className="font-medium text-red-700">
+                      Radiology Equipment Companies
+                    </span>
+                    <span className="text-sm text-gray-600 block">
+                      technical support and sales
+                    </span>
                   </div>
                 </div>
               </div>
@@ -146,7 +202,9 @@ export default function BmritPage() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Entry Level (0-2 years)</span>
+                    <span className="text-gray-700">
+                      Entry Level (0-2 years)
+                    </span>
                     <span className="font-bold text-green-600">₹2-4.5 LPA</span>
                   </div>
                   <div className="flex justify-between items-center">
@@ -154,7 +212,9 @@ export default function BmritPage() {
                     <span className="font-bold text-blue-600">₹3-6 LPA</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Senior Level (5+ years)</span>
+                    <span className="text-gray-700">
+                      Senior Level (5+ years)
+                    </span>
                     <span className="font-bold text-purple-600">₹4-20 LPA</span>
                   </div>
                   <div className="flex justify-between items-center">
@@ -163,15 +223,19 @@ export default function BmritPage() {
                   </div>
                 </div>
                 <p className="text-xs text-gray-600 mt-0">
-                  *Salaries vary based on location, experience, and specialization
+                  *Salaries vary based on location, experience, and
+                  specialization
                 </p>
               </div>
 
               <div className="bg-indigo-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-indigo-800 mb-2">Growth Opportunities</h4>
+                <h4 className="font-semibold text-indigo-800 mb-2">
+                  Growth Opportunities
+                </h4>
                 <p className="text-sm text-gray-700">
-                  Opportunities for specialization in advanced imaging techniques, 
-                  leadership roles, and potential for international career prospects.
+                  Opportunities for specialization in advanced imaging
+                  techniques, leadership roles, and potential for international
+                  career prospects.
                 </p>
               </div>
             </div>
@@ -184,28 +248,38 @@ export default function BmritPage() {
             <TrendingUp className="w-6 h-6 text-green-600" />
             Industry Outlook & Market Growth
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl">
-              <h3 className="text-xl font-semibold text-purple-800 mb-4">Expanding Market</h3>
+              <h3 className="text-xl font-semibold text-purple-800 mb-4">
+                Expanding Market
+              </h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
-                  India  medical imaging market reached USD 1,454.5 Million in 2024 and is expected to reach USD 2,181.8 Million by 2033, exhibiting a growth rate of 4.61%
+                  India medical imaging market reached USD 1,454.5 Million in
+                  2024 and is expected to reach USD 2,181.8 Million by 2033,
+                  exhibiting a growth rate of 4.61%
                 </p>
                 <p className="text-gray-700">
-                  The diagnostic imaging market was valued at USD 845.91 Million in 2024 and is anticipated to grow with a CAGR of 8.28% through 2030
+                  The diagnostic imaging market was valued at USD 845.91 Million
+                  in 2024 and is anticipated to grow with a CAGR of 8.28%
+                  through 2030
                 </p>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl">
-              <h3 className="text-xl font-semibold text-green-800 mb-4">Technology Advancement</h3>
+              <h3 className="text-xl font-semibold text-green-800 mb-4">
+                Technology Advancement
+              </h3>
               <div className="space-y-3">
                 <p className="text-gray-700">
-                  Ultrasound was the largest segment with a revenue share of 30.44% in 2024, followed by MRI and CT scan technologies
+                  Ultrasound was the largest segment with a revenue share of
+                  30.44% in 2024, followed by MRI and CT scan technologies
                 </p>
                 <p className="text-gray-700">
-                  Asia Pacific dominated the market with USD 16.18 billion in 2024, with India being a key contributor
+                  Asia Pacific dominated the market with USD 16.18 billion in
+                  2024, with India being a key contributor
                 </p>
               </div>
             </div>
@@ -221,10 +295,14 @@ export default function BmritPage() {
             <div className="bg-orange-50 p-4 rounded-lg text-center">
               <h4 className="font-semibold text-orange-800">Job Security</h4>
               <p className="text-lg font-bold text-orange-600 mt-0">High</p>
-              <p className="text-sm text-gray-600">Essential healthcare service</p>
+              <p className="text-sm text-gray-600">
+                Essential healthcare service
+              </p>
             </div>
             <div className="bg-teal-50 p-4 rounded-lg text-center">
-              <h4 className="font-semibold text-teal-800">Career Flexibility</h4>
+              <h4 className="font-semibold text-teal-800">
+                Career Flexibility
+              </h4>
               <p className="text-lg font-bold text-teal-600 mt-0">Excellent</p>
               <p className="text-sm text-gray-600">Multiple specializations</p>
             </div>
@@ -233,14 +311,18 @@ export default function BmritPage() {
 
         {/* About the Course */}
         <div className="bg-white shadow-xl rounded-2xl p-8 mt-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">About the Course</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+            About the Course
+          </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Students will learn to operate advanced imaging equipment, ensure radiation safety protocols, 
-            and collaborate with radiologists and medical professionals for accurate diagnosis. The program 
-            emphasizes both theoretical knowledge and extensive practical training to prepare graduates 
-            for the rapidly evolving field of medical imaging technology.
+            Students will learn to operate advanced imaging equipment, ensure
+            radiation safety protocols, and collaborate with radiologists and
+            medical professionals for accurate diagnosis. The program emphasizes
+            both theoretical knowledge and extensive practical training to
+            prepare graduates for the rapidly evolving field of medical imaging
+            technology.
           </p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gray-50 p-6 rounded-xl">
               <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
@@ -254,7 +336,7 @@ export default function BmritPage() {
                 <li>• Ultrasound Technology</li>
               </ul>
             </div>
-            
+
             <div className="bg-purple-50 p-6 rounded-xl">
               <h3 className="text-lg font-semibold text-purple-800 mb-3 flex items-center gap-2">
                 <Shield className="w-5 h-5 text-purple-600" />
@@ -267,7 +349,7 @@ export default function BmritPage() {
                 <li>• Image Quality Assessment</li>
               </ul>
             </div>
-            
+
             <div className="bg-blue-50 p-6 rounded-xl">
               <h3 className="text-lg font-semibold text-blue-800 mb-3 flex items-center gap-2">
                 <Monitor className="w-5 h-5 text-blue-600" />
@@ -281,42 +363,59 @@ export default function BmritPage() {
               </ul>
             </div>
           </div>
-          
-          <div className="mt-6 bg-gradient-to-r from-purple-100 to-blue-100 p-6 rounded-xl">
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">Clinical Training & Internship</h3>
+
+          <div className="mt-6 bg-linear-to-rfrom-purple-100 to-blue-100 p-6 rounded-xl">
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">
+              Clinical Training & Internship
+            </h3>
             <p className="text-gray-700 leading-relaxed">
-              The one-year mandatory internship provides extensive hands-on experience in various 
-              diagnostic imaging departments. Students work with state-of-the-art equipment in 
-              hospitals and imaging centers, developing practical skills in patient care, 
-              equipment operation, and collaboration with healthcare teams.
+              The one-year mandatory internship provides extensive hands-on
+              experience in various diagnostic imaging departments. Students
+              work with state-of-the-art equipment in hospitals and imaging
+              centers, developing practical skills in patient care, equipment
+              operation, and collaboration with healthcare teams.
             </p>
           </div>
         </div>
 
         {/* Why Choose BMRIT */}
         <div className="bg-white shadow-xl rounded-2xl p-8 mt-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Why Choose BMRIT?</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+            Why Choose BMRIT?
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="bg-purple-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">High-Tech Healthcare Field</h3>
-                  <p className="text-gray-600">Work with cutting-edge medical imaging technology</p>
+                  <h3 className="font-semibold text-gray-800">
+                    High-Tech Healthcare Field
+                  </h3>
+                  <p className="text-gray-600">
+                    Work with cutting-edge medical imaging technology
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="bg-blue-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">Critical Healthcare Role</h3>
-                  <p className="text-gray-600">Essential for accurate medical diagnosis and treatment</p>
+                  <h3 className="font-semibold text-gray-800">
+                    Critical Healthcare Role
+                  </h3>
+                  <p className="text-gray-600">
+                    Essential for accurate medical diagnosis and treatment
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="bg-green-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">Growing Job Market</h3>
-                  <p className="text-gray-600">Increasing demand for skilled imaging technologists</p>
+                  <h3 className="font-semibold text-gray-800">
+                    Growing Job Market
+                  </h3>
+                  <p className="text-gray-600">
+                    Increasing demand for skilled imaging technologists
+                  </p>
                 </div>
               </div>
             </div>
@@ -324,22 +423,32 @@ export default function BmritPage() {
               <div className="flex items-start gap-3">
                 <div className="bg-orange-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">Specialization Opportunities</h3>
-                  <p className="text-gray-600">Multiple career paths in different imaging modalities</p>
+                  <h3 className="font-semibold text-gray-800">
+                    Specialization Opportunities
+                  </h3>
+                  <p className="text-gray-600">
+                    Multiple career paths in different imaging modalities
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="bg-red-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
                   <h3 className="font-semibold text-gray-800">Stable Career</h3>
-                  <p className="text-gray-600">Essential healthcare service with job security</p>
+                  <p className="text-gray-600">
+                    Essential healthcare service with job security
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="bg-teal-600 w-3 h-3 rounded-full mt-0 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">Continuous Innovation</h3>
-                  <p className="text-gray-600">Constantly evolving field with new technologies</p>
+                  <h3 className="font-semibold text-gray-800">
+                    Continuous Innovation
+                  </h3>
+                  <p className="text-gray-600">
+                    Constantly evolving field with new technologies
+                  </p>
                 </div>
               </div>
             </div>

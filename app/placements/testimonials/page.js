@@ -6,7 +6,7 @@ export default function TestimonialsPage() {
   return (
     <main className="bg-gradient-to-br from-rose-50 via-amber-50 to-orange-50 text-gray-800">
       {/* ==================== HERO SECTION ==================== */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-orange-600 via-rose-600 to-amber-500">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-linear-to-rfrom-orange-600 via-rose-600 to-amber-500">
         <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_top_left,_#fff_0%,_transparent_60%)]"></div>
 
         <div className="relative z-10 text-center text-white px-6 max-w-3xl mx-auto">
@@ -14,7 +14,8 @@ export default function TestimonialsPage() {
             Voices of GIPS
           </h1>
           <p className="text-lg md:text-2xl font-light text-amber-100 mb-10">
-            Real experiences from students and alumni who’ve walked the GIPS journey
+            Real experiences from students and alumni who’ve walked the GIPS
+            journey
           </p>
         </div>
 
@@ -37,9 +38,10 @@ export default function TestimonialsPage() {
             What Our Students & Alumni Say
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            At Garhwal Institute of Paramedical Sciences, our students are our pride.
-            Their testimonials reflect our commitment to academic excellence, clinical training,
-            and a culture of compassion that defines GIPS.
+            At Garhwal Institute of Paramedical Sciences, our students are our
+            pride. Their testimonials reflect our commitment to academic
+            excellence, clinical training, and a culture of compassion that
+            defines GIPS.
           </p>
         </div>
       </section>
@@ -155,7 +157,7 @@ export default function TestimonialsPage() {
             ].map((a, i) => (
               <div
                 key={i}
-                className="bg-gradient-to-r from-amber-50 to-rose-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-all border border-amber-100"
+                className="bg-linear-to-rfrom-amber-50 to-rose-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-all border border-amber-100"
               >
                 <p className="text-gray-700 italic mb-4">“{a.message}”</p>
                 <h4 className="font-bold text-orange-700">{a.name}</h4>
@@ -167,15 +169,16 @@ export default function TestimonialsPage() {
       </section>
 
       {/* ==================== JOIN SECTION ==================== */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 via-rose-600 to-amber-500 text-white text-center">
+      <section className="py-20 bg-linear-to-rfrom-orange-600 via-rose-600 to-amber-500 text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <Heart className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-4xl font-bold mb-6">
             Be Part of Our Growing Family
           </h2>
           <p className="text-lg mb-8 text-amber-100">
-            Your story can inspire future generations of healthcare professionals.
-            Share your experience and stay connected with the GIPS alumni network.
+            Your story can inspire future generations of healthcare
+            professionals. Share your experience and stay connected with the
+            GIPS alumni network.
           </p>
           <button className="bg-white text-rose-600 font-semibold px-8 py-4 rounded-full shadow-md hover:bg-amber-50 transition-all">
             Share Your Testimonial

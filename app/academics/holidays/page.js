@@ -341,7 +341,7 @@ export default function Holidays() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 mt-0">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-orange-600 via-pink-600 to-purple-600 text-white px-8 py-16">
+      <div className="bg-linear-to-rfrom-orange-600 via-pink-600 to-purple-600 text-white px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center mb-6">
             <div className=" p-4 rounded-full backdrop-blur-sm animate-bounce">
@@ -370,7 +370,7 @@ export default function Holidays() {
           {holidayCategories.map((category) => (
             <div
               key={category.id}
-              className={`bg-gradient-to-r ${category.color} rounded-2xl shadow-xl p-8 text-white transform hover:scale-105 transition-all`}
+              className={`bg-linear-to-r${category.color} rounded-2xl shadow-xl p-8 text-white transform hover:scale-105 transition-all`}
             >
               <div className="text-5xl mb-4">{category.icon}</div>
               <h3 className="text-2xl font-bold mb-2">{category.name}</h3>
@@ -452,7 +452,7 @@ export default function Holidays() {
                 onClick={() => setFilterType("all")}
                 className={`px-6 py-3 rounded-full font-semibold transition-all ${
                   filterType === "all"
-                    ? "bg-gradient-to-r from-orange-600 to-pink-600 text-white shadow-lg"
+                    ? "bg-linear-to-rfrom-orange-600 to-pink-600 text-white shadow-lg"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -464,7 +464,7 @@ export default function Holidays() {
                   onClick={() => setFilterType(category.id)}
                   className={`px-6 py-3 rounded-full font-semibold transition-all ${
                     filterType === category.id
-                      ? `bg-gradient-to-r ${category.color} text-white shadow-lg`
+                      ? `bg-linear-to-r${category.color} text-white shadow-lg`
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
@@ -527,7 +527,7 @@ export default function Holidays() {
                   style={{ borderLeftColor: `var(--${holiday.type}-color)` }}
                 >
                   <div
-                    className={`bg-gradient-to-r ${getCategoryColor(
+                    className={`bg-linear-to-r${getCategoryColor(
                       holiday.type
                     )} w-14 h-14 rounded-full flex items-center justify-center text-3xl mb-4`}
                   >
@@ -560,7 +560,7 @@ export default function Holidays() {
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-gradient-to-r from-orange-600 to-pink-600 text-white">
+                  <tr className="bg-linear-to-rfrom-orange-600 to-pink-600 text-white">
                     <th className="px-6 py-4 text-left text-lg font-semibold">
                       Date
                     </th>
@@ -595,7 +595,7 @@ export default function Holidays() {
                       </td>
                       <td className="px-6 py-4">
                         <span
-                          className={`px-3 py-1 rounded-full text-sm font-semibold text-white bg-gradient-to-r ${getCategoryColor(
+                          className={`px-3 py-1 rounded-full text-sm font-semibold text-white bg-linear-to-r${getCategoryColor(
                             holiday.type
                           )}`}
                         >
@@ -614,7 +614,7 @@ export default function Holidays() {
         </div>
 
         {/* Important Information */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 mb-8 text-white">
+        <div className="bg-linear-to-rfrom-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 mb-8 text-white">
           <div className="flex items-center mb-6">
             <Info className="w-8 h-8 mr-3" />
             <h2 className="text-3xl font-bold">Important Information</h2>
@@ -653,7 +653,7 @@ export default function Holidays() {
 
         {/* Download Section - UPDATED WITH DOWNLOAD FUNCTIONALITY */}
         <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
-          <div className="bg-gradient-to-r from-orange-100 to-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="bg-linear-to-rfrom-orange-100 to-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
             <Download className="w-10 h-10 text-orange-600" />
           </div>
           <h3 className="text-2xl font-bold text-gray-800 mb-4">
@@ -664,7 +664,7 @@ export default function Holidays() {
           </p>
           <button
             onClick={handleDownload}
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl hover:scale-105 transition-all transform"
+            className="inline-flex items-center gap-3 bg-linear-to-rfrom-orange-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl hover:scale-105 transition-all transform"
           >
             <Download className="w-6 h-6" />
             Download Calendar

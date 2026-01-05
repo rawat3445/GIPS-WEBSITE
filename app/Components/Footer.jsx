@@ -68,12 +68,12 @@ export default function Footer() {
             </li>
             <li>
               Mob:{" "}
-              <a href="tel:+918273968106" className="hover:text-white">
-                8273968106
+              <a href="tel:+917454998289" className="hover:text-white">
+                7454998289
               </a>
             </li>
           </ul>
-        </div>       
+        </div>
         {/* Social / Follow */}
         <div>
           <h3 className="text-md font-semibold mb-3 text-white">Follow Us</h3>

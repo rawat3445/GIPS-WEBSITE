@@ -126,7 +126,8 @@ export default function AboutPage() {
     {
       icon: GraduationCap,
       title: "Modern Education",
-      description: "State-of-the-art curriculum aligned with industry standards",
+      description:
+        "State-of-the-art curriculum aligned with industry standards",
     },
     {
       icon: Stethoscope,
@@ -148,7 +149,7 @@ export default function AboutPage() {
   return (
     <main className="bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 text-gray-800 min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-cyan-100 via-blue-100 to-purple-100 py-20 px-6 text-center">
+      <section className="relative overflow-hidden bg-linear-to-rfrom-cyan-100 via-blue-100 to-purple-100 py-20 px-6 text-center">
         {/* Animated background elements */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 blur-3xl" />
         <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-200 rounded-full opacity-20 blur-3xl" />
@@ -159,14 +160,11 @@ export default function AboutPage() {
           transition={{ duration: 0.8 }}
           className="relative z-10"
         >
-          <motion.div
-            animate={floatingAnimation}
-            className="inline-block mb-6"
-          >
+          <motion.div animate={floatingAnimation} className="inline-block mb-6">
             <BookOpen className="w-16 h-16 text-blue-600 mx-auto" />
           </motion.div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-linear-to-rfrom-blue-600 via-purple-600 to-pink-600 mb-6">
             About Garhwal Institute of Paramedical Sciences
           </h1>
 
@@ -178,9 +176,9 @@ export default function AboutPage() {
           >
             Garhwal Institute of Paramedical Sciences (GIPS) is a premier
             institution dedicated to excellence in paramedical education and
-            healthcare training. Since its establishment, GIPS has been committed
-            to nurturing skilled healthcare professionals who combine academic
-            excellence with a human touch.
+            healthcare training. Since its establishment, GIPS has been
+            committed to nurturing skilled healthcare professionals who combine
+            academic excellence with a human touch.
           </motion.p>
 
           {/* Decorative dots */}
@@ -266,9 +264,7 @@ export default function AboutPage() {
                   </div>
 
                   {/* Corner accent */}
-                  <motion.div
-                    className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-white/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"
-                  />
+                  <motion.div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-white/50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
                 </motion.div>
               </Link>
             </motion.div>
@@ -277,7 +273,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose GIPS Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 py-20 text-center overflow-hidden">
+      <section className="relative bg-linear-to-rfrom-blue-600 via-purple-600 to-pink-600 py-20 text-center overflow-hidden">
         {/* Animated background circles */}
         <motion.div
           className="absolute top-0 left-1/4 w-64 h-64 bg-white rounded-full opacity-10"
@@ -316,8 +312,9 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-12">
-              With a legacy of excellence, GIPS combines modern education, expert
-              faculty, and hands-on training to shape healthcare leaders of tomorrow.
+              With a legacy of excellence, GIPS combines modern education,
+              expert faculty, and hands-on training to shape healthcare leaders
+              of tomorrow.
             </p>
           </motion.div>
 
@@ -376,7 +373,7 @@ export default function AboutPage() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               href="/admissions"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-linear-to-rfrom-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <span>Apply Now</span>
               <ArrowRight className="w-5 h-5" />

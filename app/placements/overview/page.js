@@ -5,7 +5,7 @@ export default function PlacementOverview() {
   return (
     <main className="bg-gray-50 text-gray-800 ">
       {/* ==================== HERO SECTION ==================== */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-indigo-700 via-purple-600 to-blue-600">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-linear-to-rfrom-indigo-700 via-purple-600 to-blue-600">
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,_#ffffff_0%,_transparent_60%)]"></div>
 
         <div className="relative z-10 text-center text-white px-6 max-w-3xl mx-auto">
@@ -130,7 +130,7 @@ export default function PlacementOverview() {
       </section>
 
       {/* ==================== TRAINING & DEVELOPMENT ==================== */}
-      <section className="py-20 bg-gradient-to-r from-indigo-700 via-purple-600 to-blue-600 text-white">
+      <section className="py-20 bg-linear-to-rfrom-indigo-700 via-purple-600 to-blue-600 text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8">Training & Development</h2>
           <p className="text-lg mb-10 max-w-3xl mx-auto text-indigo-100">
@@ -198,7 +198,7 @@ export default function PlacementOverview() {
       </section>
 
       {/* ==================== CALL TO ACTION ==================== */}
-      <section className="py-20 bg-gradient-to-r from-purple-700 to-blue-700 text-white text-center">
+      <section className="py-20 bg-linear-to-rfrom-purple-700 to-blue-700 text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-6">
             Begin Your Career Journey with GIPS

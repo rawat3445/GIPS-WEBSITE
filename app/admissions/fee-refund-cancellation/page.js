@@ -113,14 +113,16 @@ export default function FeeRefund() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-teal-50 to-blue-50 mt-0">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-600 via-teal-600 to-blue-600 text-white px-8 py-20">
+      <div className="bg-linear-to-rfrom-green-600 via-teal-600 to-blue-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <div className="bg-white/20 backdrop-blur-md p-4 rounded-full border border-white/30">
               <FileText className="w-16 h-16" />
             </div>
           </div>
-          <h1 className="text-6xl font-bold mb-6">Fee Refund & Cancellation Policy</h1>
+          <h1 className="text-6xl font-bold mb-6">
+            Fee Refund & Cancellation Policy
+          </h1>
           <p className="text-2xl text-green-100 max-w-3xl mx-auto leading-relaxed">
             Clear, Transparent & Student-Friendly Refund Guidelines at GIPS
           </p>
@@ -136,7 +138,7 @@ export default function FeeRefund() {
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === tab
-                  ? "bg-gradient-to-r from-green-600 to-teal-600 text-white shadow-lg"
+                  ? "bg-linear-to-rfrom-green-600 to-teal-600 text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -155,15 +157,17 @@ export default function FeeRefund() {
                 GIPS Fee Refund & Cancellation Policy
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Garhwal Institute of Paramedical Sciences (GIPS) ensures that all refund and
-                cancellation requests are handled transparently in accordance with institutional
-                policies. Students are advised to carefully read and understand the guidelines
-                before making payments.
+                Garhwal Institute of Paramedical Sciences (GIPS) ensures that
+                all refund and cancellation requests are handled transparently
+                in accordance with institutional policies. Students are advised
+                to carefully read and understand the guidelines before making
+                payments.
               </p>
               <div className="bg-green-50 border-l-4 border-green-600 p-5 rounded-lg mt-6">
                 <AlertCircle className="w-5 h-5 text-green-600 inline mr-2" />
                 <span className="text-gray-700">
-                  <strong>Note:</strong> Admission fees are <b>strictly non-refundable</b> once paid.
+                  <strong>Note:</strong> Admission fees are{" "}
+                  <b>strictly non-refundable</b> once paid.
                 </span>
               </div>
             </div>
@@ -178,7 +182,7 @@ export default function FeeRefund() {
                     className="bg-white shadow-md p-6 rounded-xl border-t-4 border-green-500 hover:shadow-lg transition-all"
                   >
                     <div
-                      className={`flex items-center mb-4 bg-gradient-to-r ${rule.color} text-white px-4 py-2 rounded-lg`}
+                      className={`flex items-center mb-4 bg-linear-to-r${rule.color} text-white px-4 py-2 rounded-lg`}
                     >
                       <Icon className="w-6 h-6 mr-3" />
                       <h3 className="text-xl font-bold">{rule.title}</h3>
@@ -200,11 +204,13 @@ export default function FeeRefund() {
             <div className="space-y-8">
               {processSteps.map((s, i) => (
                 <div key={i} className="flex items-start">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold text-2xl mr-6 flex-shrink-0">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center bg-linear-to-rfrom-blue-600 to-green-600 text-white font-bold text-2xl mr-6 flex-shrink-0">
                     {s.step}
                   </div>
-                  <div className="flex-1 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-6">
-                    <h4 className="text-2xl font-bold text-gray-800 mb-2">{s.title}</h4>
+                  <div className="flex-1 bg-linear-to-rfrom-blue-50 to-green-50 rounded-xl p-6">
+                    <h4 className="text-2xl font-bold text-gray-800 mb-2">
+                      {s.title}
+                    </h4>
                     <p className="text-gray-700 text-lg">{s.description}</p>
                   </div>
                 </div>
@@ -213,7 +219,9 @@ export default function FeeRefund() {
 
             {/* Cancellation Notes */}
             <div className="mt-10 bg-red-50 border-l-4 border-red-600 p-6 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-800 mb-3">Cancellation Guidelines</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                Cancellation Guidelines
+              </h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
                 {cancellationPoints.map((point, i) => (
                   <li key={i}>{point}</li>
@@ -252,7 +260,8 @@ export default function FeeRefund() {
             Need Help with Refund or Cancellation?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            For any refund-related assistance, please reach out to the Accounts Department.
+            For any refund-related assistance, please reach out to the Accounts
+            Department.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="flex items-center bg-green-50 rounded-lg px-6 py-3">
@@ -262,7 +271,7 @@ export default function FeeRefund() {
               </span>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
+          <button className="bg-linear-to-rfrom-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105">
             Apply for Refund
           </button>
         </div>

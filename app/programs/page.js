@@ -63,7 +63,7 @@ export default function Programs() {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* BPT Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
+            <div className="bg-linear-to-rfrom-green-500 to-emerald-600 p-6">
               <div className="flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Activity className="w-8 h-8" />
@@ -150,7 +150,7 @@ export default function Programs() {
 
           {/* B.Optom Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6">
+            <div className="bg-linear-to-rfrom-blue-500 to-indigo-600 p-6">
               <div className="flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Eye className="w-8 h-8" />
@@ -234,7 +234,7 @@ export default function Programs() {
 
           {/* BMRIT Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-purple-500 to-indigo-600 p-6">
+            <div className="bg-linear-to-rfrom-purple-500 to-indigo-600 p-6">
               <div className="flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Monitor className="w-8 h-8" />
@@ -320,7 +320,7 @@ export default function Programs() {
 
           {/* BOTT Program */}
           <div className="bg-white shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="bg-gradient-to-r from-teal-500 to-cyan-600 p-6">
+            <div className="bg-linear-to-rfrom-teal-500 to-cyan-600 p-6">
               <div className="flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Scissors className="w-8 h-8" />
@@ -510,7 +510,7 @@ export default function Programs() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 shadow-xl rounded-3xl p-8 mt-8 text-center">
+        <div className="bg-linear-to-rfrom-blue-600 to-indigo-700 shadow-xl rounded-3xl p-8 mt-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Start Your Healthcare Career?
           </h2>

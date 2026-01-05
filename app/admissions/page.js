@@ -297,7 +297,7 @@ export default function AdmissionPage() {
         {/* Header */}
         <div className="bg-white shadow-xl rounded-3xl p-8 mb-8 text-center">
           <div className="flex justify-center mb-4">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-full">
+            <div className="bg-linear-to-rfrom-blue-600 to-indigo-600 p-4 rounded-full">
               <GraduationCap className="w-10 h-10 text-white" />
             </div>
           </div>
@@ -321,7 +321,7 @@ export default function AdmissionPage() {
                     <div
                       className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
                         currentStep >= step.number
-                          ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg scale-110"
+                          ? "bg-linear-to-rfrom-blue-600 to-indigo-600 text-white shadow-lg scale-110"
                           : "bg-gray-200 text-gray-500"
                       }`}
                     >
@@ -345,7 +345,7 @@ export default function AdmissionPage() {
                     <div
                       className={`h-1 flex-1 mx-2 rounded transition-all duration-300 ${
                         currentStep > step.number
-                          ? "bg-gradient-to-r from-blue-600 to-indigo-600"
+                          ? "bg-linear-to-rfrom-blue-600 to-indigo-600"
                           : "bg-gray-200"
                       }`}
                     />
@@ -1448,7 +1448,7 @@ export default function AdmissionPage() {
               <button
                 type="button"
                 onClick={nextStep}
-                className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-full transition-all ml-auto"
+                className="flex items-center gap-2 px-6 py-3 bg-linear-to-rfrom-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-full transition-all ml-auto"
               >
                 Next
                 <ChevronRight className="w-5 h-5" />
