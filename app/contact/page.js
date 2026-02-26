@@ -243,8 +243,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">
                   Phone
                 </h3>
-                <p className="text-gray-700 font-medium">+91 8273968106</p>
-                <p className="text-gray-700 font-medium">+91 9634099389</p>
+                <p className="text-gray-700 font-medium">+91 7454998289</p>
               </div>
 
               <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-3 hover:scale-105 transition-all text-center border-2 border-cyan-200">

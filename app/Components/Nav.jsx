@@ -236,7 +236,7 @@ export default function Nav() {
       {/* Fixed Side Support Links - ALWAYS VISIBLE */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 space-y-3">
         <a
-          href="https://wa.me/8273968106"
+          href="https://wa.me/7454998289"
           className="flex items-center justify-center w-12 h-12 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-colors"
           target="_blank"
           rel="noopener noreferrer"
@@ -245,14 +245,14 @@ export default function Nav() {
         </a>
 
         <a
-          href="tel:+"
+          href="tel:7454998289"
           className="flex items-center justify-center w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-colors"
         >
           <Phone className="w-6 h-6" />
         </a>
 
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/share/1At2JsSS2h/"
           className="flex items-center justify-center w-12 h-12 bg-blue-700 hover:bg-blue-800 text-white rounded-full shadow-lg transition-colors"
           target="_blank"
           rel="noopener noreferrer"
