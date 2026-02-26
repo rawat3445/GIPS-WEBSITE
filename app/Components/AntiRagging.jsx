@@ -147,7 +147,7 @@ export default function AntiRagging() {
         </div>
 
         {/* Warning Notice */}
-        <div className="bg-linear-to-rfrom-red-600 to-red-700 rounded-xl shadow-lg p-8 text-white">
+        <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-xl shadow-lg p-8 text-white">
           <div className="flex items-start mb-6">
             <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
               <AlertTriangle className="w-6 h-6 text-yellow-500 drop-shadow" />

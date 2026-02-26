@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 import {
   Award,
@@ -24,15 +23,15 @@ export default function AboutGipsPage() {
           name: "Mr. Kavinder Istwal",
           position: "Chairman",
           qualification: "Garhwal Institute of Paramedical Sciences",
-          location: "Shree Satchandi Jankalyan Samiti",
-          image: "/Chairman_sir.jpg",
+          location: "Shri Bhatchandi Jankiya Van Samiti, Pauri Garhwal",
+          image: "/api/placeholder/150/180",
         },
         {
           name: "Mr. Nripesh Tiwari",
           position: "General Secretary",
           qualification: "Garhwal Institute of Paramedical Sciences",
-          location: "Shree Satchandi Jankalyan Samiti",
-          image: "/Nripesh_sir.png",
+          location: "Shri Bhatchandi Jankiya Van Samiti, Pauri Garhwal",
+          image: "/api/placeholder/150/180",
         },
       ],
     },
@@ -45,7 +44,7 @@ export default function AboutGipsPage() {
           qualification:
             "Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           degree: "B.OPTOMETRY, MSc., Ph.D. ONTOMETRY",
-          image: "/Principal-Sir.jpg",
+          image: "/api/placeholder/150/180",
         },
       ],
     },
@@ -58,9 +57,8 @@ export default function AboutGipsPage() {
             "Assistant Professor / Controller of Examinations / Faculty In-Charge",
           qualification:
             "Dept. of Physiotherapy, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
-          degree:
-            "MPT (NEUROLOGY), Ph.D. Scholar (Neurology and psychosomatic Disorders)",
-          image: "/Sid_sir.png",
+          degree: "MPT (NEUROLOGY & PSYCHOSOMATIC DISORDERS)",
+          image: "/api/placeholder/150/180",
         },
         {
           name: "Dr. Priyanka Shah",
@@ -68,7 +66,7 @@ export default function AboutGipsPage() {
           qualification:
             "Dept. of Physiotherapy, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           degree: "BACHELORS IN PHYSIOTHERAPY",
-          image: "/priyanka-mam.png",
+          image: "/api/placeholder/150/180",
         },
       ],
     },
@@ -81,16 +79,7 @@ export default function AboutGipsPage() {
           qualification:
             "Dept. of Operation Theatre Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           hospital: "BOTT (SGRH, DOON HOSPITAL, DEHRADUN)",
-          image: "/Hritik.png",
-        },
-
-        {
-          name: "Ms. Aastha",
-          position: "Lecturer",
-          qualification:
-            "Dept. of Operation Theatre Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
-          hospital: "Uttranchal P.G Collage Of Biomedical Science and Hospital",
-          image: "/Ms.Astha.jpg",
+          image: "/api/placeholder/150/180",
         },
       ],
     },
@@ -103,7 +92,15 @@ export default function AboutGipsPage() {
           qualification:
             "Dept. of Medical Radio-Imaging Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
           hospital: "BMRIT (VCSGG GOVT. MEDICAL COLLEGE, SRINAGAR)",
-          image: "/Nidhi-mam.png",
+          image: "/api/placeholder/150/180",
+        },
+        {
+          name: "Miss. Sunita Kaswal",
+          position: "Lecturer",
+          qualification:
+            "Dept. of Medical Radio-Imaging Technology, Garhwal Institute of Paramedical Sciences, Pauri Garhwal",
+          degree: "BACHELORS IN MEDICAL RADIO-IMAGING TECHNOLOGY",
+          image: "/api/placeholder/150/180",
         },
       ],
     },
@@ -185,7 +182,7 @@ export default function AboutGipsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 mt-0">
       {/* Hero Section */}
-      <div className="bg-linear-to-rfrom-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-20">
+      <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <div className="bg-white/20 backdrop-blur-md p-4 rounded-full border border-white/30">
@@ -208,7 +205,7 @@ export default function AboutGipsPage() {
               onClick={() => setActiveTab("about")}
               className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === "about"
-                  ? "bg-linear-to-rfrom-blue-600 to-purple-600 text-white shadow-lg"
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -218,7 +215,7 @@ export default function AboutGipsPage() {
               onClick={() => setActiveTab("faculty")}
               className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === "faculty"
-                  ? "bg-linear-to-rfrom-blue-600 to-purple-600 text-white shadow-lg"
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -279,7 +276,7 @@ export default function AboutGipsPage() {
                 return (
                   <div
                     key={index}
-                    className={`bg-linear-to-r${item.color} rounded-2xl shadow-xl p-10 text-white`}
+                    className={`bg-gradient-to-r ${item.color} rounded-2xl shadow-xl p-10 text-white`}
                   >
                     <div className="flex items-center mb-6">
                       <IconComponent className="w-12 h-12 mr-4" />
@@ -326,7 +323,7 @@ export default function AboutGipsPage() {
                       key={index}
                       className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all text-center"
                     >
-                      <div className="bg-linear-to-rfrom-blue-500 to-purple-500 w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                      <div className="bg-gradient-to-r from-blue-500 to-purple-500 w-16 h-16 rounded-full flex items-center justify-center text-white mx-auto mb-4">
                         <IconComponent className="w-8 h-8" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 mb-2">
@@ -340,7 +337,7 @@ export default function AboutGipsPage() {
             </div>
 
             {/* Affiliation */}
-            <div className="bg-linear-to-rfrom-green-600 to-teal-600 rounded-2xl shadow-xl p-10 text-white text-center">
+            <div className="bg-gradient-to-r from-green-600 to-teal-600 rounded-2xl shadow-xl p-10 text-white text-center">
               <Globe className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold mb-4">
                 Affiliation & Recognition
@@ -391,7 +388,7 @@ export default function AboutGipsPage() {
             {/* Faculty Members by Department */}
             {facultyMembers.map((department, deptIndex) => (
               <div key={deptIndex} className="mb-12">
-                <div className="bg-linear-to-rfrom-indigo-600 to-purple-600 rounded-t-2xl p-6 text-white">
+                <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-t-2xl p-6 text-white">
                   <h3 className="text-3xl font-bold">{department.category}</h3>
                 </div>
                 <div className="bg-white rounded-b-2xl shadow-xl p-8">
@@ -402,12 +399,10 @@ export default function AboutGipsPage() {
                         className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 hover:border-indigo-500 hover:shadow-xl transition-all"
                       >
                         {/* Faculty Image */}
-                        <div className="bg-white w-60 h-79 mx-auto rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                          <Image
+                        <div className="bg-gray-200 w-40 h-48 mx-auto rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                          <img
                             src={faculty.image}
                             alt={faculty.name}
-                            width={175}
-                            height={10}
                             className="w-full h-full object-cover"
                           />
                         </div>
@@ -450,7 +445,7 @@ export default function AboutGipsPage() {
             ))}
 
             {/* Faculty Achievements */}
-            <div className="bg-linear-to-rfrom-yellow-400 via-orange-500 to-red-500 rounded-2xl shadow-xl p-10 text-white text-center">
+            <div className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 rounded-2xl shadow-xl p-10 text-white text-center">
               <Award className="w-16 h-16 mx-auto mb-6" />
               <h3 className="text-3xl font-bold mb-4">Faculty Excellence</h3>
               <p className="text-xl mb-6 max-w-3xl mx-auto">

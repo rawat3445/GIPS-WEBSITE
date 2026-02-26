@@ -116,7 +116,7 @@ export default function VisionMissionPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 mt-0">
       {/* Hero Section */}
-      <div className="bg-linear-to-rfrom-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-20">
+      <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-8 py-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <div className="bg-white/20 backdrop-blur-md p-4 rounded-full border border-white/30">
@@ -134,7 +134,7 @@ export default function VisionMissionPage() {
         {/* Vision Section */}
         <div className="bg-white rounded-2xl shadow-xl p-10 mb-12 border-t-4 border-blue-600">
           <div className="flex items-center mb-8">
-            <div className="bg-linear-to-rfrom-blue-500 to-indigo-500 w-16 h-16 rounded-full flex items-center justify-center text-white mr-6">
+            <div className="bg-gradient-to-r from-blue-500 to-indigo-500 w-16 h-16 rounded-full flex items-center justify-center text-white mr-6">
               <Target className="w-8 h-8" />
             </div>
             <h2 className="text-4xl font-bold text-gray-800">Our Vision</h2>
@@ -172,7 +172,7 @@ export default function VisionMissionPage() {
 
         {/* Mission Section */}
         <div className="mb-12">
-          <div className="bg-linear-to-rfrom-purple-600 to-pink-600 rounded-t-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-t-2xl p-8 text-white">
             <div className="flex items-center">
               <Heart className="w-12 h-12 mr-4" />
               <h2 className="text-4xl font-bold">Our Mission</h2>
@@ -191,7 +191,7 @@ export default function VisionMissionPage() {
                     key={index}
                     className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 hover:shadow-lg transition-all"
                   >
-                    <div className="bg-linear-to-rfrom-purple-500 to-pink-500 w-14 h-14 rounded-full flex items-center justify-center text-white mb-4">
+                    <div className="bg-gradient-to-r from-purple-500 to-pink-500 w-14 h-14 rounded-full flex items-center justify-center text-white mb-4">
                       <IconComponent className="w-7 h-7" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -216,7 +216,7 @@ export default function VisionMissionPage() {
             {coreObjectives.map((objective, index) => (
               <div
                 key={index}
-                className="flex items-start bg-linear-to-rfrom-blue-50 to-indigo-50 rounded-lg p-5 border-l-4 border-blue-600"
+                className="flex items-start bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-5 border-l-4 border-blue-600"
               >
                 <CheckCircle className="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
                 <p className="text-gray-700">{objective}</p>
@@ -236,7 +236,7 @@ export default function VisionMissionPage() {
                 key={index}
                 className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all"
               >
-                <div className="bg-linear-to-rfrom-indigo-600 to-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mb-4">
+                <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mb-4">
                   {index + 1}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -249,7 +249,7 @@ export default function VisionMissionPage() {
         </div>
 
         {/* Core Values */}
-        <div className="bg-linear-to-rfrom-orange-600 to-red-600 rounded-2xl shadow-xl p-10 mb-12 text-white">
+        <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl shadow-xl p-10 mb-12 text-white">
           <h2 className="text-4xl font-bold mb-8 text-center">
             Our Core Values
           </h2>
