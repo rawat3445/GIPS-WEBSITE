@@ -5,16 +5,18 @@ import About from "./Components/About";
 import AboutPreview from "./Components/AboutPreview";
 import Footer from "./Components/Footer";
 import Program from "./Components/Program";
+import { Analytics } from "@vercel/analytics/next";
 export default function Home() {
   return (
-    <div >
+    <div>
       <Hero />
       <AboutPreview />
-      <Program/>
+      <Program />
       <About />
-      <Event /> 
+      <Event />
       <AntiRagging />
       <Footer />
+      <Analytics />
     </div>
   );
 }
