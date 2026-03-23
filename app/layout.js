@@ -31,23 +31,29 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* ✅ Google Analytics */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-11FPX67T0Z"
-        strategy="afterInteractive"
-      />
-      <Script id="ga4" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-11FPX67T0Z');
-        `}
-      </Script>
-
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8013060283776818"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-11FPX67T0Z"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-11FPX67T0Z');
+          `}
+        </Script>
         <Nav />
         <LenisProvider>{children}</LenisProvider>
       </body>
